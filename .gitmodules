@@ -1,0 +1,21 @@
+[submodule "clustershift"]
+	path = clustershift
+	url = git@github.com:romankudravcev/clustershift.git
+[submodule "benchmark-applications/clustershift-benchmark-client"]
+	path = benchmark-applications/clustershift-benchmark-client
+	url = git@github.com:romankudravcev/clustershift-benchmark-client.git
+[submodule "benchmark-applications/k8s-metrics-collector"]
+	path = benchmark-applications/k8s-metrics-collector
+	url = git@github.com:romankudravcev/k8s-metrics-collector.git
+[submodule "benchmark-applications/clustershift-benchmark-application"]
+	path = benchmark-applications/clustershift-benchmark-application
+	url = git@github.com:romankudravcev/clustershift-benchmark-application.git
+[submodule "clustershift-tools/mongosyncer"]
+	path = clustershift-tools/mongosyncer
+	url = git@github.com:romankudravcev/mongosyncer.git
+[submodule "clustershift-tools/reverse-proxy-http"]
+	path = clustershift-tools/reverse-proxy-http
+	url = git@github.com:romankudravcev/reverse-proxy-http.git
+[submodule "clustershift-tools/kube-connectivity-probe"]
+	path = clustershift-tools/kube-connectivity-probe
+	url = git@github.com:romankudravcev/kube-connectivity-probe.git
