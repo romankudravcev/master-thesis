@@ -1,0 +1,35 @@
+apiVersion: mongodbcommunity.mongodb.com/v1
+kind: MongoDBCommunity
+metadata:
+  name: example-mongodb
+  namespace: mongodb
+spec:
+  members: 2
+  type: ReplicaSet
+  version: "6.0.17"
+  security:
+    authentication:
+      modes: ["SCRAM"]
+  users:
+    - name: my-user
+      db: admin
+      passwordSecretRef:
+        name: my-user-password
+      roles:
+        - name: clusterAdmin
+          db: admin
+        - name: userAdminAnyDatabase
+          db: admin
+      scramCredentialsSecretName: my-scram
+  additionalMongodConfig:
+    storage.wiredTiger.engineConfig.journalCompressor: zlib
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: my-user-password
+  namespace: mongodb
+type: Opaque
+stringData:
+  password: password
+
