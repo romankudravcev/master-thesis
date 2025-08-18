@@ -1,0 +1,209 @@
+2025-08-18 21:17:33 [INFO] Starting migration process...
+2025-08-18 21:17:33 [INFO] You will be prompted to select a networking tool and rerouting option to establish a secure connection and manage traffic between the clusters.
+2025-08-18 21:19:07 [INFO] Initializing kubernetes clients
+2025-08-18 21:19:07 [INFO] Checking connectivity between clusters
+2025-08-18 21:19:07 [DEBUG] Fetching cluster IPs
+2025-08-18 21:19:08 [DEBUG] Cleaning up probe resources
+2025-08-18 21:19:08 [DEBUG] Testing connectivity with Origin IP: 192.168.131.1, Target IP: 192.168.133.1
+2025-08-18 21:19:08 [DEBUG] Deploying probe resources
+2025-08-18 21:19:09 [DEBUG] Waiting for pods to be ready
+2025-08-18 21:19:13 [DEBUG] Pods are ready
+2025-08-18 21:19:13 [DEBUG] Checking connectivity between clusters
+2025-08-18 21:19:23 [DEBUG] Connectivity check successful with Origin IP: 192.168.131.1, Target IP: 192.168.133.1 - both clusters can reach each other
+2025-08-18 21:19:23 [DEBUG] Cleaning up probe resources
+2025-08-18 21:19:23 [DEBUG] Connectivity probe complete
+2025-08-18 21:19:23 [INFO] Establishing secure connection between clusters
+2025-08-18 21:19:23 [INFO] Installing Submariner
+2025-08-18 21:19:26 [DEBUG] Pod CIDR Origin: 10.42.0.0/16
+
+2025-08-18 21:19:26 [DEBUG] Pod CIDR Target: 10.42.0.0/16
+
+2025-08-18 21:19:26 [DEBUG] Service CIDR Origin: 10.43.0.0/16
+
+2025-08-18 21:19:26 [DEBUG] Service CIDR Target: 10.43.0.0/16
+
+2025-08-18 21:19:26 [DEBUG] Broker URL: 192.168.131.1:6443
+
+2025-08-18 21:19:26 [INFO] Labeling gateway nodes
+2025-08-18 21:19:26 [INFO] Labeled gateway nodes
+2025-08-18 21:19:26 [INFO] Deploying broker
+2025-08-18 21:19:38 [INFO] Deployed broker
+2025-08-18 21:19:38 [DEBUG] Generated random string: rOWAJ4qdK1CBBhBXO36afZHMEieWIv7cIT2ypDd7RmJu51XwHNtOqtkkYheFSGvA
+
+2025-08-18 21:19:38 [INFO] Joining origin cluster
+2025-08-18 21:19:57 [INFO] Joined origin cluster
+2025-08-18 21:19:57 [INFO] Joining target cluster
+2025-08-18 21:20:16 [INFO] Joined target cluster
+2025-08-18 21:20:16 [INFO] Submariner installed
+2025-08-18 21:20:16 [INFO] Migrating configuration resources
+2025-08-18 21:20:19 [INFO] Scanning for existing cnpg databases
+2025-08-18 21:20:19 [INFO] No existing cnpg databases found, skipping migration
+2025-08-18 21:20:19 [INFO] Migrating MongoDBs
+2025-08-18 21:20:20 [INFO] No existing MongoDBs found, skipping migration
+2025-08-18 21:20:20 [INFO] Checking for existing MongoDB Community Operator deployment
+2025-08-18 21:20:20 [DEBUG] Found MongoDB Community Operator version 0.13.0 in namespace mongodb
+2025-08-18 21:20:20 [INFO] Deploying MongoDB Community Operator version 0.13.0 to target cluster
+2025-08-18 21:20:32 [DEBUG] Found 1 MongoDB databases in origin cluster
+2025-08-18 21:20:32 [DEBUG] Creating MongoDB client pod...
+2025-08-18 21:20:32 [DEBUG] Waiting for MongoDB client pod to be ready...
+2025-08-18 21:20:48 [DEBUG] Creating MongoDB client pod...
+2025-08-18 21:20:48 [DEBUG] Waiting for MongoDB client pod to be ready...
+2025-08-18 21:21:02 [DEBUG] Deploying MongoDB cluster example-mongodb in namespace mongodb
+2025-08-18 21:21:03 [DEBUG] Waiting for MongoDB cluster example-mongodb in namespace mongodb to be ready
+2025-08-18 21:21:08 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: 
+2025-08-18 21:21:13 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-18 21:21:18 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-18 21:21:23 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-18 21:21:28 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-18 21:21:33 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-18 21:21:38 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-18 21:21:43 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-18 21:21:48 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-18 21:21:53 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-18 21:21:58 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-18 21:21:58 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is ready
+2025-08-18 21:21:58 [INFO] Checking for namespace
+2025-08-18 21:21:58 [INFO] Namespace exists
+2025-08-18 21:21:58 [INFO] Creating service export resource
+2025-08-18 21:21:58 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:example-mongodb-svc namespace:mongodb] status:map[]]
+2025-08-18 21:21:58 [INFO] Service exported successfully
+2025-08-18 21:21:58 [INFO] Checking for namespace
+2025-08-18 21:21:59 [INFO] Namespace exists
+2025-08-18 21:21:59 [INFO] Creating service export resource
+2025-08-18 21:21:59 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:example-mongodb-svc namespace:mongodb] status:map[]]
+2025-08-18 21:21:59 [INFO] Service exported successfully
+2025-08-18 21:22:06 [DEBUG] MongoDB command output: {"set":"example-mongodb","date":"2025-08-18T19:22:06.761Z","myState":1,"term":{"low":1,"high":0,"unsigned":false},"syncSourceHost":"","syncSourceId":-1,"heartbeatIntervalMillis":{"low":2000,"high":0,"unsigned":false},"majorityVoteCount":2,"writeMajorityCount":2,"votingMembersCount":2,"writableVotingMembersCount":2,"optimes":{"lastCommittedOpTime":{"ts":{"$timestamp":"7540008043828740102"},"t":{"low":1,"high":0,"unsigned":false}},"lastCommittedWallTime":"2025-08-18T19:22:06.749Z","readConcernMajorityOpTime":{"ts":{"$timestamp":"7540008043828740102"},"t":{"low":1,"high":0,"unsigned":false}},"appliedOpTime":{"ts":{"$timestamp":"7540008043828740102"},"t":{"low":1,"high":0,"unsigned":false}},"durableOpTime":{"ts":{"$timestamp":"7540008043828740102"},"t":{"low":1,"high":0,"unsigned":false}},"lastAppliedWallTime":"2025-08-18T19:22:06.749Z","lastDurableWallTime":"2025-08-18T19:22:06.749Z"},"lastStableRecoveryTimestamp":{"$timestamp":"7540008043828740100"},"electionCandidateMetrics":{"lastElectionReason":"electionTimeout","lastElectionDate":"2025-08-18T19:15:16.987Z","electionTerm":{"low":1,"high":0,"unsigned":false},"lastCommittedOpTimeAtElection":{"ts":{"$timestamp":"7540006239942475777"},"t":{"low":-1,"high":-1,"unsigned":false}},"lastSeenOpTimeAtElection":{"ts":{"$timestamp":"7540006239942475777"},"t":{"low":-1,"high":-1,"unsigned":false}},"numVotesNeeded":2,"priorityAtElection":1,"electionTimeoutMillis":{"low":10000,"high":0,"unsigned":false},"numCatchUpOps":{"low":0,"high":0,"unsigned":false},"newTermStartDate":"2025-08-18T19:15:17.027Z","wMajorityWriteAvailabilityDate":"2025-08-18T19:15:17.929Z"},"members":[{"_id":0,"name":"example-mongodb-0.example-mongodb-svc.mongodb.svc.cluster.local:27017","health":1,"state":1,"stateStr":"PRIMARY","uptime":498,"optime":{"ts":{"$timestamp":"7540008043828740102"},"t":{"low":1,"high":0,"unsigned":false}},"optimeDate":"2025-08-18T19:22:06.000Z","lastAppliedWallTime":"2025-08-18T19:22:06.749Z","lastDurableWallTime":"2025-08-18T19:22:06.749Z","syncSourceHost":"","syncSourceId":-1,"infoMessage":"","electionTime":{"$timestamp":"7540006282892148737"},"electionDate":"2025-08-18T19:15:16.000Z","configVersion":1,"configTerm":1,"self":true,"lastHeartbeatMessage":""},{"_id":1,"name":"example-mongodb-1.example-mongodb-svc.mongodb.svc.cluster.local:27017","health":1,"state":2,"stateStr":"SECONDARY","uptime":420,"optime":{"ts":{"$timestamp":"7540008039533772802"},"t":{"low":1,"high":0,"unsigned":false}},"optimeDurable":{"ts":{"$timestamp":"7540008039533772802"},"t":{"low":1,"high":0,"unsigned":false}},"optimeDate":"2025-08-18T19:22:05.000Z","optimeDurableDate":"2025-08-18T19:22:05.000Z","lastAppliedWallTime":"2025-08-18T19:22:06.749Z","lastDurableWallTime":"2025-08-18T19:22:06.749Z","lastHeartbeat":"2025-08-18T19:22:05.161Z","lastHeartbeatRecv":"2025-08-18T19:22:06.180Z","pingMs":{"low":0,"high":0,"unsigned":false},"lastHeartbeatMessage":"","syncSourceHost":"example-mongodb-0.example-mongodb-svc.mongodb.svc.cluster.local:27017","syncSourceId":0,"infoMessage":"","configVersion":1,"configTerm":1}],"ok":1,"$clusterTime":{"clusterTime":{"$timestamp":"7540008043828740102"},"signature":{"hash":"J4xD9yLBbJYd3bMJ/6ZT6eOm5Yw=","keyId":{"low":4,"high":1755544517,"unsigned":false}}},"operationTime":{"$timestamp":"7540008043828740102"}}
+
+2025-08-18 21:22:10 [DEBUG] MongoDB command output: {"set":"example-mongodb","date":"2025-08-18T19:22:10.110Z","myState":1,"term":{"low":1,"high":0,"unsigned":false},"syncSourceHost":"","syncSourceId":-1,"heartbeatIntervalMillis":{"low":2000,"high":0,"unsigned":false},"majorityVoteCount":1,"writeMajorityCount":1,"votingMembersCount":1,"writableVotingMembersCount":1,"optimes":{"lastCommittedOpTime":{"ts":{"$timestamp":"7540008052418674689"},"t":{"low":1,"high":0,"unsigned":false}},"lastCommittedWallTime":"2025-08-18T19:22:08.720Z","readConcernMajorityOpTime":{"ts":{"$timestamp":"7540008052418674689"},"t":{"low":1,"high":0,"unsigned":false}},"appliedOpTime":{"ts":{"$timestamp":"7540008052418674689"},"t":{"low":1,"high":0,"unsigned":false}},"durableOpTime":{"ts":{"$timestamp":"7540008052418674689"},"t":{"low":1,"high":0,"unsigned":false}},"lastAppliedWallTime":"2025-08-18T19:22:08.720Z","lastDurableWallTime":"2025-08-18T19:22:08.720Z"},"lastStableRecoveryTimestamp":{"$timestamp":"7540007966519328769"},"electionCandidateMetrics":{"lastElectionReason":"electionTimeout","lastElectionDate":"2025-08-18T19:21:48.657Z","electionTerm":{"low":1,"high":0,"unsigned":false},"lastCommittedOpTimeAtElection":{"ts":{"$timestamp":"7540007966519328769"},"t":{"low":-1,"high":-1,"unsigned":false}},"lastSeenOpTimeAtElection":{"ts":{"$timestamp":"7540007966519328769"},"t":{"low":-1,"high":-1,"unsigned":false}},"numVotesNeeded":1,"priorityAtElection":1,"electionTimeoutMillis":{"low":10000,"high":0,"unsigned":false},"newTermStartDate":"2025-08-18T19:21:48.701Z","wMajorityWriteAvailabilityDate":"2025-08-18T19:21:48.722Z"},"members":[{"_id":0,"name":"example-mongodb-0.example-mongodb-svc.mongodb.svc.cluster.local:27017","health":1,"state":1,"stateStr":"PRIMARY","uptime":23,"optime":{"ts":{"$timestamp":"7540008052418674689"},"t":{"low":1,"high":0,"unsigned":false}},"optimeDate":"2025-08-18T19:22:08.000Z","lastAppliedWallTime":"2025-08-18T19:22:08.720Z","lastDurableWallTime":"2025-08-18T19:22:08.720Z","syncSourceHost":"","syncSourceId":-1,"infoMessage":"Could not find member to sync from","electionTime":{"$timestamp":"7540007966519328770"},"electionDate":"2025-08-18T19:21:48.000Z","configVersion":1,"configTerm":1,"self":true,"lastHeartbeatMessage":""}],"ok":1,"$clusterTime":{"clusterTime":{"$timestamp":"7540008052418674689"},"signature":{"hash":"SWYg1cIJuWepOTCtVFZzEYrcpIs=","keyId":{"low":6,"high":1755544908,"unsigned":false}}},"operationTime":{"$timestamp":"7540008052418674689"}}
+
+2025-08-18 21:22:10 [INFO] Primary MongoDB host in origin cluster: example-mongodb-0.example-mongodb-svc.mongodb.svc.cluster.local
+2025-08-18 21:22:10 [INFO] Primary MongoDB host in target cluster: example-mongodb-0.example-mongodb-svc.mongodb.svc.cluster.local
+2025-08-18 21:22:12 [DEBUG] MongoDB command output: {
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1755544932, i: 7 }),
+    signature: {
+      hash: Binary.createFromBase64('V2hMBKnPPcHBcCoa/dXCy8m+5H4=', 0),
+      keyId: Long('7540006287187116036')
+    }
+  },
+  operationTime: Timestamp({ t: 1755544932, i: 7 })
+}
+
+2025-08-18 21:22:15 [DEBUG] MongoDB command output: {
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1755544935, i: 1 }),
+    signature: {
+      hash: Binary.createFromBase64('y1QPIjC+z/GhAG3SxO6b5mVzhLU=', 0),
+      keyId: Long('7540007966519328774')
+    }
+  },
+  operationTime: Timestamp({ t: 1755544935, i: 1 })
+}
+
+2025-08-18 21:22:17 [DEBUG] MongoDB command output: {"_id":"example-mongodb","version":1,"term":1,"members":[{"_id":0,"host":"example-mongodb-0.example-mongodb-svc.mongodb.svc.cluster.local:27017","arbiterOnly":false,"buildIndexes":true,"hidden":false,"priority":1,"tags":{},"secondaryDelaySecs":{"low":0,"high":0,"unsigned":false},"votes":1},{"_id":1,"host":"example-mongodb-1.example-mongodb-svc.mongodb.svc.cluster.local:27017","arbiterOnly":false,"buildIndexes":true,"hidden":false,"priority":1,"tags":{},"secondaryDelaySecs":{"low":0,"high":0,"unsigned":false},"votes":1}],"protocolVersion":{"low":1,"high":0,"unsigned":false},"writeConcernMajorityJournalDefault":true,"settings":{"chainingAllowed":true,"heartbeatIntervalMillis":2000,"heartbeatTimeoutSecs":10,"electionTimeoutMillis":10000,"catchUpTimeoutMillis":-1,"catchUpTakeoverDelayMillis":30000,"getLastErrorModes":{},"getLastErrorDefaults":{"w":1,"wtimeout":0},"replicaSetId":"68a37bba2a0942d915432572"}}
+
+2025-08-18 21:22:17 [INFO] mongodb://clusteradmin:password1@example-mongodb-0.origin.example-mongodb-svc.mongodb.svc.clusterset.local:27017,example-mongodb-1.origin.example-mongodb-svc.mongodb.svc.clusterset.local:27017/?authSource=admin
+2025-08-18 21:22:20 [DEBUG] MongoDB command output: {"_id":"example-mongodb","version":1,"term":1,"members":[{"_id":0,"host":"example-mongodb-0.example-mongodb-svc.mongodb.svc.cluster.local:27017","arbiterOnly":false,"buildIndexes":true,"hidden":false,"priority":1,"tags":{},"secondaryDelaySecs":{"low":0,"high":0,"unsigned":false},"votes":1}],"protocolVersion":{"low":1,"high":0,"unsigned":false},"writeConcernMajorityJournalDefault":true,"settings":{"chainingAllowed":true,"heartbeatIntervalMillis":2000,"heartbeatTimeoutSecs":10,"electionTimeoutMillis":10000,"catchUpTimeoutMillis":-1,"catchUpTakeoverDelayMillis":30000,"getLastErrorModes":{},"getLastErrorDefaults":{"w":1,"wtimeout":0},"replicaSetId":"68a37d4cf4bad5a3bf2c1f35"}}
+
+2025-08-18 21:22:20 [INFO] mongodb://clusteradmin:password1@example-mongodb-0.target.example-mongodb-svc.mongodb.svc.clusterset.local:27017/?authSource=admin
+2025-08-18 21:22:25 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-18 21:22:30 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-18 21:22:35 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-18 21:22:40 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-18 21:22:45 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-18 21:22:50 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-18 21:22:55 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-18 21:23:00 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-18 21:23:05 [DEBUG] Job mongosyncer-job in namespace default has completed
+2025-08-18 21:23:08 [DEBUG] MongoDB command output: {
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1755544988, i: 1 }),
+    signature: {
+      hash: Binary.createFromBase64('HZ3HwWR2K7r0iG33gARN+F7tkVY=', 0),
+      keyId: Long('7540007966519328774')
+    }
+  },
+  operationTime: Timestamp({ t: 1755544988, i: 1 })
+}
+
+2025-08-18 21:23:08 [DEBUG] Deleting MongoDB client pod...
+2025-08-18 21:23:08 [DEBUG] Deleting MongoDB client pod...
+2025-08-18 21:23:08 [DEBUG] Restoring MongoDB cluster example-mongodb member count to 2
+2025-08-18 21:23:08 [INFO] Migrating PostgreSQL databases
+2025-08-18 21:23:08 [INFO] No existing PostgreSQL databases found, skipping migration
+2025-08-18 21:23:08 [INFO] Migrating resources
+2025-08-18 21:23:09 [INFO] Enable request forwarding from origin
+2025-08-18 21:23:09 [INFO] Checking for namespace
+2025-08-18 21:23:09 [INFO] Namespace exists
+2025-08-18 21:23:09 [INFO] Creating service export resource
+2025-08-18 21:23:09 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:clustershift-benchmark-service namespace:benchmark] status:map[]]
+2025-08-18 21:23:10 [INFO] Service exported successfully
+2025-08-18 21:23:10 [INFO] Checking for namespace
+2025-08-18 21:23:10 [INFO] Namespace exists
+2025-08-18 21:23:10 [INFO] Creating service export resource
+2025-08-18 21:23:10 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:metrics-collector namespace:clustershift] status:map[]]
+2025-08-18 21:23:10 [INFO] Service exported successfully
+2025-08-18 21:23:10 [INFO] Checking for namespace
+2025-08-18 21:23:10 [INFO] Namespace exists
+2025-08-18 21:23:10 [INFO] Creating service export resource
+2025-08-18 21:23:10 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:kubernetes namespace:default] status:map[]]
+2025-08-18 21:23:10 [INFO] Service exported successfully
+2025-08-18 21:23:10 [INFO] Checking for namespace
+2025-08-18 21:23:10 [INFO] Namespace exists
+2025-08-18 21:23:10 [INFO] Creating service export resource
+2025-08-18 21:23:10 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:kube-dns namespace:kube-system] status:map[]]
+2025-08-18 21:23:11 [INFO] Service exported successfully
+2025-08-18 21:23:11 [INFO] Checking for namespace
+2025-08-18 21:23:11 [INFO] Namespace exists
+2025-08-18 21:23:11 [INFO] Creating service export resource
+2025-08-18 21:23:11 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:metrics-server namespace:kube-system] status:map[]]
+2025-08-18 21:23:11 [INFO] Service exported successfully
+2025-08-18 21:23:11 [INFO] Checking for namespace
+2025-08-18 21:23:11 [INFO] Namespace exists
+2025-08-18 21:23:11 [INFO] Creating service export resource
+2025-08-18 21:23:11 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:traefik namespace:kube-system] status:map[]]
+2025-08-18 21:23:11 [INFO] Service exported successfully
+2025-08-18 21:23:11 [INFO] Checking for namespace
+2025-08-18 21:23:11 [INFO] Namespace exists
+2025-08-18 21:23:11 [INFO] Creating service export resource
+2025-08-18 21:23:11 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:metallb-webhook-service namespace:metallb-system] status:map[]]
+2025-08-18 21:23:11 [INFO] Service exported successfully
+2025-08-18 21:23:11 [INFO] Checking for namespace
+2025-08-18 21:23:11 [INFO] Namespace exists
+2025-08-18 21:23:11 [INFO] Creating service export resource
+2025-08-18 21:23:11 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:example-mongodb-svc namespace:mongodb] status:map[]]
+2025-08-18 21:23:12 [INFO] Service already exported
+2025-08-18 21:23:12 [INFO] Checking for namespace
+2025-08-18 21:23:12 [INFO] Namespace exists
+2025-08-18 21:23:12 [INFO] Creating service export resource
+2025-08-18 21:23:12 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:submariner-gateway-metrics namespace:submariner-operator] status:map[]]
+2025-08-18 21:23:12 [INFO] Service exported successfully
+2025-08-18 21:23:12 [INFO] Checking for namespace
+2025-08-18 21:23:12 [INFO] Namespace exists
+2025-08-18 21:23:12 [INFO] Creating service export resource
+2025-08-18 21:23:12 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:submariner-globalnet-metrics namespace:submariner-operator] status:map[]]
+2025-08-18 21:23:12 [INFO] Service exported successfully
+2025-08-18 21:23:12 [INFO] Checking for namespace
+2025-08-18 21:23:12 [INFO] Namespace exists
+2025-08-18 21:23:12 [INFO] Creating service export resource
+2025-08-18 21:23:12 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:submariner-lighthouse-agent-metrics namespace:submariner-operator] status:map[]]
+2025-08-18 21:23:12 [INFO] Service exported successfully
+2025-08-18 21:23:12 [INFO] Checking for namespace
+2025-08-18 21:23:12 [INFO] Namespace exists
+2025-08-18 21:23:12 [INFO] Creating service export resource
+2025-08-18 21:23:12 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:submariner-lighthouse-coredns namespace:submariner-operator] status:map[]]
+2025-08-18 21:23:13 [INFO] Service exported successfully
+2025-08-18 21:23:13 [INFO] Checking for namespace
+2025-08-18 21:23:13 [INFO] Namespace exists
+2025-08-18 21:23:13 [INFO] Creating service export resource
+2025-08-18 21:23:13 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:submariner-lighthouse-coredns-metrics namespace:submariner-operator] status:map[]]
+2025-08-18 21:23:13 [INFO] Service exported successfully
+2025-08-18 21:23:13 [INFO] Checking for namespace
+2025-08-18 21:23:13 [INFO] Namespace exists
+2025-08-18 21:23:13 [INFO] Creating service export resource
+2025-08-18 21:23:13 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:submariner-operator-metrics namespace:submariner-operator] status:map[]]
+2025-08-18 21:23:13 [INFO] Service exported successfully
+2025-08-18 21:23:13 [INFO] Migration complete

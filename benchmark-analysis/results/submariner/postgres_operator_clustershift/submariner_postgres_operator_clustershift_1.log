@@ -1,0 +1,81 @@
+2025-08-14 17:33:08 [INFO] Starting migration process...
+2025-08-14 17:33:08 [INFO] You will be prompted to select a networking tool and rerouting option to establish a secure connection and manage traffic between the clusters.
+2025-08-14 17:34:27 [INFO] Initializing kubernetes clients
+2025-08-14 17:34:28 [INFO] Checking connectivity between clusters
+2025-08-14 17:34:28 [DEBUG] Fetching cluster IPs
+2025-08-14 17:34:28 [DEBUG] Cleaning up probe resources
+2025-08-14 17:34:28 [DEBUG] Testing connectivity with Origin IP: 192.168.131.1, Target IP: 192.168.133.1
+2025-08-14 17:34:28 [DEBUG] Deploying probe resources
+2025-08-14 17:34:29 [DEBUG] Waiting for pods to be ready
+2025-08-14 17:34:33 [DEBUG] Pods are ready
+2025-08-14 17:34:33 [DEBUG] Checking connectivity between clusters
+2025-08-14 17:34:44 [DEBUG] Connectivity check successful with Origin IP: 192.168.131.1, Target IP: 192.168.133.1 - both clusters can reach each other
+2025-08-14 17:34:44 [DEBUG] Cleaning up probe resources
+2025-08-14 17:34:44 [DEBUG] Connectivity probe complete
+2025-08-14 17:34:44 [INFO] Deploy reverse proxy for request forwarding
+2025-08-14 17:34:44 [DEBUG] Fetching loadbalancer IP
+2025-08-14 17:34:44 [DEBUG] Service: traefik IP: 141.13.5.242
+2025-08-14 17:34:44 [DEBUG] Fetched loadbalancer IP: 141.13.5.242
+2025-08-14 17:34:44 [DEBUG] Deploying proxy
+2025-08-14 17:34:44 [INFO] Establishing secure connection between clusters
+2025-08-14 17:34:44 [INFO] Installing Submariner
+2025-08-14 17:34:48 [DEBUG] Pod CIDR Origin: 10.42.0.0/16
+
+2025-08-14 17:34:48 [DEBUG] Pod CIDR Target: 10.42.0.0/16
+
+2025-08-14 17:34:48 [DEBUG] Service CIDR Origin: 10.43.0.0/16
+
+2025-08-14 17:34:48 [DEBUG] Service CIDR Target: 10.43.0.0/16
+
+2025-08-14 17:34:48 [DEBUG] Broker URL: 192.168.131.1:6443
+
+2025-08-14 17:34:48 [INFO] Labeling gateway nodes
+2025-08-14 17:34:48 [INFO] Labeled gateway nodes
+2025-08-14 17:34:48 [INFO] Deploying broker
+2025-08-14 17:34:54 [INFO] Deployed broker
+2025-08-14 17:34:54 [DEBUG] Generated random string: a3vHEEdBRrFhQQLc2ry_1gmVyEmTTaYWeZ1noU_QCvK734tavdiroDoqysNTv71n
+
+2025-08-14 17:34:54 [INFO] Joining origin cluster
+2025-08-14 17:35:09 [INFO] Joined origin cluster
+2025-08-14 17:35:09 [INFO] Joining target cluster
+2025-08-14 17:35:22 [INFO] Joined target cluster
+2025-08-14 17:35:22 [INFO] Submariner installed
+2025-08-14 17:35:22 [INFO] Migrating configuration resources
+2025-08-14 17:35:26 [INFO] Scanning for existing cnpg databases
+2025-08-14 17:35:26 [INFO] Migrate cnpg databases
+2025-08-14 17:35:26 [INFO] Installing cloud native-pg operator
+2025-08-14 17:35:41 [INFO] Adding submariner clusterset DNS
+2025-08-14 17:35:41 [INFO] fetching cnpg clusters
+2025-08-14 17:35:41 [INFO] Updating cluster resources
+2025-08-14 17:35:41 [INFO] Exporting cnpg rw services
+2025-08-14 17:35:41 [INFO] fetching cnpg clusters
+2025-08-14 17:35:42 [INFO] Checking for namespace
+2025-08-14 17:35:42 [INFO] Namespace exists
+2025-08-14 17:35:42 [INFO] Creating service export resource
+2025-08-14 17:35:42 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:my-postgres-cluster-rw namespace:postgres] status:map[]]
+2025-08-14 17:35:42 [INFO] Service exported successfully
+2025-08-14 17:35:42 [INFO] Creating replica cluster
+2025-08-14 17:35:42 [INFO] Fetching origin cnpg clusters
+2025-08-14 17:35:42 [INFO] Fetched origin clusters
+2025-08-14 17:35:42 [INFO] Creating replica cluster from origin
+2025-08-14 17:35:42 [DEBUG] &{{Cluster postgresql.cnpg.io/v1} {my-postgres-cluster  postgres    0 0001-01-01 00:00:00 +0000 UTC <nil> <nil> map[] map[] [] [] []} { <nil> ghcr.io/cloudnative-pg/postgresql:17.5 <nil>   26 26 3 0 0 {map[archive_mode:on archive_timeout:5min dynamic_shared_memory_type:posix full_page_writes:on log_destination:csvlog log_directory:/controller/log log_filename:postgres log_rotation_age:0 log_rotation_size:0 log_truncate_on_rotation:false logging_collector:on max_parallel_workers:32 max_replication_slots:32 max_worker_processes:32 shared_memory_type:mmap shared_preload_libraries: ssl_max_protocol_version:TLSv1.3 ssl_min_protocol_version:TLSv1.3 wal_keep_size:512MB wal_level:logical wal_log_hints:on wal_receiver_timeout:5s wal_sender_timeout:5s] <nil> [] [] {[] false} [] <nil> 0 false} 0x14000b7f128 0x14000b7f188 0x140008c79f0 <nil> 0x140007cf762 0x14000bd50e0 [] {0x14000b910e0 2Gi 0x140007cf763 nil} <nil> <nil> nil 3600 1800 0x140007cf764 3600 0 <nil> {<nil>  map[] nil [] preferred nil nil} [] {map[] map[] []} <nil>  unsupervised restart <nil> <nil> 0x14000babe00 [{my-postgres-cluster map[dbname:postgres host:origin.my-postgres-cluster-rw.postgres.svc.clusterset.local sslmode:verify-full user:streaming_replica] &SecretKeySelector{LocalObjectReference:LocalObjectReference{Name:my-postgres-cluster-replication,},Key:tls.crt,Optional:nil,} &SecretKeySelector{LocalObjectReference:LocalObjectReference{Name:my-postgres-cluster-replication,},Key:tls.key,Optional:nil,} &SecretKeySelector{LocalObjectReference:LocalObjectReference{Name:my-postgres-cluster-ca,},Key:ca.crt,Optional:nil,} nil <nil> <nil>}] info nil [] [] <nil> nil [] 0x140007cf769 [] <nil>} {0 0 map[] map[] {map[] map[] map[]} [] 0 {map[] 0 false} 0    0 0 [] [] [] [] []     {   map[]      map[] map[]} {map[]} {{    []} map[]}  map[]  map[]      <nil>  [] [] [] false false  [] {false} }}
+2025-08-14 17:37:33 [INFO] Created replica clusters
+2025-08-14 17:37:33 [INFO] Migrating MongoDBs
+2025-08-14 17:37:33 [INFO] No existing MongoDBs found, skipping migration
+2025-08-14 17:37:33 [INFO] Checking for existing MongoDB Community Operator deployment
+2025-08-14 17:37:33 [DEBUG] No MongoDB Community Operator found in origin cluster, skipping operator migration
+2025-08-14 17:37:33 [INFO] Migrating PostgreSQL databases
+2025-08-14 17:37:33 [INFO] No existing PostgreSQL databases found, skipping migration
+2025-08-14 17:37:33 [INFO] Migrating resources
+2025-08-14 17:37:34 [INFO] Demote cnpg clusters
+2025-08-14 17:37:34 [INFO] fetching cnpg clusters
+2025-08-14 17:37:34 [INFO] Fetched clusters
+2025-08-14 17:37:35 [INFO] Successfully updated cluster my-postgres-cluster in namespace postgres
+2025-08-14 17:37:35 [INFO] Completed demoting clusters
+2025-08-14 17:37:35 [INFO] Demote cnpg clusters
+2025-08-14 17:37:35 [INFO] fetching cnpg clusters
+2025-08-14 17:37:35 [INFO] Fetched clusters
+2025-08-14 17:37:35 [INFO] Successfully updated cluster my-postgres-cluster in namespace postgres
+2025-08-14 17:37:35 [INFO] Completed demoting clusters
+2025-08-14 17:37:35 [INFO] Enable request forwarding from origin
+2025-08-14 17:37:36 [INFO] Migration complete

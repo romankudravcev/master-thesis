@@ -1,0 +1,134 @@
+2025-08-18 17:36:23 [INFO] Starting migration process...
+2025-08-18 17:36:23 [INFO] You will be prompted to select a networking tool and rerouting option to establish a secure connection and manage traffic between the clusters.
+2025-08-18 17:38:09 [INFO] Initializing kubernetes clients
+2025-08-18 17:38:09 [INFO] Checking connectivity between clusters
+2025-08-18 17:38:09 [DEBUG] Fetching cluster IPs
+2025-08-18 17:38:10 [DEBUG] Cleaning up probe resources
+2025-08-18 17:38:10 [DEBUG] Testing connectivity with Origin IP: 192.168.131.1, Target IP: 192.168.133.1
+2025-08-18 17:38:10 [DEBUG] Deploying probe resources
+2025-08-18 17:38:11 [DEBUG] Waiting for pods to be ready
+2025-08-18 17:38:19 [DEBUG] Pods are ready
+2025-08-18 17:38:19 [DEBUG] Checking connectivity between clusters
+2025-08-18 17:38:29 [DEBUG] Connectivity check successful with Origin IP: 192.168.131.1, Target IP: 192.168.133.1 - both clusters can reach each other
+2025-08-18 17:38:29 [DEBUG] Cleaning up probe resources
+2025-08-18 17:38:29 [DEBUG] Connectivity probe complete
+2025-08-18 17:38:29 [INFO] Establishing secure connection between clusters
+2025-08-18 17:38:29 [INFO] Installing Submariner
+2025-08-18 17:38:32 [DEBUG] Pod CIDR Origin: 10.42.0.0/16
+
+2025-08-18 17:38:32 [DEBUG] Pod CIDR Target: 10.42.0.0/16
+
+2025-08-18 17:38:32 [DEBUG] Service CIDR Origin: 10.43.0.0/16
+
+2025-08-18 17:38:32 [DEBUG] Service CIDR Target: 10.43.0.0/16
+
+2025-08-18 17:38:32 [DEBUG] Broker URL: 192.168.131.1:6443
+
+2025-08-18 17:38:32 [INFO] Labeling gateway nodes
+2025-08-18 17:38:33 [INFO] Labeled gateway nodes
+2025-08-18 17:38:33 [INFO] Deploying broker
+2025-08-18 17:38:38 [INFO] Deployed broker
+2025-08-18 17:38:38 [DEBUG] Generated random string: 8gXgHVy56z0BTNgYt1LsIhu4oklJsp5HgOQCmZfJc0TaRILhYQpfWaak2UCNbjEL
+
+2025-08-18 17:38:38 [INFO] Joining origin cluster
+2025-08-18 17:38:54 [INFO] Joined origin cluster
+2025-08-18 17:38:54 [INFO] Joining target cluster
+2025-08-18 17:39:09 [INFO] Joined target cluster
+2025-08-18 17:39:09 [INFO] Submariner installed
+2025-08-18 17:39:09 [INFO] Migrating configuration resources
+2025-08-18 17:39:12 [INFO] Scanning for existing cnpg databases
+2025-08-18 17:39:12 [INFO] No existing cnpg databases found, skipping migration
+2025-08-18 17:39:12 [INFO] Migrating MongoDBs
+2025-08-18 17:39:12 [INFO] No existing MongoDBs found, skipping migration
+2025-08-18 17:39:12 [INFO] Checking for existing MongoDB Community Operator deployment
+2025-08-18 17:39:13 [DEBUG] No MongoDB Community Operator found in origin cluster, skipping operator migration
+2025-08-18 17:39:13 [INFO] Migrating PostgreSQL databases
+2025-08-18 17:39:13 [INFO] postgres, admin
+2025-08-18 17:39:13 [INFO] Checking for namespace
+2025-08-18 17:39:13 [INFO] Namespace exists
+2025-08-18 17:39:13 [INFO] Creating service export resource
+2025-08-18 17:39:13 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:postgres namespace:postgres] status:map[]]
+2025-08-18 17:39:13 [INFO] Service exported successfully
+2025-08-18 17:39:14 [INFO] Added replication environment variables to StatefulSet postgres
+2025-08-18 17:39:14 [INFO] Waiting for replication to be ready for postgres
+2025-08-18 17:39:45 [INFO] Target database not ready yet: command terminated with exit code 2
+2025-08-18 17:40:15 [INFO] Target database not ready yet: command terminated with exit code 2
+2025-08-18 17:40:45 [INFO] Replication is ready and target database is operational
+2025-08-18 17:40:45 [INFO] Decoupling target database postgres from source
+2025-08-18 17:40:46 [INFO] Target database is in recovery mode, promoting to master
+2025-08-18 17:40:51 [INFO] Successfully promoted target database to master
+2025-08-18 17:40:51 [INFO] Target database successfully decoupled and is now operating as an independent master
+2025-08-18 17:40:51 [INFO] Successfully migrated PostgreSQL database postgres
+2025-08-18 17:40:51 [INFO] Migrating resources
+2025-08-18 17:40:52 [INFO] Enable request forwarding from origin
+2025-08-18 17:40:52 [INFO] Checking for namespace
+2025-08-18 17:40:52 [INFO] Namespace exists
+2025-08-18 17:40:52 [INFO] Creating service export resource
+2025-08-18 17:40:52 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:clustershift-benchmark-service namespace:benchmark] status:map[]]
+2025-08-18 17:40:53 [INFO] Service exported successfully
+2025-08-18 17:40:53 [INFO] Checking for namespace
+2025-08-18 17:40:53 [INFO] Namespace exists
+2025-08-18 17:40:53 [INFO] Creating service export resource
+2025-08-18 17:40:53 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:metrics-collector namespace:clustershift] status:map[]]
+2025-08-18 17:40:53 [INFO] Service exported successfully
+2025-08-18 17:40:53 [INFO] Checking for namespace
+2025-08-18 17:40:53 [INFO] Namespace exists
+2025-08-18 17:40:53 [INFO] Creating service export resource
+2025-08-18 17:40:53 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:kubernetes namespace:default] status:map[]]
+2025-08-18 17:40:53 [INFO] Service exported successfully
+2025-08-18 17:40:53 [INFO] Checking for namespace
+2025-08-18 17:40:53 [INFO] Namespace exists
+2025-08-18 17:40:53 [INFO] Creating service export resource
+2025-08-18 17:40:53 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:kube-dns namespace:kube-system] status:map[]]
+2025-08-18 17:40:53 [INFO] Service exported successfully
+2025-08-18 17:40:53 [INFO] Checking for namespace
+2025-08-18 17:40:53 [INFO] Namespace exists
+2025-08-18 17:40:53 [INFO] Creating service export resource
+2025-08-18 17:40:53 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:metrics-server namespace:kube-system] status:map[]]
+2025-08-18 17:40:54 [INFO] Service exported successfully
+2025-08-18 17:40:54 [INFO] Checking for namespace
+2025-08-18 17:40:54 [INFO] Namespace exists
+2025-08-18 17:40:54 [INFO] Creating service export resource
+2025-08-18 17:40:54 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:traefik namespace:kube-system] status:map[]]
+2025-08-18 17:40:54 [INFO] Service exported successfully
+2025-08-18 17:40:54 [INFO] Checking for namespace
+2025-08-18 17:40:54 [INFO] Namespace exists
+2025-08-18 17:40:54 [INFO] Creating service export resource
+2025-08-18 17:40:54 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:metallb-webhook-service namespace:metallb-system] status:map[]]
+2025-08-18 17:40:54 [INFO] Service exported successfully
+2025-08-18 17:40:54 [INFO] Checking for namespace
+2025-08-18 17:40:54 [INFO] Namespace exists
+2025-08-18 17:40:54 [INFO] Creating service export resource
+2025-08-18 17:40:54 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:postgres namespace:postgres] status:map[]]
+2025-08-18 17:40:54 [INFO] Service exported successfully
+2025-08-18 17:40:55 [INFO] Checking for namespace
+2025-08-18 17:40:55 [INFO] Namespace exists
+2025-08-18 17:40:55 [INFO] Creating service export resource
+2025-08-18 17:40:55 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:submariner-gateway-metrics namespace:submariner-operator] status:map[]]
+2025-08-18 17:40:55 [INFO] Service exported successfully
+2025-08-18 17:40:55 [INFO] Checking for namespace
+2025-08-18 17:40:55 [INFO] Namespace exists
+2025-08-18 17:40:55 [INFO] Creating service export resource
+2025-08-18 17:40:55 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:submariner-globalnet-metrics namespace:submariner-operator] status:map[]]
+2025-08-18 17:40:55 [INFO] Service exported successfully
+2025-08-18 17:40:55 [INFO] Checking for namespace
+2025-08-18 17:40:55 [INFO] Namespace exists
+2025-08-18 17:40:55 [INFO] Creating service export resource
+2025-08-18 17:40:55 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:submariner-lighthouse-agent-metrics namespace:submariner-operator] status:map[]]
+2025-08-18 17:40:55 [INFO] Service exported successfully
+2025-08-18 17:40:55 [INFO] Checking for namespace
+2025-08-18 17:40:55 [INFO] Namespace exists
+2025-08-18 17:40:55 [INFO] Creating service export resource
+2025-08-18 17:40:55 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:submariner-lighthouse-coredns namespace:submariner-operator] status:map[]]
+2025-08-18 17:40:56 [INFO] Service exported successfully
+2025-08-18 17:40:56 [INFO] Checking for namespace
+2025-08-18 17:40:56 [INFO] Namespace exists
+2025-08-18 17:40:56 [INFO] Creating service export resource
+2025-08-18 17:40:56 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:submariner-lighthouse-coredns-metrics namespace:submariner-operator] status:map[]]
+2025-08-18 17:40:56 [INFO] Service exported successfully
+2025-08-18 17:40:56 [INFO] Checking for namespace
+2025-08-18 17:40:56 [INFO] Namespace exists
+2025-08-18 17:40:56 [INFO] Creating service export resource
+2025-08-18 17:40:56 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:submariner-operator-metrics namespace:submariner-operator] status:map[]]
+2025-08-18 17:40:56 [INFO] Service exported successfully
+2025-08-18 17:40:56 [INFO] Migration complete

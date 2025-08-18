@@ -1,0 +1,69 @@
+2025-08-18 16:18:09 [INFO] Starting migration process...
+2025-08-18 16:18:09 [INFO] You will be prompted to select a networking tool and rerouting option to establish a secure connection and manage traffic between the clusters.
+2025-08-18 16:19:51 [INFO] Initializing kubernetes clients
+2025-08-18 16:19:51 [INFO] Checking connectivity between clusters
+2025-08-18 16:19:51 [DEBUG] Fetching cluster IPs
+2025-08-18 16:19:51 [DEBUG] Cleaning up probe resources
+2025-08-18 16:19:51 [DEBUG] Testing connectivity with Origin IP: 192.168.131.1, Target IP: 192.168.133.1
+2025-08-18 16:19:51 [DEBUG] Deploying probe resources
+2025-08-18 16:19:52 [DEBUG] Waiting for pods to be ready
+2025-08-18 16:19:58 [DEBUG] Pods are ready
+2025-08-18 16:19:58 [DEBUG] Checking connectivity between clusters
+2025-08-18 16:20:09 [DEBUG] Connectivity check successful with Origin IP: 192.168.131.1, Target IP: 192.168.133.1 - both clusters can reach each other
+2025-08-18 16:20:09 [DEBUG] Cleaning up probe resources
+2025-08-18 16:20:09 [DEBUG] Connectivity probe complete
+2025-08-18 16:20:09 [INFO] Deploy reverse proxy for request forwarding
+2025-08-18 16:20:09 [DEBUG] Fetching loadbalancer IP
+2025-08-18 16:20:09 [DEBUG] Service: traefik IP: 141.13.5.242
+2025-08-18 16:20:09 [DEBUG] Fetched loadbalancer IP: 141.13.5.242
+2025-08-18 16:20:09 [DEBUG] Deploying proxy
+2025-08-18 16:20:09 [INFO] Establishing secure connection between clusters
+2025-08-18 16:20:09 [INFO] Installing Submariner
+2025-08-18 16:20:14 [DEBUG] Pod CIDR Origin: 10.42.0.0/16
+
+2025-08-18 16:20:14 [DEBUG] Pod CIDR Target: 10.42.0.0/16
+
+2025-08-18 16:20:14 [DEBUG] Service CIDR Origin: 10.43.0.0/16
+
+2025-08-18 16:20:14 [DEBUG] Service CIDR Target: 10.43.0.0/16
+
+2025-08-18 16:20:14 [DEBUG] Broker URL: 192.168.131.1:6443
+
+2025-08-18 16:20:14 [INFO] Labeling gateway nodes
+2025-08-18 16:20:14 [INFO] Labeled gateway nodes
+2025-08-18 16:20:14 [INFO] Deploying broker
+2025-08-18 16:20:20 [INFO] Deployed broker
+2025-08-18 16:20:20 [DEBUG] Generated random string: Sg9-3zVvBZ2w47ya5cwvO9Aa1kgr-Kpkf52NjzNJB-5Wsj0jlpLQ1yF30S0o3G9v
+
+2025-08-18 16:20:20 [INFO] Joining origin cluster
+2025-08-18 16:20:35 [INFO] Joined origin cluster
+2025-08-18 16:20:35 [INFO] Joining target cluster
+2025-08-18 16:20:53 [INFO] Joined target cluster
+2025-08-18 16:20:53 [INFO] Submariner installed
+2025-08-18 16:20:53 [INFO] Migrating configuration resources
+2025-08-18 16:20:56 [INFO] Scanning for existing cnpg databases
+2025-08-18 16:20:56 [INFO] No existing cnpg databases found, skipping migration
+2025-08-18 16:20:56 [INFO] Migrating MongoDBs
+2025-08-18 16:20:56 [INFO] No existing MongoDBs found, skipping migration
+2025-08-18 16:20:56 [INFO] Checking for existing MongoDB Community Operator deployment
+2025-08-18 16:20:56 [DEBUG] No MongoDB Community Operator found in origin cluster, skipping operator migration
+2025-08-18 16:20:56 [INFO] Migrating PostgreSQL databases
+2025-08-18 16:20:56 [INFO] postgres, admin
+2025-08-18 16:20:56 [INFO] Checking for namespace
+2025-08-18 16:20:56 [INFO] Namespace exists
+2025-08-18 16:20:56 [INFO] Creating service export resource
+2025-08-18 16:20:56 [DEBUG] map[apiVersion:multicluster.x-k8s.io/v1alpha1 kind:ServiceExport metadata:map[creationTimestamp:<nil> name:postgres namespace:postgres] status:map[]]
+2025-08-18 16:20:56 [INFO] Service exported successfully
+2025-08-18 16:20:58 [INFO] Added replication environment variables to StatefulSet postgres
+2025-08-18 16:20:58 [INFO] Waiting for replication to be ready for postgres
+2025-08-18 16:21:28 [INFO] Target database not ready yet: command terminated with exit code 2
+2025-08-18 16:21:58 [INFO] Target database not ready yet: command terminated with exit code 2
+2025-08-18 16:22:29 [INFO] Replication is ready and target database is operational
+2025-08-18 16:22:29 [INFO] Decoupling target database postgres from source
+2025-08-18 16:22:29 [INFO] Target database is in recovery mode, promoting to master
+2025-08-18 16:22:35 [INFO] Successfully promoted target database to master
+2025-08-18 16:22:35 [INFO] Target database successfully decoupled and is now operating as an independent master
+2025-08-18 16:22:35 [INFO] Successfully migrated PostgreSQL database postgres
+2025-08-18 16:22:35 [INFO] Migrating resources
+2025-08-18 16:22:36 [INFO] Enable request forwarding from origin
+2025-08-18 16:22:36 [INFO] Migration complete
