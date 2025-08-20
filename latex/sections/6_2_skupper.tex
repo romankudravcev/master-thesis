@@ -1,0 +1,72 @@
+%
+\subsection{Skupper}
+%
+% Platform is here Kubernetes!
+Skupper is an open-source project and an alternative to traditional VPN-based solutions, such as Submariner, for enabling secure communication across a Kubernetes cluster.
+Despite being a less known solution (around 600 github-stars), Skupper is a viable option to look at.
+It differentiates itself from solutions like Submariner because it operates entirely at the application layer (Layer 7).
+Their key concept is the Virtual Application Network (VAN), which is an overlay network to enable applications to communicate as if they were in the same cluster.
+
+% Overall architecture of Skupper
+The setup of Skupper consists of several components that work together to create such a VAN. The main components are routers and sites which enable the communication between clusters.
+
+% Site
+A Skupper site represents an application workload (a pod or container in our orchestrated usecase) within a Kubernetes namespace.
+So multiple sites can exists within the same cluster which is allowing flexible management which workload is getting exposed to remote sites.
+
+% Router
+Each site also has a Skupper router that communicates with the local workload and forwards traffic to the routers of the remote sites.
+Similar to network routers used for VPNs, these routers work at Layer 7.
+Instead of using IP addresses Skupper routes messages based on application addresses.
+An application address is an endpoint or destination in the VAN, so the router knows where to send the message.
+
+% Links
+Links are necessary to enable Skupper to connect the individual sites with each other.
+These links provide a site-to-site communication using mutual TLS authentication and encryption.
+
+
+
+Links enable communication between sites by serving as channels.
+For establishing such a link the remote site must enable link access.
+After enabling the link access it provides an external endpoint that accepts links from external sites.
+The link access has a host, port and TLS credentials for exposing a TLS endpoint that accepts connections from remote sites.
+A link consists, like the link access, of a host, port and TLS credentials.
+These are needed to establish a mutual TLS connection to remote site. 
+To establish the connection between two sites access tokens are created and exchanged between those.
+These access tokens contain the connection details required to create a link.
+The whole process of creating the link via exchanging the access token works as follows:
+Site 1 wants to accept links and creates an access grant.
+With this access grant site 1 can create an access token which is then transfered to site 2.
+Site 2 wants to connect to site 1 so it takes the access token and submits it to site 1 to redeem it.
+After validating the token site 1 sends site 2 the needed information to be able to create a link to site 1.
+
+A network is a set of linked sites (also known as VAN).
+Sites in the network are able to expose services to other sites in the same network.
+Those can then be accessed by those others sites.
+
+% Services
+Links only provide the transport over the network, but we also need to handle the connection between applications.
+Normally this is done via services that refer to a running pod.
+Skupper provides an option to expose services.
+This is done by listeners and connectors.
+A listener provide an endpoint and is deployed in the site where the application consume from the the other site. 
+The connector on the other hand binds the workload that gets requested.
+The listener and connector are matched using a routing key.
+The Skupper router then uses the routing key to forward the request to the site where the workload is running.
+The listener is implemented as a service in Kubernetes, so we can access the pod from another cluster.
+For the connector to know which load he has to expose the pod that needs to be exposed has to be labeld with a skupper specific label, which is then detected by the router.
+
+% Security
+Skupper secures its communication with the usage of TLS authentication and encryption.
+The authorization is done by using dedicated certificate authority, where each router is identified by its own certificate.
+Because of the usage of TLS Skupper must not adopt complex layer 3 networking like VPNs.
+
+
+% Else
+
+%In a Skupper network, each namespace contains a Skupper instance. When these Skupper instances connect, they continually share information about the services that each instance exposes. This means that each Skupper instance is always aware of every service that has been exposed to the Skupper network, regardless of the namespace in which each service resides.
+
+%Once a Skupper network is formed across Kubernetes namespaces, any of the services in those namespaces can be exposed (through annotation) to the Skupper network. When a service is exposed, Skupper creates proxy endpoints to make that service available on each namespace in the Skupper network.
+
+
+

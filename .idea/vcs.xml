@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/benchmark-applications/clustershift-benchmark-application" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/benchmark-applications/clustershift-benchmark-client" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/benchmark-applications/k8s-metrics-collector" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/clustershift" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/clustershift-tools/kube-connectivity-probe" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/clustershift-tools/mongosyncer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/clustershift-tools/reverse-proxy-http" vcs="Git" />
+  </component>
+</project>

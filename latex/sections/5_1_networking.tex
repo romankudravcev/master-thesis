@@ -1,0 +1,13 @@
+%
+\subsection{Networking}
+\label{sec:networking}
+%
+In this application, we have to solve two problems related to networking: Establishing a secure connection between our two environments and routing the request from the source environment to the destination environment.
+%
+\paragraph{Secure Connection.}
+%
+Establishing a secure connection is essential for the migration process. Since the stored data may contain sensitive information it is desirable to ensure that there is no unauthorized access to this data. We need a way to encrypt the communication between both clusters to enable a secure replication to the target environment. Therefore, we evaluate different tools that provide the wanted functionality. In \Cref{sec:secure_connection} we introduce and compare three such tools. Each of them offering different approaches to encrypted communication in a distributed edge environment.
+%
+\paragraph{Request forwarding.}
+%
+After the migration process, it is important to handle requests that are still directed to the origin environment. This might occur because IoT devices may not yet have been updated to communicate with the target environment, which depends on the implementation and update cycle of the devices themselves. To make sure that service doesn't stop and to avoid any interaction with the outdated origin environment, which doesn't have any write permission to the database, we use a forwarding mechanism. This ensures that the request is processed by the target environment. This mechanism transparently forwards traffic from the origin to the target environment, assuming the target holds the current database state and functions as the primary system. In \Cref{sec:request_forwarding} we will introduce methods on request forwarding. We will take a look at the tools that are responsible for the secure connection. These tools deliver the opportunity to reference services of the other cluster. We will also introduce a custom solution that can be adapted depending on the specific needs of each client.

@@ -1,0 +1,35 @@
+%
+\section{Introduction}
+\label{sec:introduction}
+%
+%Introduction sentence to edge and fog%
+Edge and fog computing have emerged as innovative paradigms in distributed computing, extending the capabilities of traditional cloud infrastructure. They aim to meet the growing demand for real-time, latency-sensitive applications and data processing closer to the source, such as Internet of Things (IoT) devices.\cite{cao_overview_2020}
+%Define edge and fogcomputing%
+Edge computing brings computing resources closer to users, enabling faster data processing and reducing reliance on centralized cloud centers.\cite{satyanarayanan_emergence_2017} Fog computing extends cloud services across a distributed network of nodes, acting as an intermediary layer between IoT devices and the cloud. Both edge and fog computing transform traditional cloud architectures by improving latency, bandwidth, and data protection. They also enable more efficient real-time applications.\cite{salaht_overview_2021}
+
+%Transition to problem statement%
+The integration of edge and fog computing introduces greater complexity than traditional distributed systems. One significant challenge is the migration of edge systems, whether switching from a centralized cloud architecture to a cloud-edge hybrid system or adjusting the service placement of existing edge deployments.
+
+%Problems%
+There are several critical issues that must be carefully considered when migrating edge computing applications.
+%Availabiltiy%
+One key challenge is availability. Applications may require minimal to no downtime during migration. For many edge computing services, continuous system availability is critical. This means that the migration process must ensure that applications remain functional throughout the transition.
+%Stateful%
+Another key issue is managing stateful applications. These applications typically collect and process large amounts of data. In order to avoid potential data loss or inadvertent duplication during migration, organizations must ensure that data is transferred completely and accurately. The primary goal is to preserve the contextual state and ongoing process integrity of the application. 
+%Networking%
+Networking is also an issue that must be taken into consideration. During the migration, systems must be able to communicate seamlessly between the source and target environments. We also need to somehow ensure that the target environment can process the source environment's request after the migration is complete.
+
+%Existing approaches%
+
+% BITTE IN CONTRIBUTIONS AUFTEILEN
+% CONTRIBUTION1: MIGRATION
+% 2: REQUEST REROUTING
+% 3: RELIABLE AND SECURE CONNECTIVITY
+
+%Research goals%
+The following objectives arise from the problems we have identified and the limitations of existing solutions: Our research aims at the development of methods for the seamless migration of both stateful and stateless services and applications in edge and fog computing environments. To ensure reliable data transfer between the source and target environments during migration, we aim to provide a secure and stable network framework. In addition, we aim to implement dynamic re-routing of requests from the source to the target environment. This will ensure uninterrupted service availability.
+%Contributions to research%
+By demonstrating that seamless migration of services and applications in edge and fog computing is achievable, our work contributes to the field of edge and fog computing and distributed systems migration. Our research provides a comprehensive approach supported by a real-world implementation, unlike existing literature that often lacks practical implementation details. We bridge the gap between theoretical concepts and practical application by providing both a proven methodology and an accompanying codebase. This addresses a notable gap in current scientific research.
+
+
+%Tell why this topic is relevant (short explaination). It is relevant because of service placement and the trend towards edge and fog for some applications but there is no automatic tool that provides a seemless migration of clusters (or nodes or servers idk). Seemless is understand as a migration that is not noticeable to the clients.%

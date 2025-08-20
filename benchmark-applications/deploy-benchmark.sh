@@ -2,6 +2,7 @@
 
 # Benchmark Applications Deployment Script
 # This script deploys the clustershift-benchmark-application and k8s-metrics-collector
+# with dynamic database configuration for PostgreSQL or MongoDB
 
 set -e # Exit on any error
 
@@ -29,13 +30,17 @@ print_error() {
   echo -e "${RED}[ERROR]${NC} $1"
 }
 
-# Configuration variables
+# Default configuration variables
 BENCHMARK_NAMESPACE=${BENCHMARK_NAMESPACE:-"benchmark"}
 METRICS_NAMESPACE=${METRICS_NAMESPACE:-"clustershift"}
-MONGODB_NAMESPACE=${MONGODB_NAMESPACE:-"mongodb"}
-MONGODB_RESOURCE_NAME=${MONGODB_RESOURCE_NAME:-"example-mongodb"}
-MONGODB_TESTDB_USER=${MONGODB_TESTDB_USER:-"testdb_user"}
-MONGODB_DATABASE=${MONGODB_DATABASE:-"testdb"}
+
+# Database configuration variables
+DB_TYPE=""
+DB_HOST=""
+DB_PORT=""
+DB_USER=""
+DB_PASSWORD=""
+DB_NAME=""
 
 # Get the directory where this script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -45,6 +50,88 @@ METRICS_COLLECTOR_DIR="${SCRIPT_DIR}/../benchmark-applications/k8s-metrics-colle
 # Function to check if command exists
 command_exists() {
   command -v "$1" >/dev/null 2>&1
+}
+
+# Function to show help
+show_help() {
+  cat << EOF
+Usage: $0 [OPTIONS]
+
+Options:
+  Application Configuration:
+    --benchmark-namespace NAME      Specify benchmark namespace (default: benchmark)
+    --metrics-namespace NAME        Specify metrics namespace (default: clustershift)
+
+  Database Configuration:
+    --db-type TYPE                  Database type: mongodb or postgresql (required)
+    --db-host HOST                  Database host (required)
+    --db-port PORT                  Database port (required)
+    --db-user USER                  Database username (required)
+    --db-password PASSWORD          Database password (required)
+    --db-name NAME                  Database name (required)
+
+  Actions:
+    --cleanup                       Remove all resources and exit
+    --help                          Show this help message
+
+Examples:
+  # Deploy with PostgreSQL
+  $0 --db-type postgresql --db-host pg.example.com --db-port 5432 \\
+     --db-user myuser --db-password mypass --db-name mydb
+
+  # Deploy with MongoDB
+  $0 --db-type mongodb --db-host mongo.example.com --db-port 27017 \\
+     --db-user myuser --db-password mypass --db-name mydb
+
+  # Deploy with in-cluster database
+  $0 --db-type postgresql --db-host postgres-svc.database.svc.cluster.local --db-port 5432 \\
+     --db-user myuser --db-password mypass --db-name mydb
+
+EOF
+}
+
+# Function to validate required parameters
+validate_parameters() {
+  local errors=0
+
+  if [ -z "$DB_TYPE" ]; then
+    print_error "Database type is required. Use --db-type [mongodb|postgresql]"
+    errors=$((errors + 1))
+  elif [ "$DB_TYPE" != "mongodb" ] && [ "$DB_TYPE" != "postgresql" ]; then
+    print_error "Invalid database type. Supported types: mongodb, postgresql"
+    errors=$((errors + 1))
+  fi
+
+  if [ -z "$DB_HOST" ]; then
+    print_error "Database host is required. Use --db-host HOST"
+    errors=$((errors + 1))
+  fi
+
+  if [ -z "$DB_PORT" ]; then
+    print_error "Database port is required. Use --db-port PORT"
+    errors=$((errors + 1))
+  fi
+
+  if [ -z "$DB_USER" ]; then
+    print_error "Database user is required. Use --db-user USER"
+    errors=$((errors + 1))
+  fi
+
+  if [ -z "$DB_PASSWORD" ]; then
+    print_error "Database password is required. Use --db-password PASSWORD"
+    errors=$((errors + 1))
+  fi
+
+  if [ -z "$DB_NAME" ]; then
+    print_error "Database name is required. Use --db-name NAME"
+    errors=$((errors + 1))
+  fi
+
+  if [ $errors -gt 0 ]; then
+    print_error "Please fix the above errors and try again."
+    echo "Use --help for usage information."
+    exit 1
+  fi
 }
 
 # Function to check prerequisites
@@ -105,48 +192,38 @@ create_namespaces() {
   fi
 }
 
-# Function to get MongoDB credentials and create ConfigMap
-create_mongodb_configmap() {
-  print_status "Creating MongoDB ConfigMap..."
+# Function to create database ConfigMap
+create_database_configmap() {
+  print_status "Creating database ConfigMap..."
 
-  # Check if MongoDB is running
-  if ! kubectl get mongodbcommunity "$MONGODB_RESOURCE_NAME" -n "$MONGODB_NAMESPACE" >/dev/null 2>&1; then
-    print_error "MongoDB resource '$MONGODB_RESOURCE_NAME' not found in namespace '$MONGODB_NAMESPACE'"
-    print_error "Please run the MongoDB setup script first."
-    exit 1
+  # Create database URI based on type
+  local db_uri=""
+  if [ "$DB_TYPE" = "mongodb" ]; then
+    db_uri="mongodb://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}?authSource=${DB_NAME}"
+  elif [ "$DB_TYPE" = "postgresql" ]; then
+    db_uri="postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}"
   fi
-
-  # Get the password from the secret
-  local mongodb_password=$(kubectl get secret my-user-password -n "$MONGODB_NAMESPACE" -o jsonpath='{.data.password}' | base64 -d)
-
-  if [ -z "$mongodb_password" ]; then
-    print_error "Failed to retrieve MongoDB password from secret"
-    exit 1
-  fi
-
-  # Set MongoDB connection details
-  local mongodb_host="${MONGODB_RESOURCE_NAME}-svc.${MONGODB_NAMESPACE}.svc.cluster.local"
-  local mongodb_port="27017"
-  local mongodb_uri="mongodb://${MONGODB_TESTDB_USER}:${mongodb_password}@${mongodb_host}:${mongodb_port}/${MONGODB_DATABASE}"
 
   # Create the ConfigMap
   kubectl create configmap clustershift-benchmark-config \
-    --from-literal=DB_HOST="$mongodb_host" \
-    --from-literal=DB_PORT="$mongodb_port" \
-    --from-literal=DB_USER="$MONGODB_TESTDB_USER" \
-    --from-literal=DB_PASSWORD="$mongodb_password" \
-    --from-literal=DB_NAME="$MONGODB_DATABASE" \
-    --from-literal=DB_TYPE="mongodb" \
-    --from-literal=MONGODB_URI="$mongodb_uri" \
+    --from-literal=DB_HOST="$DB_HOST" \
+    --from-literal=DB_PORT="$DB_PORT" \
+    --from-literal=DB_USER="$DB_USER" \
+    --from-literal=DB_PASSWORD="$DB_PASSWORD" \
+    --from-literal=DB_NAME="$DB_NAME" \
+    --from-literal=DB_TYPE="$DB_TYPE" \
+    --from-literal=DATABASE_URI="$db_uri" \
     --namespace="$BENCHMARK_NAMESPACE" \
     --dry-run=client -o yaml | kubectl apply -f -
 
-  print_success "MongoDB ConfigMap created successfully!"
-  print_status "MongoDB connection details:"
-  print_status "  Host: $mongodb_host"
-  print_status "  Port: $mongodb_port"
-  print_status "  Database: $MONGODB_DATABASE"
-  print_status "  User: $MONGODB_TESTDB_USER"
+  print_success "Database ConfigMap created successfully!"
+  print_status "Database connection details:"
+  print_status "  Type: $DB_TYPE"
+  print_status "  Host: $DB_HOST"
+  print_status "  Port: $DB_PORT"
+  print_status "  Database: $DB_NAME"
+  print_status "  User: $DB_USER"
+  print_status "  URI: $(echo "$db_uri" | sed "s/:${DB_PASSWORD}@/:***@/")" # Hide password in output
 }
 
 # Function to deploy benchmark application
@@ -188,7 +265,10 @@ display_info() {
   echo "=========================="
   echo "Benchmark Namespace: $BENCHMARK_NAMESPACE"
   echo "Metrics Namespace: $METRICS_NAMESPACE"
-  echo "MongoDB Namespace: $MONGODB_NAMESPACE"
+  echo "Database Type: $DB_TYPE"
+  echo "Database Host: $DB_HOST"
+  echo "Database Port: $DB_PORT"
+  echo "Database Name: $DB_NAME"
   echo "=========================="
 
   print_status "Pod Status:"
@@ -233,12 +313,28 @@ main() {
       METRICS_NAMESPACE="$2"
       shift 2
       ;;
-    --mongodb-namespace)
-      MONGODB_NAMESPACE="$2"
+    --db-type)
+      DB_TYPE="$2"
       shift 2
       ;;
-    --mongodb-resource)
-      MONGODB_RESOURCE_NAME="$2"
+    --db-host)
+      DB_HOST="$2"
+      shift 2
+      ;;
+    --db-port)
+      DB_PORT="$2"
+      shift 2
+      ;;
+    --db-user)
+      DB_USER="$2"
+      shift 2
+      ;;
+    --db-password)
+      DB_PASSWORD="$2"
+      shift 2
+      ;;
+    --db-name)
+      DB_NAME="$2"
       shift 2
       ;;
     --cleanup)
@@ -246,14 +342,7 @@ main() {
       exit 0
       ;;
     --help)
-      echo "Usage: $0 [OPTIONS]"
-      echo "Options:"
-      echo "  --benchmark-namespace NAME  Specify benchmark namespace (default: benchmark)"
-      echo "  --metrics-namespace NAME    Specify metrics namespace (default: clustershift)"
-      echo "  --mongodb-namespace NAME    Specify MongoDB namespace (default: mongodb)"
-      echo "  --mongodb-resource NAME     Specify MongoDB resource name (default: example-mongodb)"
-      echo "  --cleanup                   Remove all resources and exit"
-      echo "  --help                      Show this help message"
+      show_help
       exit 0
       ;;
     *)
@@ -264,10 +353,13 @@ main() {
     esac
   done
 
+  # Validate required parameters
+  validate_parameters
+
   # Execute deployment steps
   check_prerequisites
   create_namespaces
-  create_mongodb_configmap
+  create_database_configmap
   deploy_benchmark_application
   deploy_metrics_collector
   wait_for_deployments

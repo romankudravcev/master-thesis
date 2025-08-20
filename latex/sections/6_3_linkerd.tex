@@ -1,0 +1,35 @@
+%
+\subsection{Linkerd}
+%
+Linkerd is a Cloud Native Computing Foundation (CNCF) project and therefore open source. 
+It is a popular service mesh for Kubernetes with over 11k github-stars.
+Since we looked at service meshes as a general concept in Chapter 2, we know what advantages they bring.
+Linkerd is no excuse.
+Linkerd is able to make running services easier and safer by providing runtime debugging, observability, reliability and security without any changes in the application itself.
+For our use case most of the features it provides are irrelevant.
+We take a look at Linkerd because it is able to provide secure communication between Kubernetes clusters and has the ability to reroute and load balance requests between the services in the service mesh.
+
+% Components
+Linkerd's two main components are the control plane and the data plane.
+The control plane is getting installed on the cluster and the data plane on the workloads (pods in our case).
+
+% Control plane
+The control plane consist of a set of services that give access to control Linkerd. 
+These services run in a dedicated namespace.
+The control plane consists of following services: The destination service, identity service and proxy injector.
+The destination service fetches several information necessary to enable communication between different services. 
+It fetches information about the destination of the request (service discovery), policies (which type of requests are allowed) and other profile information which include metrics, retries and timeouts.
+This information is needed and accessed by the data plane proxies.
+The identity service is there for authorizing and signing TLS Certificates which is needed to enable secure proxy-to-proxy communication.
+The proxy injector is there to inject the sidecar proxy to each pod. This is done by a webhook that is called each time a pod is created. This is communicated by an annotiation that has to been set for the deployment.  
+
+% Data plane
+The process of deploying the data plane is called meshing or injecting.
+The data plane is made up of micro-proxies which run next to each application instance (pod).
+They call this micro-proxy that is deployed as a pod sidecar containers and they handle the TCP traffic to and from the application and communicates with the control plane. 
+That means that the sidecars and therefore the data plane is closely coupled with the workload.
+Because of those proxies Linkerd is able to run without introducing a huge amount of latency.
+This is possible because the proxies communicate everything with the control plane and so they are able to measure and manipulate traffi to and from the service.
+This makes the proxies very transparent and they are able to intercept TCP connections with the help of iptable rules.
+A meshed connection in Linkerd exists if there are two injected pods and one of them establishes a TCP connection to the other.
+The pod that establishes the connection is the outbound proxy and is responsible for service discovery, load balancing, circuit breakers, retries, and timeouts. The pod that accepts the connection is called inbound proxy and is responsible for enforcing the authorization policy.

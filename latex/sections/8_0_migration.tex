@@ -1,0 +1,94 @@
+%
+\section{Migration}
+\label{sec:migration}
+%
+\subsection{Data}
+%
+\subsubsection{Relational Databases}
+%
+SQL is the most used language for interacting with relational databases. So we focus on SQL databases, specifically PostgreSQL, which is the most popular SQL database.\footnote{\url{https://survey.stackoverflow.co/2024/technology#1-databases}} In container orchestration platforms like Kubernetes, SQL databases are typically deployed using stateful sets or operator-managed database clusters, which are gaining popularity due to their advanced features. 
+%
+\paragraph{Operator-managed}
+%
+Operator-managed database clusters handle tasks such as high availability, scaling, rolling updates, resource management, and security, making them a robust choice for database management.\footnote{\url{https://cloudnative-pg.io/}}
+
+We took a closer look at the CloudNativePG operator  because it is very widely used, with over 6,000 GitHub stars.
+Such database operators are explicitly created for the use in an orchestrated environment (most of them for Kubernetes).
+CloudNativePG is implemented using custom resources named `Cluster`.
+The CloudNativePG operator takes on the task of creating all needed base resources only by reading the deployed Cluster resource, where all the configuration takes places.
+Such a Cluster consists of a single primary instance, which is used for read and write operations and optional scalable read instances.
+These read replicas are used to enable high availability, and balance the load by using one service pointing on all read instances.
+These instances consists out of a pod and a service in a self defined Kubernetes namespace.
+Thanks to the operator pattern the services can be managed and also make possible to handle failovers or switchovers automatically what enables higher availability.
+In such a failover the most aligned replica is getting promoted to take over the writer role.
+This allows applications to access the database internally in the cluster by using the already existing CoreDNS or expose the services like normal Kubernetes services (e.g. Loadbalancer).
+The use of CloudNativePG brings also other benefits than just a higher availability and easier setup then to a regular PostgreSQL database. It also provides out of the box TLS-support, backup and recovery, persistent volume management and much more.
+
+% What about WAL?
+Looking at the migration possiblities of such PostgreSQL operators, including CloudNativePG, many of them support bootstrapping a new database from an existing one. During migration, the target database cluster is bootstrapped as a replica of the source database, which continues to run as the primary database. Once the target environment is synchronized with the source, applications and data are fully migrated. At this point, the roles of the clusters must be switched: the replica is promoted to primary, and the original primary is demoted to replica. This ensures that the target environment can handle writes without errors, since replicas typically do not allow writes. In CloudNativePG, this process includes synchronized demotion and promotion of database clusters.\footnotemark[\value{footnote}]
+It is possible to replicate data in two ways: storage level replication (replicate persistent volumes) and application level replication (replication via PostgreSQL).
+If using CloudNativePG using the application-level replication is a better option, because it is robust and also has physical replication capabilities by for example using WAL.
+CloudNativePG supports asynchronous (file-based log) and synchronous (streaming over the network) synchronization.
+
+%
+\paragraph{StatefulSet}
+%
+%https://jineshnagori.medium.com/ultimate-guide-to-setting-up-postgresql-in-kubernetes-with-statefulsets-adminer-dashboard-and-6232323cb4dc
+- Because there are many different postgres image types (bitnami, datacrunch, ...)
+- Because different postgres images handle the configuration of the database in different ways (configmap, env vars, ...) it is not easy to find a generic solution to allow replication over all images.
+- We would be able to exec into the pod and reconfigure it from there but this changes may get lost after a restart of the statefulset!
+- So we focused on one: bitnami. We decided to use this because it is popular and kubernetes friendly. 
+- Also it is easier to configure it withoutside of the application and instead with kubernetes with configmaps.
+- Anyway it is not that recommended to use a statefulset in kubernetes as a production database, but managed alternatives like cnpg are much better because of a, b and c.
+- Provide information about how we setup a StatefulSet DB? (we have to create manually a persistent volume, persistent volume claim, a config and a secret to configure db access, then the statefulset itself and the service to make it accessible.
+- Maybe write how it differs from the operator (cnpg) setup used before, what is different in the usage itself and how the migration differs
+- 
+
+For PostgreSQL databases deployed in a StatefulSet, the process is similar but requires additional manual steps. First, we enable logical replication on the source database so that the target can replicate it. Next, we enable publishing of changes on the source. The database schema is then imported from the source, and the target database subscribes to the source's publication. Once replication is complete, we can switch to the target database by simply disabling the subscription.
+%
+\subsubsection{Non-relational Databases}
+%
+%
+\paragraph{Operator-managed}
+%
+- Looking at MongoDB (most popular non-sql db)
+- We wanted to take a look at the official community operator of mongodb
+- The community operator did not enable direct stream replication!
+- It works as followed:
+- You deploy a MongoDB ReplicaSet which creates one primary and x secondary instances which make the db accessible
+- You are able to add members which then will replicate the needed data from the other members to get the current state of the db
+- This is not possible with two clusters!
+- If you deploy a ReplicaSet on the target cluster it will init a own ReplicaSet which is not merge-able with the origin db, because of obvious reasons (two different states possible at this point!)
+- The community operator doesn't allow to add it before initializing the second ReplicaSet
+- The function two sync two clusters or span a db over multiple clusters are reserved for the enterprise edition of the operator which we won't use
+- So a stream replication approach is not possible in this scenario
+- But we have three different approaches which may allow to replicate our data (NOT THAT SEAMLESS ANYMORE):
+- We can create a dump of our origin db and restore it in the target db (The question is where to dump it and how target will access the dump? Maybe minIO?)
+- We can create a vanilla MongoDB, add it to the origin db as a member, and afterwards use the volumes created by the vanilla DB to init our ReplicaSet on target
+- Use mongosync (a cmd tool that migrates one db to another but for community it is limited; We would have to download the binaries and run the command in golang)
+%
+\paragraph{StatefulSet}
+%
+% TODO: define what a MongoDB ReplicaSet ist
+% TODO: define other options and explain why we selected this way of migration
+- Looking at MongoDB without an operator there are still options
+- We are able to deploy a standalone DB which includes only one instance without failover and a ReplicaSet which includes several instances replicating each other
+- Because we want to use the features of kubernetes we will take a look at ReplicaSet option
+- Normally a ReplicaSet starts with the deployment of a Statefulset including multiple instances and the configuration that enables the ReplicationSet
+- Afterwards the user has to setup the ReplicaSet manually by going into the mongo commandline and initiate the ReplicaSet by adding all instances as members
+- After this is done we have one primary instance and the rest are secondary instances (read-only)
+- To migrate this setup to the target cluster we are able to just copy over all resources (expect the pv and pvc)
+- After copying the resources we have to export the headless service so both DBs can see each other
+- Because the members have a defined host under which they are reachable we have to modify the hosts of the existing origin members so the target knows under which host it can reach the primary member
+- After changing the host we are able to add an instance of the target cluster to our ReplicaSet in the origin cluster
+- This is done by adding it by its host it is reachable (DNS defined by our connectivity tool)
+- The rest is done by mongoDB -> The members are connecting each other and the target member is starting the replication of the db on the target cluster
+- After the replication is done we are able to decouple the target member and starting its own ReplicaSet
+- Therefore we have to step down all instances to secondary so no write operations are possible anymore so we don't loose any data
+- Then we have to delete the target member from the origin ReplicaSet
+- And then we have to initialize the new ReplicaSet with the removed target Member and are able to add additional instances running on the target cluster
+%
+\subsubsection{Key-Value Stores}
+%
+\subsubsection{Blob/Object Storage}
+%

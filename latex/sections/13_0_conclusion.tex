@@ -1,0 +1,14 @@
+%
+\section{Conclusion and Future Work}
+\label{sec:conclusion}
+%
+% TODO: orchestrated environments lassen oder spezifisch kubernetes clusters schreiben?
+This paper showed an implementation of how a tool for migrating orchestrated environments could be built and an evaluation of this tool. 
+To answer our contribution of our tool, we conclude that we achieved an almost seamless application migration in edge and fog computing environments with an availability of over $98\%$.
+With our tool we are able to establish a secure tunnel between our environments by using Submariner, migrate stateful application by replicating PostgreSQL databases and forward incoming traffic by rerouting it with a reverse proxy.
+
+While our implementation and evaluation of this tool provided important insights, it also highlighted issues that require further investigation.
+The evaluation of this tool was performed using single node clusters, which does not reflect reality.
+In future experiments, it would be interesting to benchmark multi-node clusters to see if the tool's results are comparable.
+In order to handle traffic forwarding in a more efficient and generic way, different proxy solutions or service meshes that also sound promising, should be investigated in future work.
+It would also be interesting to look at migrating different database types such as NoSQL or key-value stores to cover a wider variety of storage methods.

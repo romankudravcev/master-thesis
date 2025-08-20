@@ -1,0 +1,14 @@
+%
+\subsection{Migration}
+%
+The primary focus of this paper is the migration of our orchestrated edge system, which includes applications. This includes the migration of Kubernetes resources in the context of Kubernetes clusters. For stateful migrations, we also need to consider the related data, specifically how to transfer databases from the origin to the target environment.
+
+%
+\subsubsection{Applications}
+%
+To enable the migration of our system, we developed a custom Go application. This tool scans the resources within a Kubernetes cluster, such as deployments, services, ingress routes, config maps, and secrets. It then checks whether these resources already exist in the target environment. If they are not, the tool cleans up the resources by removing unique identifiers (e.g., creation dates, IDs) before applying them to the new cluster.
+
+%
+\subsubsection{Data}
+%
+The environments we want to migrate contain one or more data sources. This data source can be in different forms. It can be a database or files on a mounted file system. Because we focus on stateful application stack in this thesis we ignore files. We take a look at the most used database types and their variants. We will take a look at relational databases, non-relational databases, key-value stores and blob storage. 

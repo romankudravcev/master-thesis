@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: mongodb-keyfile
+  namespace: mongodb
+type: Opaque
+stringData:
+  key: HIkNL8bggppHlfsth1UbniC4c597hAx1HBlhTpyTW5Y=
+

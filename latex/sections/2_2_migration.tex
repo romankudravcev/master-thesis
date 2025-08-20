@@ -1,0 +1,20 @@
+%
+\subsection{Migration}
+%
+Migration is the process of transitioning from one place, state, or condition to another. In information technology, it involves moving data, applications, or systems from one environment to another. IT migrations are often performed to modernize systems, reduce costs, or improve performance. These migrations can involve data, applications, operating systems, or workloads across environments such as data centers, cloud platforms, or storage systems. Examples include moving from on-premises infrastructure to cloud-based solutions or replacing a monolithic application with containerized services.
+
+For the purposes of this thesis, data migration and application migration are the most relevant. Data migration involves moving data from one storage system or platform to another, ensuring seamless functionality and efficiency during the transition. Application migration involves the transfer of software applications to a new IT environment using strategies such as rehosting, where applications are moved without modification; refactoring, where applications are redesigned for the new environment; or replatforming, where minimal changes are required to adapt to the new platform.
+
+Each type of migration presents unique challenges, such as maintaining data integrity, ensuring compatibility, ensuring security, and minimizing downtime, underscoring the importance of careful planning and execution.\footnote{\url{https://www.redhat.com/en/topics/automation/what-is-it-migration}}
+
+Migration strategies depend on the structure of the application. Stateful applications retain and use historical data, while stateless do not.
+
+\subsubsection{Stateful}
+Stateful applications store, record, and return information that has already been established. In stateful applications, the server also keeps track of the state of each user session and stores information about the user's interactions and past requests. This data may vary, ranging from persistent data stored in a database to temporary session data that isn't saved to a database. These stored details can always be returned to and are executed in the context of previous transactions, with the current transaction potentially affected by past ones. For these reasons, stateful applications use the same servers each time they process a request from a user.\footnote{\url{https://www.redhat.com/en/topics/cloud-native-apps/stateful-vs-stateless}}
+
+When migrating a stateful application, it is important to migrate not only the application itself, but also its state. This includes the data stored in the database and the session information. Ensuring a seamless transfer of both is critical to maintaining continuity and ensuring that the application functions properly in the new environment.
+
+\subsubsection{Stateless}
+A stateless application, on the other hand, retains no information about previous interactions. There is no stored knowledge that can be referenced or manipulated between requests. Each transaction is independent of all others, meaning that each request is treated as a new interaction. As a result, each request receives a single, unique response.\footnote{\url{https://www.redhat.com/en/topics/cloud-native-apps/stateful-vs-stateless}}
+
+Since there is no state or data tied to previous interactions that needs to be transferred or synchronized, only the application itself needs to be migrated.

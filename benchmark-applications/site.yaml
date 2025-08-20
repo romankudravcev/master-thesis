@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: skupper-site
+  namespace: clustershift
+data:
+  ingress: nodeport
+  console-ingress: nodeport
+  controller-ingress: nodeport

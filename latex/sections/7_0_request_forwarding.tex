@@ -1,0 +1,33 @@
+%
+\section{Request Forwarding}
+\label{sec:request_forwarding}
+%
+\subsection{Custom Reverse Proxy}
+%
+The solution uses an HTTP reverse proxy that is deployed in the source environment. This proxy intercepts HTTP requests, replicates their details (method, headers, body), and forwards them to the target environment. It then passes the target response back to the client, preserving headers and status codes for transparency.
+Although designed for HTTP, this approach can be adapted for TCP or UDP traffic. For TCP, the proxy would forward raw byte streams, and for UDP, it would forward datagrams. This flexible forwarding mechanism ensures seamless communication across protocols.
+%
+\subsection{Submariner Service Export}
+%
+While using Submariner as our connectivity tool, we are able to take advantage of the already integrated ServiceImport and ServiceExport resources to forward the necessary traffic. 
+So if the application is already deployed on the target cluster and was successfully exported from there, the origin cluster is able to get from the Submariner Broker the necessary information to create a ServiceImport resource.
+With this resource the cluster is able to access the exported service from the other cluster.
+If we use HTTP based request and are using resources like for example a Traefik Ingressroute, we are able to to easily exchange the referenced service from the origin service to the exported target service. 
+Maybe we are also able to just transform the origin service into a service of type externalName and declare the DNS of the target Service to not depend on other resources, which allows us to have a universal solution.
+In this way we don't require any additional implementation to forward the request.
+%
+\subsection{Skupper Exposed Service}
+%
+\subsection{Linkerd Service Mirroring}
+%
+While using Linkerd as the connectivity tool, we are also able to use the integrated functionality.
+Linkerd provides multicluster components which allow to connect multiple clusters.
+After Linkerd is installed on both clusters we are able to link both clusters so they are able to see each other and the secure the connection.
+After the multicluster setup is done, we want to inject the pod we want to make visible and usable to the other cluster.
+In our case this would be the service in the target cluster.
+After injecting the service the proxy will be initialized.
+This alone is not enough to make the service visible in the origin cluster.
+We have to also mirror/export the service by annotating the service.
+With this annotation the service will be also setup on the origin cluster and directly interactive with other components.
+That means the origin cluster discovered the mirrored service and creates a "copy" of it which refers to the original service on the target cluster.
+Now we can interact with this service by using the default kubernetes DNS and can replace for example in our Traefik Ingressroute the origin service with the target service to enable this reroute.

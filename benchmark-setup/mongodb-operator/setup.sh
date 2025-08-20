@@ -35,7 +35,7 @@ HELM_RELEASE_NAME=${HELM_RELEASE_NAME:-"community-operator"}
 MONGODB_OPERATOR_CHART="mongodb/community-operator"
 YAML_FILE=${YAML_FILE:-"mongodb.yaml"}
 MONGODB_RESOURCE_NAME="example-mongodb"
-TEST_DATA_COUNT=100
+TEST_DATA_COUNT=1000
 
 # Function to check if command exists
 command_exists() {
@@ -270,7 +270,7 @@ get_mongodb_credentials() {
 
   # Get the password from the secret
   local mongodb_password=$(kubectl get secret my-user-password -n "$NAMESPACE" -o jsonpath='{.data.password}' | base64 -d)
-  
+
   if [ -z "$mongodb_password" ]; then
     print_error "Failed to retrieve MongoDB password from secret"
     exit 1
@@ -344,7 +344,7 @@ EOF
 
   # Test MongoDB connectivity first
   print_status "Testing MongoDB connectivity..."
-  
+
   # Try to connect to MongoDB and run a simple command
   local connection_test=$(kubectl exec -n "$NAMESPACE" mongodb-client-temp -- mongosh \
     "mongodb://${MONGODB_USER}:${MONGODB_PASSWORD}@${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_ADMIN_DATABASE}?authSource=${MONGODB_ADMIN_DATABASE}" \
@@ -353,19 +353,19 @@ EOF
 
   if [ "$connection_test" != "1" ]; then
     print_error "Cannot connect to MongoDB. Checking MongoDB status..."
-    
+
     # Debug information
     print_status "MongoDB pod logs:"
     kubectl logs -n "$NAMESPACE" "${MONGODB_RESOURCE_NAME}-0" -c mongodb-agent --tail=20 || true
-    
+
     print_status "MongoDB pod status:"
     kubectl get pods -n "$NAMESPACE" -l app="${MONGODB_RESOURCE_NAME}-svc" -o wide
-    
+
     print_status "Testing direct connection to MongoDB service..."
     kubectl exec -n "$NAMESPACE" mongodb-client-temp -- mongosh \
       "mongodb://${MONGODB_USER}:${MONGODB_PASSWORD}@${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_ADMIN_DATABASE}?authSource=${MONGODB_ADMIN_DATABASE}" \
       --eval "db.runCommand('ping')" 2>&1 || true
-    
+
     exit 1
   fi
 
@@ -373,7 +373,7 @@ EOF
 
   # Create root user if needed and set up database
   print_status "Setting up MongoDB database and user permissions..."
-  
+
   kubectl exec -n "$NAMESPACE" mongodb-client-temp -- mongosh \
     "mongodb://${MONGODB_USER}:${MONGODB_PASSWORD}@${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_ADMIN_DATABASE}?authSource=${MONGODB_ADMIN_DATABASE}" \
     --eval "
@@ -390,7 +390,9 @@ EOF
             user: '${MONGODB_TESTDB_USER}',
             pwd: '${MONGODB_PASSWORD}',
             roles: [
-              { role: 'readWrite', db: '${MONGODB_DATABASE}' }
+              { role: 'readWrite', db: '${MONGODB_DATABASE}' },
+              { role: 'dbAdmin', db: '${MONGODB_DATABASE}' },
+              { role: 'userAdmin', db: '${MONGODB_DATABASE}' }
             ]
           });
           print('${MONGODB_TESTDB_USER} created with readWrite permissions in testdb');
@@ -462,7 +464,7 @@ EOF
 
   # Extract the count from the output
   local inserted_count=$(echo "$insert_output" | grep -o "FINAL_COUNT=[0-9]*" | sed 's/FINAL_COUNT=//' | tail -1)
-  
+
   # If we can't find the FINAL_COUNT, try to get the last number in the output
   if [ -z "$inserted_count" ]; then
     inserted_count=$(echo "$insert_output" | grep -o "[0-9]*" | tail -1)
@@ -473,7 +475,7 @@ EOF
     print_status "Inserted $inserted_count messages into the 'messages' collection in database '$MONGODB_DATABASE'"
   else
     print_error "Failed to create test data! Expected $TEST_DATA_COUNT, got: $inserted_count"
-    
+
     # Try to get actual count from database
     print_status "Checking actual count in database..."
     local actual_count=$(kubectl exec -n "$NAMESPACE" mongodb-client-temp -- mongosh \
@@ -482,7 +484,7 @@ EOF
       --eval "db.messages.countDocuments()" 2>/dev/null || echo "0")
 
     print_status "Actual count in database: $actual_count"
-    
+
     if [ "$actual_count" -eq "$TEST_DATA_COUNT" ]; then
       print_success "Data insertion actually succeeded! Count matches expected value."
     else
@@ -544,7 +546,7 @@ EOF
 
   # Extract count from output
   local count=$(echo "$verify_output" | grep -o "DOCUMENT_COUNT=[0-9]*" | sed 's/DOCUMENT_COUNT=//' | tail -1)
-  
+
   # If we can't find DOCUMENT_COUNT, try to get the last number
   if [ -z "$count" ]; then
     count=$(echo "$verify_output" | grep -o "[0-9]*" | tail -1)

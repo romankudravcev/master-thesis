@@ -1,0 +1,38 @@
+%
+\subsection{Networking}
+%
+A critical component of orchestrated edge and cloud migrations is establishing effective networking between the source and target environments. During and after migration, networking serves as the backbone for securely routing requests and transmitting data between environments. To ensure secure, reliable, and seamless connectivity, this chapter explores the key technologies and protocols that enable this communication. We will begin by looking at tunneling as a basic networking method, and then move on to service meshes, which provide advanced networking capabilities customized for container-orchestrated environments.
+%
+\subsubsection{Tunneling}
+%
+Cloud and edge networks are complex and driven by a variety of technologies, methodologies, and protocols. One of the most fundamental protocols in cloud networking is tunneling. 
+%
+Tunneling is a method of transmitting data over a public network in a discreet and private manner. Even though the data is transmitted over a public network, the use of the transmitted data is only intended within private networks. Tunnels provide a direct connection between two networks, making the data transmitted undetectable within the public network.
+%
+The tunneling process works as follows: Data packets are encapsulated to pass securely through the tunnel. At the destination, these packets are unpacked and decrypted. Encapsulation involves wrapping a packet and placing it in the payload of another packet. Encapsulation is useful because it allows data to be transmitted over networks that do not natively support its original protocol by wrapping it in a compatible protocol, thereby allowing it to communicate seamlessly. It also enables encrypted connections by wrapping encrypted packets within unencrypted packets, allowing them to travel through networks while maintaining security. The most common application of tunneling is in Virtual Private Networks (VPNs), which provide efficient and secure connections between two networks. VPNs also allow using unsupported network protocols and bypassing firewalls.\footnote{\url{https://www.cloudflare.com/learning/network-layer/what-is-tunneling/}}
+%
+Tunneling is often used because it provides an easy way to allow two networks to communicate with each other without having to configure much. It allows a direct connection between two endpoints, bypassing firewalls. It also eliminates the need to define a route through multiple servers before reaching the destination network.
+%
+While tunneling provides easy connections between networks, it also has drawbacks. Encapsulation requires computing resources, which can slow communication. In addition, although the packets themselves are encrypted, it's important to note that tunnels are designed to bypass firewalls and provide direct access to local networks. If unauthorized individuals gain access to the tunnel, this creates a potential security vulnerability. Therefore, tunneling must be carefully managed to mitigate the risks.\footnote{\url{https://traefik.io/glossary/network-tunneling/}}
+%
+\subsubsection{Service mesh}
+Another way to establish networking in a container-orchestrated environment is through service meshes. A service mesh is a dedicated networking layer that enables secure, reliable, and observable communication between services in both cloud and on-premises environments. They are commonly installed in container orchestration systems such as Kubernetes. However, service meshes are also available for non-Kubernetes based workloads and are platform agnostic. A service mesh is looking to improve application infrastructure by abstracting much of the complexity of managing network traffic between services. This simplifies tasks such as traffic routing, security, and observability.
+Service meshes route requests between services through proxies in their own infrastructure layer. These proxies are called "sidecars" because they run next to each service and then within the services. Without a Service Mesh, each service would need to integrate the logic needed to communicate between services. This means that with a service mesh, the services do not have to worry about communication. In addition, failures are easier to diagnose because the communication is not hidden within the services.\footnote{\url{https://www.redhat.com/en/topics/microservices/what-is-a-service-mesh}}
+Service Meshes provide benefits that significantly improve the security and resilience of an application. This is made possible by the capabilities of a service mesh: Service discovery, application health monitoring, load balancing, automatic failover, traffic management, encryption, observability, authentication, authorization, and network automation. Service meshes are often used to achieve a zero trust model. Zero Trust requires identity-based access to ensure that all Service Mesh communications are authenticated with TLS certificates and encrypted in transit.\footnote{\url{https://developer.hashicorp.com/consul/docs/concepts/service-mesh}}
+
+\subsubsection{Vxlan (kubernetes)}
+
+
+\subsubsection{layer 2 and 3 network}
+
+
+\subsubsection{tcp}
+
+
+\subsubsection{udp}
+
+tunneling, service mesh, vxlan (kuberbenetes) layer 2 und 3 network, tcp und udp,
+
+https://www.ibm.com/think/topics/network-functions-virtualization
+vfn networking
+kubernetes vxlan flannel

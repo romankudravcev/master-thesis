@@ -1,0 +1,41 @@
+%
+\subsection{Skupper}
+%
+
+
+Skupper is an open-source project that enables secure communication between applications running across different Kubernetes clusters or networks. Despite being less known (around 600 GitHub stars), it provides a powerful alternative to traditional VPN-based solutions by operating entirely at the application layer (Layer 7). Its key concept is the **Virtual Application Network (VAN)** — a Layer 7 overlay network that links applications as if they were running in the same cluster.
+
+\paragraph{Component Overview}%
+A Skupper deployment consists of several key components that work together to create a Virtual Application Network (VAN). A \textbf{site} represents a Skupper instance running within a specific Kubernetes namespace. Each site contains a \textbf{router} responsible for forwarding messages across the network. Sites are connected to each other using \textbf{links}, which establish secure, mutually authenticated TLS tunnels. These interconnected sites form a \textbf{Skupper network}. Within this network, services are made accessible using \textbf{connectors} and \textbf{listeners}: a connector binds a local application (pod) to a routing address, while a listener makes a remote service available as if it were local. Communication between sites uses \textbf{application addresses}, which are used by routers to forward messages at the application layer (Layer 7). This architecture enables seamless and secure cross-cluster service connectivity without requiring low-level network configuration such as VPNs or peering.
+
+
+\paragraph{Virtual Application Network (VAN)}
+%A VAN allows applications to communicate through **application-layer routers**, which route messages based on **application addresses** instead of IP addresses. These routers behave similarly to network routers but work at Layer 7. As a result, applications can send messages to an address (e.g., a service name), and Skupper ensures delivery across cluster boundaries.
+
+\paragraph{Sites}
+%In Skupper terminology, a **site** represents a deployment of application workloads within a Kubernetes namespace. Each site contains a Skupper router that connects local workloads to remote sites in the VAN. Notably, multiple sites can exist within the same Kubernetes cluster (in different namespaces), allowing for flexible topologies.
+
+\paragraph{Linking Sites into a Network}
+To form a VAN, sites must be linked together. This is done via **Skupper links**, which are mutual TLS-authenticated connections between routers. The process is as follows:
+
+1. **Site A** creates an **access grant** and generates an **access token**.
+2. The access token is shared securely with **Site B**.
+3. **Site B** redeems the token, establishing a **mutual TLS** connection with Site A.
+4. A **link** is formed, enabling communication between the two routers.
+
+Multiple sites linked together in this way form a **Skupper network**, which enables service discovery and routing across all participating namespaces and clusters.
+
+\paragraph{Exposing Services}
+Skupper enables workloads in one site to be consumed from another site by exposing services. This is done using **listeners** and **connectors**:
+
+- A **connector** is deployed alongside the service to be exposed. It tags the relevant pods (using Skupper-specific labels) to signal their availability.
+- A **listener** is deployed in the site that wants to consume the service. It acts as a Kubernetes `Service` object pointing to a remote workload.
+
+Both listener and connector share a **routing key**, which the Skupper router uses to route requests across the VAN to the appropriate workload. From the perspective of an application, it’s as if the remote service were local.
+
+\paragraph{Security}
+All inter-site communication in Skupper is secured with **mutual TLS authentication and encryption**. Each router possesses a unique certificate issued by a dedicated **certificate authority**. This eliminates the need for complex Layer 3 networking setups like VPNs or mesh overlays, making Skupper simple to operate within firewalled or NATed environments.
+
+\paragraph{How it all fits together}
+Each site runs a Skupper router within a namespace and participates in a larger VAN by linking to other sites using access tokens. Services are exposed and consumed via Skupper's routing layer, allowing applications across clusters to interact seamlessly — as though they were on the same Kubernetes network.
+

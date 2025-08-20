@@ -34,7 +34,7 @@ NAMESPACE=${NAMESPACE:-"postgres"}
 CNPG_OPERATOR_URL="https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/release-1.26/releases/cnpg-1.26.0.yaml"
 YAML_FILE=${YAML_FILE:-"postgres.yaml"}
 POSTGRES_CLUSTER_NAME="my-postgres-cluster"
-TEST_DATA_COUNT=100
+TEST_DATA_COUNT=1000
 
 # Function to check if command exists
 command_exists() {

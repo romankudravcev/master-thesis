@@ -1,0 +1,21 @@
+%
+\section{Experimental Setup and Design}
+\label{sec:experimental_setup_and_design}
+
+%
+% Setup
+In order to evaluate the impact of the migration on the environments and key metrics, we designed a controlled experimental setup to ensure that the results were reproducible and consistent. Therefore we used four Ubuntu 20.04 Virtual Machines (VMs) with 2vCPUs, 4GB memory and a SSD with a capacity of 30GB each. All VMs run on-premises on one single physical host machine with Kernel–based Virtual Machine (KVM) as hypervisor and containerd as container runtime. These VMs were split into two two-node clusters: a source cluster for migration and a target cluster as the destination.
+
+% Benchmark components and their functionality and tasks
+The setup consisted of three components: a resource utilization collector, a test application, and a client application. 
+%
+The resource utilization collector used Kubernetes' Metrics API \footnote{\url{|https://kubernetes.io/docs/tasks/debug/debug-cluster/resource-metrics-pipeline/}} to monitor cluster-wide CPU and memory usage every 100 ms, storing the data with timestamps in a SQLite database. 
+%
+The test application was a message store with a REST API for storing, retrieving, and deleting messages, using a PostgreSQL database managed by the CNPG operator. A message contains a time stamp, a unique ID, and a message so that we can later check which message may not have been received.
+%
+The client application is a lightweight HTTP client that simulates IoT devices and is configured to send requests to the test application's REST API. The client supports adjustable request rates and GET/POST ratios. It logs the details of each request - message content, HTTP method, timestamp, response time, and success status. A response is considered successful if it returns a status code in the 200 range. After all requests have been sent, the client retrieves stored messages from the test application to determine message loss, availability, and average response time.
+
+% Testing scenarios and goals
+Our evaluation consists of two scenarios. The first scenario measures the idle load without migration. This establishes a baseline for performance and resource utilization under normal conditions. The second scenario evaluates the load during migration. By testing these two scenarios, we can compare performance and resource utilization between the two scenarios. We can also observe and evaluate availability and downtime during a migration.
+%
+For the test where we want to collect the idle load metrics without migration, we use only one of the two clusters. We deploy the Resource Utilization Collector and the test application on that cluster and start making requests with our implemented client. For testing during migration, we deploy the resource utilization collector on both clusters to get an overview of the resource utilization of both clusters and deploy the test application on the origin environment. Then we start doing requests with our implemented client and start our migration process.

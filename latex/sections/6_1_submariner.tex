@@ -1,0 +1,55 @@
+%
+\subsection{Submariner}
+%
+% General Information
+Submariner is an open-source project with 2.5k github-stars, built to connect overlay networks of different Kubernetes clusters. It enables seamless networking between Pods and Services across multiple Kubernetes clusters, regardless of whether they are running on-premises or in the cloud. It provides cross-cluster Layer 3 (L3) connectivity using encrypted or unencrypted connections. This allows workloads in different clusters to communicate as if they were on the same network. Submariner is designed to be network plug-in (CNI) agnostic. This ensures compatibility with a variety of Kubernetes networking setups.
+
+% Architecture
+Submariner consists of several main components: Broker, Gateway Engine, Route Agent and Service Discovery.
+
+% Broker
+The Broker is a central component to connect the clusters by exchanging metadata of the clusters. 
+It allows the Gateway Engines of the individual clusters to discover each other for further communication. 
+The Broker consists of several new CRDs and a ServiceAccount and RBAC to enable for securely access of the Broker's API.
+The Broker also deploys an operator Pod that installs the CRDs and the Globalnet configuration.
+To be specific what is getting exchanged via the Broker are the Endpoints and the Cluster CRDs.
+The Endpoint CRD contains information about the Gateway Engine such as the IP of the Cluster.
+The Cluster CRD contains static infromation of the Cluster such as Service and Pod CIDRs.
+The Broker can be deployed on a participating cluster or a standalone cluster which is not participating in the communication process.
+
+% Gateway Engine
+The Gateway Engine is deployed in all participating clusters. It manages and establishes the tunnels to the other clusters.
+Submariner has different alternatives for the cable engine that maintains the tunnels. 
+It provides Libreswan as a default which implements a IPsec choice, Wireguard and a unencrypted alternative using VXLAN.
+The Gateway Engine is only active on one predefined node at a time.
+For higher availability it is also possible to define several nodes as gateway nodes, but only one is active at a time.
+A leader election is performed to define a new active instance if the current active instance fails.
+The active Gateway Engine communicates its Endpoints and Cluster resources to the Broker and creates a watch on the Broker to find new active Endpoints and Cluster resources from other clusters. 
+After detecting new resources the cluster establishes a tunnel to the discovered cluster through which the traffic can be routed.
+
+% Service Discovery
+The Service Discovery component allows the services that are reachable for the other clusters are reachable by a custom Submariner DNS. 
+It is named Lighthouse.
+As part of the Lighthouse component an agent is deployed on every cluster and accesses the Kubernetes API of the Broker cluster to exchange service metadata with the other clusters.
+Information about the services that are exported from the cluster are being published and consumed by the other clusters.
+Information about the services that are exported from other clusters are received as imported services.
+Another component running within the scope of Lighthose is the own DNS server.
+This is an external DNS which communicates with CoreDNS and receives forwarded request sent to the owned domain "clusterset.local".
+It uses ServiceImport and EndpointsSlice resources to build an address cache for the DNS resolution.
+
+% Route Agent
+The Route Agent is important for multi-node setups.
+The Route Agent runs on every node and routes traffic that has to reach other clusters from nodes to the active Gateway Engine.
+If kube-proxy is used in iptables mode, the route agent established VXLAN tunnels to be able to route the traffic to the Gateway Engine.
+The node that has the active Gateway Engine, the Route Agent creates an VXLAN Tunnel Endpoint, so other Route Agents are able to establish a tunnel with the endpoint.
+
+% Did i add how the worklow in general is? Deploy Broker, join clusters and then export the services that you need to expose to the other clusters?
+
+% Upsides / Advantages
+
+
+% Downsides / Limitations
+
+
+
+

@@ -1,0 +1,26 @@
+%
+\section{Discussion}
+\label{sec:discussion}
+%
+The results show that Submariner has minimal impact on CPU and memory utilization, supporting its use in migration scenarios.
+Database replication, on the other hand, caused more significant spikes in resource usage.
+This is expected because replication requires additional resources to transfer large amounts of data and ensure data consistency.
+However, it is important to consider clusters with higher idle loads, as the replication process could potentially overload such clusters.
+Response time differences are minor for this use case and can be considered unimportant.
+This might be interesting for clients that don't handle dynamic IP changes.
+As a result, they will use the reverse proxy until they are manually set to the IP of the target cluster.
+The time it takes to set the IP would likely affect the response time.
+% TODO: Quelle, dass 98% gut genug sind?
+An availability rate above 98\% confirms that the tool is suitable for a migration use case. 
+The duration of the downtime shouldn't be influenced by the size of the database. 
+Most likely the application startup times affect the downtime, because at boot up the target database must be ready for write operations.
+
+The proposed experiment and the obtained results underlie a few limitations.
+Firstly, not all types of data were considered during the migration.
+% (\url{https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=984278})
+No user context or session data, such as a Redis store, was included in the test application.
+The evaluation was also limited to a SQL database managed by an operator.
+This only cover a small portion of use cases.
+This is a proof of concept and we are only showing general applicability.
+Finally we also have threats to validity in our experimental setup.
+We made assumptions about application startup and network stability what could impact the results.

@@ -1,0 +1,77 @@
+%
+\section{Conclusion}\label{sec:conclusion}%
+This is the last chapter of this thesis \cite{tur38}.
+%
+\subsection{Databases}
+- kubernetes operator\\
+- General problems db migration\\
+
+\subsection{Forwarding requests}
+- reverse proxy\\
+- ha proxy\\
+\subsection{Secure connection}
+- Service meshes\\
+- tunneling\\
+- submariner\\
+- skupper \\
+
+The Goal of this thesis is to be able to migrate the content of one cluster to another cluster. The clusters should be therefore on separate machines. Firstly, I want to define the naming of the objects, so there is no confusion with the naming. We are defining the original Cluster we want to migrate as "Cluster A" and the cluster we want to migrate to "Cluster B".
+%
+\subsection{Stateless Application}
+The first step to achieve this goal is to try it without a state (without a database and mounted volume). The rough approach would be to copy the application of the original cluster into the cluster we want to migrate to, and then reroute all request from the original cluster to the new cluster.
+%
+\subsubsection{Scope}
+Therefore, we are clarifying a scope to minimize the complexity of this problem. The scope contains that we are using K3s. That means that we are already using traefik as our ingress and.
+We also expect that the machine where the new cluster should run is already setup and ready to use. This also applies to the Cluster. So we have a running cluster which is empty, and only the application have to be migrated.
+%
+\subsubsection{Cluster with only one node}
+%
+The first approach to see if it is possible to automize this process is to see if it works perfectly with only one node in the cluster.
+\paragraph{Copying Cluster content}
+We want to copy all deployments, services, and the ingress and the load balancer from the original cluster. Therefore, a controller is being implemented which should handle the complete migration. This controller is implemented in java. To access the original and the new cluster from the controller, we are using the "Official Java client library for Kubernetes"(https://github.com/kubernetes-client/java). This library allows us to access everything we need from the clusters. For testing purposes we define two kubeconfigs for the test machines which we can read in our controller to access the clusters with the API. After creating a connection to the original cluster, we can access all needed deployments and services and extract the .yaml file. This is saved as a JSON object and can be instantly deployed with the API to the new cluster. This works without any problem. We are skipping the ingress and the load balancer for the beginning because more information is needed for this.
+%
+\paragraph{Rerouting traffic}
+After migrating Cluster A to Cluster B, we need to reroute the traffic which still tries to reach Cluster A. Therefore, different approaches are possible: The first one is to use DNS and update the DNS records. This assumes that we are using DNS even if there is no need for it, so this approach has been put on hold. The second one is that we are firing up a new machine with a proxy in front of Cluster A which reroutes the traffic before it even reaches the machine of Cluster A. This requires a running machine with the proxy on it, what also is not an optimal solution. Then we have the approach to edit some files on OS level, which reroutes the request.  Then the last approach is to reroute in the cluster itself. This would not need any additional resources and could be handled without any further layer. This is possible by looking at the ingress of the cluster. The ingress can reroute traffic itself. But the problem here is that there are different kinds of ingresses. For example, the two most used ingress provider are traefik and nginx. The problem is that there is no one generic solution for both. That is why we have to identify the type of ingress and handle it in the correct way, or we only focus on one of both ingresses. We decide to look at the traefik ingress for this thesis. It is still possible to add the functionality for other ingresses later on.
+%
+\subsubsection{Cluster with several nodes}
+Now that we know that it is possible to copy a cluster with one node and reroute the traffic, we want to look if this is possible without any other problems for a cluster with multiple nodes. Therefore, we are using the same technique to copy the node and reroute the traffic as in the use case with one node.
+
+
+%
+\section{Methodology}\label{sec:methodology}
+%
+\subsection{Secure Connection}
+- Why do we need a secure connection\\
+- Which is more recommended?\\
+- Which works from on-premise to on-premise\\
+- Which works from cloud to on-premise\\
+\subsubsection{Tunneling with Submariner.io}
+- Explaining how it works\\
+- Layer3 — Networking layer\\
+- Advantages\\
+- Problems\\
+\subsubsection{Tunneling with Skupper.io}
+- Explaining how it works\\
+- Layer7 — Application layer\\
+- Advantages\\
+- Problems\\
+\subsubsection{Using a service-mesh}
+- Explaining how it works\\
+- Advantages\\
+- Problems\\
+
+\subsection{Migrate SQL-database}
+\subsubsection{Database cluster managed by operator}
+\subsubsection{Statefulset}
+\subsubsection{Cloud database}
+
+\subsection{Migrate Kubernetes resources}
+
+\subsection{Forwarding or redirecting request to migrated cluster}
+\subsubsection{HA proxy}
+\subsubsection{etc/hosts file}
+\subsubsection{Traefik middlewares, ingress routes or other custom resources}
+\subsubsection{Custom proxies}
+\subsubsection{Using tunneling}
+\subsubsection{Load balancer/DNS}
+\subsubsection{CNI}
