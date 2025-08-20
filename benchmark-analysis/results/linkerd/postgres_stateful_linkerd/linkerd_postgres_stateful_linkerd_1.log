@@ -1,0 +1,111 @@
+2025-08-20 10:45:59 [INFO] Starting migration process...
+2025-08-20 10:45:59 [INFO] You will be prompted to select a networking tool and rerouting option to establish a secure connection and manage traffic between the clusters.
+2025-08-20 10:47:28 [INFO] Initializing kubernetes clients
+2025-08-20 10:47:29 [INFO] Checking connectivity between clusters
+2025-08-20 10:47:29 [DEBUG] Fetching cluster IPs
+2025-08-20 10:47:29 [DEBUG] Cleaning up probe resources
+2025-08-20 10:47:29 [DEBUG] Testing connectivity with Origin IP: 192.168.131.1, Target IP: 192.168.133.1
+2025-08-20 10:47:29 [DEBUG] Deploying probe resources
+2025-08-20 10:47:30 [DEBUG] Waiting for pods to be ready
+2025-08-20 10:47:35 [DEBUG] Pods are ready
+2025-08-20 10:47:35 [DEBUG] Checking connectivity between clusters
+2025-08-20 10:47:45 [DEBUG] Connectivity check successful with Origin IP: 192.168.131.1, Target IP: 192.168.133.1 - both clusters can reach each other
+2025-08-20 10:47:45 [DEBUG] Cleaning up probe resources
+2025-08-20 10:47:45 [DEBUG] Connectivity probe complete
+2025-08-20 10:47:45 [INFO] Establishing secure connection between clusters
+2025-08-20 10:47:45 [DEBUG] Create Linkerd certificates
+2025-08-20 10:47:45 [INFO] Installing Linkerd
+2025-08-20 10:47:45 [DEBUG] Install linkerd-crds
+2025-08-20 10:47:56 [DEBUG] Install Linkerd control plane
+2025-08-20 10:48:32 [DEBUG] Install linkerd-multicluster
+2025-08-20 10:49:01 [INFO] Installing Linkerd
+2025-08-20 10:49:01 [DEBUG] Install linkerd-crds
+2025-08-20 10:49:07 [DEBUG] Install Linkerd control plane
+2025-08-20 10:49:40 [DEBUG] Install linkerd-multicluster
+2025-08-20 10:50:09 [INFO] Try fetching gateway service linkerd-gateway in namespace linkerd-multicluster
+2025-08-20 10:50:10 [INFO] Try fetching gateway service linkerd-gateway in namespace linkerd-multicluster
+2025-08-20 10:50:10 [INFO] Migrating configuration resources
+2025-08-20 10:50:13 [INFO] Including namespace for Skupper: benchmark
+2025-08-20 10:50:13 [INFO] Including namespace for Skupper: clustershift
+2025-08-20 10:50:13 [INFO] Including namespace for Skupper: default
+2025-08-20 10:50:13 [INFO] Skipping system namespace: kube-node-lease
+2025-08-20 10:50:13 [INFO] Skipping system namespace: kube-public
+2025-08-20 10:50:13 [INFO] Skipping system namespace: kube-system
+2025-08-20 10:50:13 [INFO] Skipping system namespace: linkerd
+2025-08-20 10:50:13 [INFO] Skipping system namespace: linkerd-multicluster
+2025-08-20 10:50:13 [INFO] Skipping system namespace: metallb-system
+2025-08-20 10:50:13 [INFO] Including namespace for Skupper: postgres
+2025-08-20 10:50:13 [INFO] Skipping system namespace: traefik
+2025-08-20 10:50:13 [INFO] Number of valid namespaces found: 4
+2025-08-20 10:50:13 [INFO] No CNPG clusters found or error fetching them: the server could not find the requested resource
+2025-08-20 10:50:13 [INFO] Waiting for deployments to be ready in namespace benchmark
+2025-08-20 10:50:13 [INFO] Waiting for statefulsets to be ready in namespace benchmark
+2025-08-20 10:50:13 [INFO] Restarting deployment metrics-collector in namespace clustershift
+2025-08-20 10:50:14 [INFO] No CNPG clusters found or error fetching them: the server could not find the requested resource
+2025-08-20 10:50:14 [INFO] Waiting for deployments to be ready in namespace clustershift
+2025-08-20 10:50:19 [INFO] Deployment metrics-collector is ready
+2025-08-20 10:50:19 [INFO] Waiting for statefulsets to be ready in namespace clustershift
+2025-08-20 10:50:19 [INFO] No CNPG clusters found or error fetching them: the server could not find the requested resource
+2025-08-20 10:50:19 [INFO] Waiting for deployments to be ready in namespace default
+2025-08-20 10:50:19 [INFO] Waiting for statefulsets to be ready in namespace default
+2025-08-20 10:50:19 [INFO] No CNPG clusters found or error fetching them: the server could not find the requested resource
+2025-08-20 10:50:19 [INFO] Waiting for deployments to be ready in namespace postgres
+2025-08-20 10:50:19 [INFO] Waiting for statefulsets to be ready in namespace postgres
+2025-08-20 10:50:19 [INFO] Scanning for existing cnpg databases
+2025-08-20 10:50:19 [INFO] No existing cnpg databases found, skipping migration
+2025-08-20 10:50:19 [INFO] Migrating MongoDBs
+2025-08-20 10:50:19 [INFO] No existing MongoDBs found, skipping migration
+2025-08-20 10:50:19 [INFO] Checking for existing MongoDB Community Operator deployment
+2025-08-20 10:50:19 [DEBUG] No MongoDB Community Operator found in origin cluster, skipping operator migration
+2025-08-20 10:50:19 [INFO] Migrating PostgreSQL databases
+2025-08-20 10:50:20 [INFO] postgres, admin
+2025-08-20 10:50:20 [INFO] Exporting service postgres in namespace postgres
+2025-08-20 10:50:20 [INFO] Adding linkerd.io/inject=enabled annotation to namespace postgres
+2025-08-20 10:50:20 [INFO] Rerolling all pods in namespace postgres
+2025-08-20 10:50:20 [INFO] Restarting statefulset postgres in namespace postgres
+2025-08-20 10:50:20 [INFO] No CNPG clusters found or error fetching them: the server could not find the requested resource
+2025-08-20 10:50:20 [INFO] Waiting for deployments to be ready in namespace postgres
+2025-08-20 10:50:20 [INFO] Waiting for statefulsets to be ready in namespace postgres
+2025-08-20 10:50:55 [INFO] StatefulSet postgres is ready
+2025-08-20 10:50:56 [INFO] Added replication environment variables to StatefulSet postgres
+2025-08-20 10:50:56 [INFO] Waiting for replication to be ready for postgres
+2025-08-20 10:51:27 [INFO] Replication is ready and target database is operational
+2025-08-20 10:51:27 [INFO] Decoupling target database postgres from source
+2025-08-20 10:51:27 [INFO] Target database is in recovery mode, promoting to master
+2025-08-20 10:51:33 [INFO] Successfully promoted target database to master
+2025-08-20 10:51:33 [INFO] Target database successfully decoupled and is now operating as an independent master
+2025-08-20 10:51:33 [INFO] Successfully migrated PostgreSQL database postgres
+2025-08-20 10:51:33 [INFO] Migrating resources
+2025-08-20 10:51:34 [INFO] Enable request forwarding from origin
+2025-08-20 10:51:34 [INFO] Mirroring service clustershift-benchmark-service in namespace benchmark
+2025-08-20 10:51:34 [INFO] Mirroring service metrics-collector in namespace clustershift
+2025-08-20 10:51:35 [INFO] Mirroring service kubernetes in namespace default
+2025-08-20 10:51:35 [INFO] Mirroring service kube-dns in namespace kube-system
+2025-08-20 10:51:35 [INFO] Mirroring service metrics-server in namespace kube-system
+2025-08-20 10:51:35 [INFO] Mirroring service linkerd-gateway in namespace linkerd-multicluster
+2025-08-20 10:51:35 [INFO] Mirroring service probe-gateway-origin in namespace linkerd-multicluster
+2025-08-20 10:51:35 [INFO] Mirroring service probe-gateway-target in namespace linkerd-multicluster
+2025-08-20 10:51:35 [INFO] Mirroring service linkerd-dst in namespace linkerd
+2025-08-20 10:51:35 [INFO] Mirroring service linkerd-dst-headless in namespace linkerd
+2025-08-20 10:51:35 [INFO] Mirroring service linkerd-identity in namespace linkerd
+2025-08-20 10:51:35 [INFO] Mirroring service linkerd-identity-headless in namespace linkerd
+2025-08-20 10:51:35 [INFO] Mirroring service linkerd-policy in namespace linkerd
+2025-08-20 10:51:36 [INFO] Mirroring service linkerd-policy-validator in namespace linkerd
+2025-08-20 10:51:36 [INFO] Mirroring service linkerd-proxy-injector in namespace linkerd
+2025-08-20 10:51:36 [INFO] Mirroring service linkerd-sp-validator in namespace linkerd
+2025-08-20 10:51:36 [INFO] Mirroring service metallb-webhook-service in namespace metallb-system
+2025-08-20 10:51:36 [INFO] Mirroring service postgres in namespace postgres
+2025-08-20 10:51:37 [INFO] Mirroring service postgres-0-origin in namespace postgres
+2025-08-20 10:51:37 [INFO] Mirroring service postgres-0-target in namespace postgres
+2025-08-20 10:51:37 [INFO] Mirroring service postgres-origin in namespace postgres
+2025-08-20 10:51:37 [INFO] Mirroring service postgres-target in namespace postgres
+2025-08-20 10:51:37 [INFO] Mirroring service traefik in namespace traefik
+2025-08-20 10:51:38 [INFO] Restarting deployment traefik in namespace traefik
+2025-08-20 10:51:38 [INFO] No CNPG clusters found or error fetching them: the server could not find the requested resource
+2025-08-20 10:51:38 [INFO] Waiting for deployments to be ready in namespace traefik
+2025-08-20 10:51:43 [INFO] Deployment traefik is ready
+2025-08-20 10:51:43 [INFO] Waiting for statefulsets to be ready in namespace traefik
+2025-08-20 10:51:43 [INFO] Updating service name in IngressRoute clustershift-benchmark-ingress-route from clustershift-benchmark-service to clustershift-benchmark-service-target
+2025-08-20 10:51:43 [INFO] Updating service name in IngressRoute metrics-collector-route from metrics-collector to metrics-collector-target
+2025-08-20 10:51:43 [DEBUG] Ignoring IngressRoute traefik-dashboard as it is the Traefik dashboard
+2025-08-20 10:51:43 [INFO] Migration complete

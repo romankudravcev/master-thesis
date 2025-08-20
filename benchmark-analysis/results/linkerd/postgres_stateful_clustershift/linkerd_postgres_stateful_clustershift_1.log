@@ -1,0 +1,59 @@
+2025-08-20 09:38:26 [INFO] Starting migration process...
+2025-08-20 09:38:26 [INFO] You will be prompted to select a networking tool and rerouting option to establish a secure connection and manage traffic between the clusters.
+2025-08-20 09:40:09 [INFO] Initializing kubernetes clients
+2025-08-20 09:40:09 [INFO] Checking connectivity between clusters
+2025-08-20 09:40:09 [DEBUG] Fetching cluster IPs
+2025-08-20 09:40:09 [DEBUG] Cleaning up probe resources
+2025-08-20 09:40:09 [DEBUG] Testing connectivity with Origin IP: 192.168.131.1, Target IP: 192.168.133.1
+2025-08-20 09:40:09 [DEBUG] Deploying probe resources
+2025-08-20 09:40:10 [DEBUG] Waiting for pods to be ready
+2025-08-20 09:40:15 [DEBUG] Pods are ready
+2025-08-20 09:40:15 [DEBUG] Checking connectivity between clusters
+2025-08-20 09:40:26 [DEBUG] Connectivity check successful with Origin IP: 192.168.131.1, Target IP: 192.168.133.1 - both clusters can reach each other
+2025-08-20 09:40:26 [DEBUG] Cleaning up probe resources
+2025-08-20 09:40:26 [DEBUG] Connectivity probe complete
+2025-08-20 09:40:26 [INFO] Deploy reverse proxy for request forwarding
+2025-08-20 09:40:26 [DEBUG] Fetching loadbalancer IP
+2025-08-20 09:40:26 [DEBUG] Service: traefik IP: 141.13.5.242
+2025-08-20 09:40:26 [DEBUG] Fetched loadbalancer IP: 141.13.5.242
+2025-08-20 09:40:26 [DEBUG] Deploying proxy
+2025-08-20 09:40:26 [INFO] Establishing secure connection between clusters
+2025-08-20 09:40:26 [DEBUG] Create Linkerd certificates
+2025-08-20 09:40:26 [INFO] Installing Linkerd
+2025-08-20 09:40:26 [DEBUG] Install linkerd-crds
+2025-08-20 09:40:35 [DEBUG] Install Linkerd control plane
+2025-08-20 09:41:07 [DEBUG] Install linkerd-multicluster
+2025-08-20 09:41:36 [INFO] Installing Linkerd
+2025-08-20 09:41:36 [DEBUG] Install linkerd-crds
+2025-08-20 09:41:45 [DEBUG] Install Linkerd control plane
+2025-08-20 09:42:26 [DEBUG] Install linkerd-multicluster
+2025-08-20 09:42:59 [INFO] Try fetching gateway service linkerd-gateway in namespace linkerd-multicluster
+2025-08-20 09:43:00 [INFO] Try fetching gateway service linkerd-gateway in namespace linkerd-multicluster
+2025-08-20 09:43:01 [INFO] Migrating configuration resources
+2025-08-20 09:43:04 [INFO] Scanning for existing cnpg databases
+2025-08-20 09:43:04 [INFO] No existing cnpg databases found, skipping migration
+2025-08-20 09:43:04 [INFO] Migrating MongoDBs
+2025-08-20 09:43:04 [INFO] No existing MongoDBs found, skipping migration
+2025-08-20 09:43:04 [INFO] Checking for existing MongoDB Community Operator deployment
+2025-08-20 09:43:04 [DEBUG] No MongoDB Community Operator found in origin cluster, skipping operator migration
+2025-08-20 09:43:04 [INFO] Migrating PostgreSQL databases
+2025-08-20 09:43:04 [INFO] postgres, admin
+2025-08-20 09:43:04 [INFO] Exporting service postgres in namespace postgres
+2025-08-20 09:43:04 [INFO] Adding linkerd.io/inject=enabled annotation to namespace postgres
+2025-08-20 09:43:04 [INFO] Rerolling all pods in namespace postgres
+2025-08-20 09:43:04 [INFO] Restarting statefulset postgres in namespace postgres
+2025-08-20 09:43:04 [INFO] No CNPG clusters found or error fetching them: the server could not find the requested resource
+2025-08-20 09:43:04 [INFO] Waiting for deployments to be ready in namespace postgres
+2025-08-20 09:43:04 [INFO] Waiting for statefulsets to be ready in namespace postgres
+2025-08-20 09:43:39 [INFO] StatefulSet postgres is ready
+2025-08-20 09:43:41 [INFO] Added replication environment variables to StatefulSet postgres
+2025-08-20 09:43:41 [INFO] Waiting for replication to be ready for postgres
+2025-08-20 09:44:12 [INFO] Replication is ready and target database is operational
+2025-08-20 09:44:12 [INFO] Decoupling target database postgres from source
+2025-08-20 09:44:12 [INFO] Target database is in recovery mode, promoting to master
+2025-08-20 09:44:17 [INFO] Successfully promoted target database to master
+2025-08-20 09:44:17 [INFO] Target database successfully decoupled and is now operating as an independent master
+2025-08-20 09:44:17 [INFO] Successfully migrated PostgreSQL database postgres
+2025-08-20 09:44:17 [INFO] Migrating resources
+2025-08-20 09:44:19 [INFO] Enable request forwarding from origin
+2025-08-20 09:44:19 [INFO] Migration complete

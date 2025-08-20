@@ -1,0 +1,5690 @@
+[
+  {
+    "timestamp": "2025-08-20T08:55:34.11605275Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 812167168,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:34.10444539Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.25,
+    "memory_usage": 1425543168,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:33.111325656Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 812167168,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:33.103856161Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.25,
+    "memory_usage": 1425543168,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:32.112809031Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 812167168,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:32.104807129Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.25,
+    "memory_usage": 1425543168,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:31.1161204Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 812167168,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:31.105997847Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.25,
+    "memory_usage": 1425543168,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:30.11511907Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 812167168,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:30.104450666Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.25,
+    "memory_usage": 1425543168,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:29.117417434Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 812167168,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:29.104166185Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.25,
+    "memory_usage": 1425543168,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:28.113643244Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 812167168,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:28.105552283Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.25,
+    "memory_usage": 1425543168,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:27.114833898Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 812625920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:27.107223145Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 11.25,
+    "memory_usage": 1423626240,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:26.112660415Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 812625920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:26.105381068Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 11.25,
+    "memory_usage": 1423626240,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:25.117129035Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 812625920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:25.104288872Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 11.25,
+    "memory_usage": 1423626240,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:24.113111792Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 812625920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:24.105354853Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 11.25,
+    "memory_usage": 1423626240,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:23.113893365Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 812625920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:23.102967979Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 11.25,
+    "memory_usage": 1423626240,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:22.113573178Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 812625920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:22.105253112Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 11.25,
+    "memory_usage": 1423626240,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:21.11329816Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 812625920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:21.104853178Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 11.25,
+    "memory_usage": 1423626240,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:20.113743241Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 812625920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:20.105742983Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 11.25,
+    "memory_usage": 1423626240,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:19.117108774Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 812625920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:19.105293685Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 11.25,
+    "memory_usage": 1423626240,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:18.112413252Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 812625920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:18.105088521Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 11.25,
+    "memory_usage": 1423626240,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:17.113072635Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 812625920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:17.105785313Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 11.25,
+    "memory_usage": 1423626240,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:16.114538987Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 812625920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:16.105313016Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 11.25,
+    "memory_usage": 1423626240,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:15.11343879Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 812625920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:15.106038479Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 11.25,
+    "memory_usage": 1423626240,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:14.113998297Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 812625920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:14.105989213Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 11.25,
+    "memory_usage": 1423626240,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:13.114341915Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 812625920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:13.104410494Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 11.25,
+    "memory_usage": 1423626240,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.9,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:12.110701135Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 822603776,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:12.102839138Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1421508608,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:11.117012319Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 822603776,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:11.104866196Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1421508608,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:10.11054506Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 822603776,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:10.102977387Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1421508608,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:09.112586363Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 822603776,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:09.105683779Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1421508608,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:08.1128421Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 822603776,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:08.105262467Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1421508608,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:07.112485869Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 822603776,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:07.105227441Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1421508608,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:06.11800856Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 822603776,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:06.105015883Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1421508608,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:05.11473073Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 822603776,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:05.106785825Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1421508608,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:04.116687183Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 822603776,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:04.104732662Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1421508608,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:03.113108203Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 822603776,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:03.104825354Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1421508608,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:02.112005984Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 822603776,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:02.104238067Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1421508608,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:01.109567212Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 822603776,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:01.102665494Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1421508608,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:00.110225817Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 822603776,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:55:00.103529378Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1421508608,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:59.111730619Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 822603776,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:59.104901249Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1421508608,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:58.112550438Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 822603776,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:58.105420497Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1421508608,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.225,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:57.119078186Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.3,
+    "memory_usage": 822718464,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:57.105103959Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.75,
+    "memory_usage": 1424498688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:56.113979185Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.3,
+    "memory_usage": 822718464,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:56.105648966Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.75,
+    "memory_usage": 1424498688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:55.116466339Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.3,
+    "memory_usage": 822718464,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:55.103684051Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.75,
+    "memory_usage": 1424498688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:54.112098773Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.3,
+    "memory_usage": 822718464,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:54.105311555Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.75,
+    "memory_usage": 1424498688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:53.116504072Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.3,
+    "memory_usage": 822718464,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:53.103736184Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.75,
+    "memory_usage": 1424498688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:52.110449941Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.3,
+    "memory_usage": 822718464,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:52.103591517Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.75,
+    "memory_usage": 1424498688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:51.115792921Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.3,
+    "memory_usage": 822718464,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:51.104348176Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.75,
+    "memory_usage": 1424498688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:50.11471433Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.3,
+    "memory_usage": 822718464,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:50.103138991Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.75,
+    "memory_usage": 1424498688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:49.112329155Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.3,
+    "memory_usage": 822718464,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:49.104733661Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.75,
+    "memory_usage": 1424498688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:48.113340973Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.3,
+    "memory_usage": 822718464,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:48.105004303Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.75,
+    "memory_usage": 1424498688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:47.113181887Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.3,
+    "memory_usage": 822718464,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:47.105210195Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.75,
+    "memory_usage": 1424498688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:46.112299788Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.3,
+    "memory_usage": 822718464,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:46.105002255Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.75,
+    "memory_usage": 1424498688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:45.115741402Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.3,
+    "memory_usage": 822718464,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:45.103381085Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.75,
+    "memory_usage": 1424498688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:44.113944904Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.3,
+    "memory_usage": 822718464,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:44.104438793Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.75,
+    "memory_usage": 1424498688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:43.12008647Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.3,
+    "memory_usage": 822718464,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:43.106564879Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.75,
+    "memory_usage": 1424498688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.0249999999999995,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:42.111300473Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 821702656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:42.103057168Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.05,
+    "memory_usage": 1422008320,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:41.114190075Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 821702656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:41.106588806Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.05,
+    "memory_usage": 1422008320,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:40.111945746Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 821702656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:40.104359352Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.05,
+    "memory_usage": 1422008320,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:39.118892336Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 821702656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:39.105384036Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.05,
+    "memory_usage": 1422008320,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:38.11158427Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 821702656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:38.103538098Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.05,
+    "memory_usage": 1422008320,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:37.112138541Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 821702656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:37.105587705Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.05,
+    "memory_usage": 1422008320,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:36.113351473Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 821702656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:36.105257707Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.05,
+    "memory_usage": 1422008320,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:35.116128209Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 821702656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:35.105007688Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.05,
+    "memory_usage": 1422008320,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:34.111766518Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 821702656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:34.103555361Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.05,
+    "memory_usage": 1422008320,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:33.115945989Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 821702656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:33.107127693Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.05,
+    "memory_usage": 1422008320,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:32.11707996Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 821702656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:32.108098887Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.05,
+    "memory_usage": 1422008320,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:31.114409875Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 821702656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:31.103380586Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.05,
+    "memory_usage": 1422008320,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:30.113766762Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 821702656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:30.105567958Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.05,
+    "memory_usage": 1422008320,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:29.11109989Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 821702656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:29.103901912Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.05,
+    "memory_usage": 1422008320,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:28.117395578Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 821702656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:28.104165956Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.05,
+    "memory_usage": 1422008320,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.125,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:27.110930161Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.85,
+    "memory_usage": 822280192,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:27.104999752Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.299999999999999,
+    "memory_usage": 1419300864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:26.110744687Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.85,
+    "memory_usage": 822280192,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:26.103299533Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.299999999999999,
+    "memory_usage": 1419300864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:25.115714174Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.85,
+    "memory_usage": 822280192,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:25.104995262Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.299999999999999,
+    "memory_usage": 1419300864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:24.115263367Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.85,
+    "memory_usage": 822280192,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:24.105709682Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.299999999999999,
+    "memory_usage": 1419300864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:23.114604349Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.85,
+    "memory_usage": 822280192,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:23.105920084Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.299999999999999,
+    "memory_usage": 1419300864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:22.112451226Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.85,
+    "memory_usage": 822280192,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:22.10414761Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.299999999999999,
+    "memory_usage": 1419300864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:21.112078538Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.85,
+    "memory_usage": 822280192,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:21.105387711Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.299999999999999,
+    "memory_usage": 1419300864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:20.111555477Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.85,
+    "memory_usage": 822280192,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:20.10326841Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.299999999999999,
+    "memory_usage": 1419300864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:19.113726043Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.85,
+    "memory_usage": 822280192,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:19.105948384Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.299999999999999,
+    "memory_usage": 1419300864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:18.119091414Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.85,
+    "memory_usage": 822280192,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:18.106033038Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.299999999999999,
+    "memory_usage": 1419300864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:17.113924515Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.85,
+    "memory_usage": 822280192,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:17.105684134Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.299999999999999,
+    "memory_usage": 1419300864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:16.113790224Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.85,
+    "memory_usage": 822280192,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:16.106097168Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.299999999999999,
+    "memory_usage": 1419300864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:15.114710477Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.85,
+    "memory_usage": 822280192,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:15.104559123Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.299999999999999,
+    "memory_usage": 1419300864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:14.113428633Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.85,
+    "memory_usage": 822280192,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:14.105643587Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.299999999999999,
+    "memory_usage": 1419300864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:13.112647352Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.85,
+    "memory_usage": 822280192,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:13.104440306Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.299999999999999,
+    "memory_usage": 1419300864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.575,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:12.111120233Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 809787392,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:12.103414781Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.45,
+    "memory_usage": 1420156928,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:11.113020041Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 809787392,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:11.105450776Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.45,
+    "memory_usage": 1420156928,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:10.114194334Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 809787392,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:10.104732569Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.45,
+    "memory_usage": 1420156928,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:09.115155552Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 809787392,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:09.104942465Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.45,
+    "memory_usage": 1420156928,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:08.117355689Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 809787392,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:08.105354093Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.45,
+    "memory_usage": 1420156928,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:07.116188279Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 809787392,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:07.106891011Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.45,
+    "memory_usage": 1420156928,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:06.112410444Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 809787392,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:06.105096285Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.45,
+    "memory_usage": 1420156928,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:05.111750471Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 809787392,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:05.104355269Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.45,
+    "memory_usage": 1420156928,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:04.112525666Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 809787392,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:04.104880766Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.45,
+    "memory_usage": 1420156928,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:03.117570423Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 809787392,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:03.10515022Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.45,
+    "memory_usage": 1420156928,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:02.112858817Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 809787392,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:02.104349722Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.45,
+    "memory_usage": 1420156928,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:01.11179082Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 809787392,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:01.10493014Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.45,
+    "memory_usage": 1420156928,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:00.11180312Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 809787392,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:54:00.102345629Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.45,
+    "memory_usage": 1420156928,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:59.120072818Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 809787392,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:59.107617073Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.45,
+    "memory_usage": 1420156928,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:58.110630033Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 809787392,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:58.103549324Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.45,
+    "memory_usage": 1420156928,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:57.113076608Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9000000000000004,
+    "memory_usage": 823029760,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:57.106280409Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.2,
+    "memory_usage": 1421344768,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:56.112429799Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9000000000000004,
+    "memory_usage": 823029760,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:56.10341515Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.2,
+    "memory_usage": 1421344768,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:55.109937369Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9000000000000004,
+    "memory_usage": 823029760,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:55.103062188Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.2,
+    "memory_usage": 1421344768,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:54.120375359Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9000000000000004,
+    "memory_usage": 823029760,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:54.105177351Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.2,
+    "memory_usage": 1421344768,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:53.110782095Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9000000000000004,
+    "memory_usage": 823029760,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:53.104320514Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.2,
+    "memory_usage": 1421344768,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:52.113540005Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9000000000000004,
+    "memory_usage": 823029760,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:52.105979033Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.2,
+    "memory_usage": 1421344768,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:51.110894388Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9000000000000004,
+    "memory_usage": 823029760,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:51.103867199Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.2,
+    "memory_usage": 1421344768,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:50.114296764Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9000000000000004,
+    "memory_usage": 823029760,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:50.106419249Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.2,
+    "memory_usage": 1421344768,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:49.111090726Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9000000000000004,
+    "memory_usage": 823029760,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:49.103551126Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.2,
+    "memory_usage": 1421344768,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:48.113371306Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9000000000000004,
+    "memory_usage": 823029760,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:48.106336711Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.2,
+    "memory_usage": 1421344768,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:47.116825481Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9000000000000004,
+    "memory_usage": 823029760,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:47.103770092Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.2,
+    "memory_usage": 1421344768,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:46.113158977Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9000000000000004,
+    "memory_usage": 823029760,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:46.103827408Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.2,
+    "memory_usage": 1421344768,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:45.111413064Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9000000000000004,
+    "memory_usage": 823029760,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:45.103901083Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.2,
+    "memory_usage": 1421344768,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:44.115049288Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9000000000000004,
+    "memory_usage": 823029760,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:44.103000191Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.2,
+    "memory_usage": 1421344768,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:43.11354479Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9000000000000004,
+    "memory_usage": 823029760,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:43.103729291Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.2,
+    "memory_usage": 1421344768,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.550000000000001,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:42.112758211Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 775761920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:42.104800978Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1425330176,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:41.115835814Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 775761920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:41.106320554Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1425330176,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:40.112868933Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 775761920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:40.103583159Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1425330176,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:39.11160403Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 775761920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:39.104777522Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1425330176,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:38.113318211Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 775761920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:38.102840564Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1425330176,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:37.110652476Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 775761920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:37.104136338Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1425330176,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:36.111771424Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 775761920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:36.10536888Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1425330176,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:35.117718055Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 775761920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:35.104719792Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1425330176,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:34.111227638Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 775761920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:34.103880338Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1425330176,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:33.1118033Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 775761920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:33.105020999Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1425330176,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:32.11337702Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 775761920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:32.105260175Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1425330176,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:31.116007926Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 775761920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:31.104038555Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1425330176,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:30.111619917Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 775761920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:30.105189295Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1425330176,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:29.115763581Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 775761920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:29.105233551Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1425330176,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:28.109805793Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1999999999999997,
+    "memory_usage": 775761920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:28.103291407Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 10.35,
+    "memory_usage": 1425330176,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.275,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:27.115599131Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 775622656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:27.105539161Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.35,
+    "memory_usage": 1408221184,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:26.113559529Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 775622656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:26.105476124Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.35,
+    "memory_usage": 1408221184,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:25.112341853Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 775622656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:25.104120256Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.35,
+    "memory_usage": 1408221184,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:24.119709687Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 775622656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:24.106265215Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.35,
+    "memory_usage": 1408221184,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:23.111608451Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 775622656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:23.104342309Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.35,
+    "memory_usage": 1408221184,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:22.111000233Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 775622656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:22.103545256Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.35,
+    "memory_usage": 1408221184,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:21.115003991Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 775622656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:21.105590517Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.35,
+    "memory_usage": 1408221184,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:20.112052279Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 775622656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:20.104198039Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.35,
+    "memory_usage": 1408221184,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:19.1123969Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 775622656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:19.104327747Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.35,
+    "memory_usage": 1408221184,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:18.113026106Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 775622656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:18.105345017Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.35,
+    "memory_usage": 1408221184,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:17.114321565Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 775622656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:17.107220052Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.35,
+    "memory_usage": 1408221184,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:16.11817217Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 775622656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:16.103761114Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.35,
+    "memory_usage": 1408221184,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:15.120506671Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 775622656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:15.107144983Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.35,
+    "memory_usage": 1408221184,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:14.114078104Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 775622656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:14.1036259Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.35,
+    "memory_usage": 1408221184,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:13.111232189Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.1,
+    "memory_usage": 775622656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:13.103940834Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.35,
+    "memory_usage": 1408221184,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.7250000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:12.112345788Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 777179136,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:12.105562154Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.950000000000001,
+    "memory_usage": 1411014656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:11.114464627Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 777179136,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:11.103220156Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.950000000000001,
+    "memory_usage": 1411014656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:10.114713479Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 777179136,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:10.105129487Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.950000000000001,
+    "memory_usage": 1411014656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:09.110833649Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 777179136,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:09.104403237Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.950000000000001,
+    "memory_usage": 1411014656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:08.112212732Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 777179136,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:08.104257523Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.950000000000001,
+    "memory_usage": 1411014656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:07.12168125Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 777179136,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:07.109311279Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.950000000000001,
+    "memory_usage": 1411014656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:06.11634144Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 777179136,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:06.104296966Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.950000000000001,
+    "memory_usage": 1411014656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:05.111185945Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 777179136,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:05.104081384Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.950000000000001,
+    "memory_usage": 1411014656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:04.113975281Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 777179136,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:04.105720547Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.950000000000001,
+    "memory_usage": 1411014656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:03.119553282Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 777179136,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:03.105413588Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.950000000000001,
+    "memory_usage": 1411014656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:02.112249324Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 777179136,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:02.104933901Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.950000000000001,
+    "memory_usage": 1411014656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:01.115963067Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 777179136,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:01.104708418Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.950000000000001,
+    "memory_usage": 1411014656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:00.113883771Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 777179136,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:53:00.105246532Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.950000000000001,
+    "memory_usage": 1411014656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:59.117434538Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 777179136,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:59.105149062Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.950000000000001,
+    "memory_usage": 1411014656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:58.115697853Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 777179136,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:58.10650144Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.950000000000001,
+    "memory_usage": 1411014656,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.1,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:57.111138224Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9499999999999997,
+    "memory_usage": 793059328,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:57.104533541Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.65,
+    "memory_usage": 1379409920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:56.111673275Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9499999999999997,
+    "memory_usage": 793059328,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:56.104740006Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.65,
+    "memory_usage": 1379409920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:55.113386996Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9499999999999997,
+    "memory_usage": 793059328,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:55.104935209Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.65,
+    "memory_usage": 1379409920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:54.116168902Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9499999999999997,
+    "memory_usage": 793059328,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:54.104407127Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.65,
+    "memory_usage": 1379409920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:53.113511778Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9499999999999997,
+    "memory_usage": 793059328,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:53.105848702Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.65,
+    "memory_usage": 1379409920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:52.11195353Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9499999999999997,
+    "memory_usage": 793059328,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:52.10381708Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.65,
+    "memory_usage": 1379409920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:51.110783635Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9499999999999997,
+    "memory_usage": 793059328,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:51.103113742Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.65,
+    "memory_usage": 1379409920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:50.112740379Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9499999999999997,
+    "memory_usage": 793059328,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:50.105024045Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.65,
+    "memory_usage": 1379409920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:49.116102173Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9499999999999997,
+    "memory_usage": 793059328,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:49.105503489Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.65,
+    "memory_usage": 1379409920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:48.115937464Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9499999999999997,
+    "memory_usage": 793059328,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:48.105601277Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.65,
+    "memory_usage": 1379409920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:47.11297436Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9499999999999997,
+    "memory_usage": 793059328,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:47.105956514Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.65,
+    "memory_usage": 1379409920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:46.110303459Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9499999999999997,
+    "memory_usage": 793059328,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:46.103241329Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.65,
+    "memory_usage": 1379409920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:45.112956885Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9499999999999997,
+    "memory_usage": 793059328,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:45.10513179Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.65,
+    "memory_usage": 1379409920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:44.117776295Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9499999999999997,
+    "memory_usage": 793059328,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:44.105639397Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.65,
+    "memory_usage": 1379409920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:43.112723891Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.9499999999999997,
+    "memory_usage": 793059328,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:43.104252887Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.65,
+    "memory_usage": 1379409920,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.3,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:42.113623221Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 775770112,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:42.106241514Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.049999999999999,
+    "memory_usage": 1374380032,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:41.112613524Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 775770112,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:41.10527372Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.049999999999999,
+    "memory_usage": 1374380032,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:40.120880231Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 775770112,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:40.107248712Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.049999999999999,
+    "memory_usage": 1374380032,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:39.110442202Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 775770112,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:39.103014812Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.049999999999999,
+    "memory_usage": 1374380032,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:38.112357373Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 775770112,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:38.105685159Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.049999999999999,
+    "memory_usage": 1374380032,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:37.112966022Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 775770112,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:37.104351562Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.049999999999999,
+    "memory_usage": 1374380032,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:36.118562779Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 775770112,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:36.104939209Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.049999999999999,
+    "memory_usage": 1374380032,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:35.11254549Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 775770112,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:35.105756622Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.049999999999999,
+    "memory_usage": 1374380032,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:34.111030641Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 775770112,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:34.104218469Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.049999999999999,
+    "memory_usage": 1374380032,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:33.112454263Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 775770112,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:33.105395725Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.049999999999999,
+    "memory_usage": 1374380032,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:32.116371824Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 775770112,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:32.107723955Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.049999999999999,
+    "memory_usage": 1374380032,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:31.124349312Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 775770112,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:31.106294061Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.049999999999999,
+    "memory_usage": 1374380032,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:30.113172057Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 775770112,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:30.104977907Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.049999999999999,
+    "memory_usage": 1374380032,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:29.110944388Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 775770112,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:29.104396228Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.049999999999999,
+    "memory_usage": 1374380032,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:28.113065535Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 775770112,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:28.104164719Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.049999999999999,
+    "memory_usage": 1374380032,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 5.65,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:27.112616825Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 775782400,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:27.104972291Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 41.05,
+    "memory_usage": 1359286272,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:26.113574656Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 775782400,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:26.106006161Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 41.05,
+    "memory_usage": 1359286272,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:25.120432111Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 775782400,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:25.10738712Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 41.05,
+    "memory_usage": 1359286272,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:24.111382715Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 775782400,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:24.104572955Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 41.05,
+    "memory_usage": 1359286272,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:23.111984802Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 775782400,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:23.103817785Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 41.05,
+    "memory_usage": 1359286272,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:22.112280321Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 775782400,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:22.104886691Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 41.05,
+    "memory_usage": 1359286272,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:21.112885803Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 775782400,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:21.105701476Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 41.05,
+    "memory_usage": 1359286272,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:20.114400322Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 775782400,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:20.107023102Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 41.05,
+    "memory_usage": 1359286272,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:19.110777011Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 775782400,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:19.103771017Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 41.05,
+    "memory_usage": 1359286272,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:18.116991128Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 775782400,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:18.105347994Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 41.05,
+    "memory_usage": 1359286272,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:17.114415331Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 775782400,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:17.105359517Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 41.05,
+    "memory_usage": 1359286272,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:16.113777389Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 775782400,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:16.106230703Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 41.05,
+    "memory_usage": 1359286272,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:15.115066072Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 775782400,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:15.10627685Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 41.05,
+    "memory_usage": 1359286272,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:14.118489673Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 775782400,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:14.106165258Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 41.05,
+    "memory_usage": 1359286272,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:13.118297513Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 775782400,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:13.10477524Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 41.05,
+    "memory_usage": 1359286272,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 21.85,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:12.112813049Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 774258688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:12.104993405Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 56.699999999999996,
+    "memory_usage": 1354952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:11.113537779Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 774258688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:11.104497648Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 56.699999999999996,
+    "memory_usage": 1354952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:10.115718535Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 774258688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:10.104223277Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 56.699999999999996,
+    "memory_usage": 1354952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:09.114466046Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 774258688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:09.107009796Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 56.699999999999996,
+    "memory_usage": 1354952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:08.111756359Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 774258688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:08.104904071Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 56.699999999999996,
+    "memory_usage": 1354952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:07.113436973Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 774258688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:07.105943668Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 56.699999999999996,
+    "memory_usage": 1354952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:06.118598103Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 774258688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:06.105068631Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 56.699999999999996,
+    "memory_usage": 1354952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:05.111247449Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 774258688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:05.104485898Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 56.699999999999996,
+    "memory_usage": 1354952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:04.112123007Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 774258688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:04.105027102Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 56.699999999999996,
+    "memory_usage": 1354952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:03.117031871Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 774258688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:03.105650223Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 56.699999999999996,
+    "memory_usage": 1354952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:02.112824709Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 774258688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:02.106032303Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 56.699999999999996,
+    "memory_usage": 1354952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:01.114211116Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 774258688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:01.104413018Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 56.699999999999996,
+    "memory_usage": 1354952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:00.113252251Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 774258688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:52:00.105040012Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 56.699999999999996,
+    "memory_usage": 1354952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:59.117350966Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 774258688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:59.106094196Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 56.699999999999996,
+    "memory_usage": 1354952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:58.118347432Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.55,
+    "memory_usage": 774258688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:58.107820748Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 56.699999999999996,
+    "memory_usage": 1354952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 29.625,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:57.114066916Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.55,
+    "memory_usage": 789876736,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:57.106383965Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 8.6,
+    "memory_usage": 1125072896,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:56.115365106Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.55,
+    "memory_usage": 789876736,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:56.105765053Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 8.6,
+    "memory_usage": 1125072896,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:55.116522761Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.55,
+    "memory_usage": 789876736,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:55.104678015Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 8.6,
+    "memory_usage": 1125072896,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:54.113759914Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.55,
+    "memory_usage": 789876736,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:54.105628897Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 8.6,
+    "memory_usage": 1125072896,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:53.114938888Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.55,
+    "memory_usage": 789876736,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:53.10696834Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 8.6,
+    "memory_usage": 1125072896,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:52.110095902Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.55,
+    "memory_usage": 789876736,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:52.102959519Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 8.6,
+    "memory_usage": 1125072896,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:51.121692184Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.55,
+    "memory_usage": 789876736,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:51.106519084Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 8.6,
+    "memory_usage": 1125072896,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:50.127936358Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.55,
+    "memory_usage": 789876736,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:50.10471966Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 8.6,
+    "memory_usage": 1125072896,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:49.111626765Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.55,
+    "memory_usage": 789876736,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:49.104296333Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 8.6,
+    "memory_usage": 1125072896,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:48.115235327Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.55,
+    "memory_usage": 789876736,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:48.106062976Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 8.6,
+    "memory_usage": 1125072896,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:47.118272691Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.55,
+    "memory_usage": 789876736,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:47.108091179Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 8.6,
+    "memory_usage": 1125072896,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:46.125797777Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.55,
+    "memory_usage": 789876736,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:46.108518471Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 8.6,
+    "memory_usage": 1125072896,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:45.112299251Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.55,
+    "memory_usage": 789876736,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:45.104077077Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 8.6,
+    "memory_usage": 1125072896,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:44.118259375Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.55,
+    "memory_usage": 789876736,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:44.106768834Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 8.6,
+    "memory_usage": 1125072896,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:43.11158501Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.55,
+    "memory_usage": 789876736,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:43.105210496Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 8.6,
+    "memory_usage": 1125072896,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 7.074999999999999,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:42.11144424Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 751411200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:42.105186398Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 19.5,
+    "memory_usage": 1117298688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:41.118320022Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 751411200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:41.104803197Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 19.5,
+    "memory_usage": 1117298688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:40.118440616Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 751411200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:40.105295694Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 19.5,
+    "memory_usage": 1117298688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:39.115459867Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 751411200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:39.104464844Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 19.5,
+    "memory_usage": 1117298688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:38.118810032Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 751411200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:38.111677838Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 19.5,
+    "memory_usage": 1117298688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:37.113756706Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 751411200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:37.104510112Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 19.5,
+    "memory_usage": 1117298688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:36.119649638Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 751411200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:36.108857582Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 19.5,
+    "memory_usage": 1117298688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:35.115247648Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 751411200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:35.106114473Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 19.5,
+    "memory_usage": 1117298688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:34.114531328Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 751411200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:34.105202562Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 19.5,
+    "memory_usage": 1117298688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:33.11484242Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 751411200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:33.105950125Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 19.5,
+    "memory_usage": 1117298688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:32.117201076Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 751411200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:32.105648203Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 19.5,
+    "memory_usage": 1117298688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:31.114717115Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 751411200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:31.105737172Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 19.5,
+    "memory_usage": 1117298688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:30.112515338Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 751411200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:30.105829346Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 19.5,
+    "memory_usage": 1117298688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:29.111550128Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 751411200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:29.104809608Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 19.5,
+    "memory_usage": 1117298688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:28.112683471Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.25,
+    "memory_usage": 751411200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:28.105364286Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 19.5,
+    "memory_usage": 1117298688,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 10.875,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:27.112914677Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.7,
+    "memory_usage": 750899200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:27.10605743Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 14.499999999999998,
+    "memory_usage": 1082368000,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:26.119061727Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.7,
+    "memory_usage": 750899200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:26.104055448Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 14.499999999999998,
+    "memory_usage": 1082368000,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:25.115058854Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.7,
+    "memory_usage": 750899200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:25.106680687Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 14.499999999999998,
+    "memory_usage": 1082368000,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:24.113995051Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.7,
+    "memory_usage": 750899200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:24.10663683Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 14.499999999999998,
+    "memory_usage": 1082368000,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:23.120561854Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.7,
+    "memory_usage": 750899200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:23.106474335Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 14.499999999999998,
+    "memory_usage": 1082368000,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:22.113485869Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.7,
+    "memory_usage": 750899200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:22.105909358Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 14.499999999999998,
+    "memory_usage": 1082368000,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:21.114329333Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.7,
+    "memory_usage": 750899200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:21.105185266Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 14.499999999999998,
+    "memory_usage": 1082368000,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:20.113517294Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.7,
+    "memory_usage": 750899200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:20.10483066Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 14.499999999999998,
+    "memory_usage": 1082368000,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:19.11547405Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.7,
+    "memory_usage": 750899200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:19.105702237Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 14.499999999999998,
+    "memory_usage": 1082368000,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:18.108939113Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.7,
+    "memory_usage": 750899200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:18.102791826Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 14.499999999999998,
+    "memory_usage": 1082368000,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:17.113710469Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.7,
+    "memory_usage": 750899200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:17.106106958Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 14.499999999999998,
+    "memory_usage": 1082368000,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:16.113329579Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.7,
+    "memory_usage": 750899200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:16.104209902Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 14.499999999999998,
+    "memory_usage": 1082368000,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:15.112903398Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.7,
+    "memory_usage": 750899200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:15.104925936Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 14.499999999999998,
+    "memory_usage": 1082368000,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:14.114880486Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.7,
+    "memory_usage": 750899200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:14.106936009Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 14.499999999999998,
+    "memory_usage": 1082368000,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:13.114285693Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.7,
+    "memory_usage": 750899200,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:13.105898457Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 14.499999999999998,
+    "memory_usage": 1082368000,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 8.6,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:12.111773453Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 1.9,
+    "memory_usage": 747425792,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:12.104510162Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 4.95,
+    "memory_usage": 1026564096,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:11.112015796Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 1.9,
+    "memory_usage": 747425792,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:11.104078986Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 4.95,
+    "memory_usage": 1026564096,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:10.111294346Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 1.9,
+    "memory_usage": 747425792,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:10.103699248Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 4.95,
+    "memory_usage": 1026564096,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:09.1129364Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 1.9,
+    "memory_usage": 747425792,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:09.104579293Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 4.95,
+    "memory_usage": 1026564096,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:08.111500155Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 1.9,
+    "memory_usage": 747425792,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:08.104623955Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 4.95,
+    "memory_usage": 1026564096,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:07.113986263Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 1.9,
+    "memory_usage": 747425792,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:07.106283015Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 4.95,
+    "memory_usage": 1026564096,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:06.114584647Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 1.9,
+    "memory_usage": 747425792,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:06.104642409Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 4.95,
+    "memory_usage": 1026564096,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:05.115900732Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 1.9,
+    "memory_usage": 747425792,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:05.106659785Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 4.95,
+    "memory_usage": 1026564096,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:04.112417855Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 1.9,
+    "memory_usage": 747425792,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:04.105177538Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 4.95,
+    "memory_usage": 1026564096,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:03.115571046Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 1.9,
+    "memory_usage": 747425792,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:03.106792667Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 4.95,
+    "memory_usage": 1026564096,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:02.11243043Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 1.9,
+    "memory_usage": 747425792,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:02.105182415Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 4.95,
+    "memory_usage": 1026564096,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:01.112241406Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 1.9,
+    "memory_usage": 747425792,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:01.105267535Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 4.95,
+    "memory_usage": 1026564096,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:00.115271491Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 1.9,
+    "memory_usage": 747425792,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:51:00.106505277Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 4.95,
+    "memory_usage": 1026564096,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:59.122681304Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 1.9,
+    "memory_usage": 747425792,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:59.11353292Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 4.95,
+    "memory_usage": 1026564096,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:58.115720949Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 1.9,
+    "memory_usage": 747425792,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:58.105227948Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 4.95,
+    "memory_usage": 1026564096,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 3.4250000000000003,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:57.112758389Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 747556864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:57.105464348Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 5.35,
+    "memory_usage": 1024577536,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:56.112181746Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 747556864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:56.104947872Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 5.35,
+    "memory_usage": 1024577536,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:55.116914355Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 747556864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:55.104007442Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 5.35,
+    "memory_usage": 1024577536,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:54.116713368Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 747556864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:54.104751445Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 5.35,
+    "memory_usage": 1024577536,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:53.113659212Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 747556864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:53.10493851Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 5.35,
+    "memory_usage": 1024577536,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:52.115590206Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 747556864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:52.108201575Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 5.35,
+    "memory_usage": 1024577536,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:51.118174277Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 747556864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:51.105149972Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 5.35,
+    "memory_usage": 1024577536,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:50.120278633Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 747556864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:50.105100681Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 5.35,
+    "memory_usage": 1024577536,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:49.113461582Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 747556864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:49.104814994Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 5.35,
+    "memory_usage": 1024577536,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:48.114980089Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 747556864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:48.105718022Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 5.35,
+    "memory_usage": 1024577536,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:47.114015931Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 747556864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:47.103972Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 5.35,
+    "memory_usage": 1024577536,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:46.112340193Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 747556864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:46.104640664Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 5.35,
+    "memory_usage": 1024577536,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:45.117379262Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 747556864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:45.104928749Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 5.35,
+    "memory_usage": 1024577536,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:44.118623307Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 747556864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:44.104806607Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 5.35,
+    "memory_usage": 1024577536,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:43.113092835Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 2.65,
+    "memory_usage": 747556864,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:43.104791528Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 5.35,
+    "memory_usage": 1024577536,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 4,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:42.114877059Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 18.25,
+    "memory_usage": 756719616,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:42.104224492Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.1,
+    "memory_usage": 1021378560,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:41.113203746Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 18.25,
+    "memory_usage": 756719616,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:41.10651701Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.1,
+    "memory_usage": 1021378560,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:40.112787922Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 18.25,
+    "memory_usage": 756719616,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:40.10555088Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.1,
+    "memory_usage": 1021378560,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:39.111598074Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 18.25,
+    "memory_usage": 756719616,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:39.104426068Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.1,
+    "memory_usage": 1021378560,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:38.113031328Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 18.25,
+    "memory_usage": 756719616,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:38.105877451Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.1,
+    "memory_usage": 1021378560,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:37.113830751Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 18.25,
+    "memory_usage": 756719616,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:37.10513246Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.1,
+    "memory_usage": 1021378560,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:36.114138945Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 18.25,
+    "memory_usage": 756719616,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:36.105554848Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.1,
+    "memory_usage": 1021378560,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:35.118029345Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 18.25,
+    "memory_usage": 756719616,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:35.105368468Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.1,
+    "memory_usage": 1021378560,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:34.11348601Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 18.25,
+    "memory_usage": 756719616,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:34.104814158Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.1,
+    "memory_usage": 1021378560,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:33.113706104Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 18.25,
+    "memory_usage": 756719616,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:33.105451111Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.1,
+    "memory_usage": 1021378560,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:32.113467552Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 18.25,
+    "memory_usage": 756719616,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:32.106030031Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.1,
+    "memory_usage": 1021378560,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:31.112178752Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 18.25,
+    "memory_usage": 756719616,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:31.105358862Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.1,
+    "memory_usage": 1021378560,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:30.113488125Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 18.25,
+    "memory_usage": 756719616,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:30.105098358Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.1,
+    "memory_usage": 1021378560,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:29.118041558Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 18.25,
+    "memory_usage": 756719616,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:29.105324493Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.1,
+    "memory_usage": 1021378560,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:28.11074525Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 18.25,
+    "memory_usage": 756719616,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:28.104688652Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 9.1,
+    "memory_usage": 1021378560,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 13.675,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:27.111695239Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.8999999999999995,
+    "memory_usage": 714952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.8500000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:27.105317825Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 7.8,
+    "memory_usage": 1021321216,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.8500000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:26.11412809Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.8999999999999995,
+    "memory_usage": 714952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.8500000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:26.106275486Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 7.8,
+    "memory_usage": 1021321216,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.8500000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:25.115062696Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.8999999999999995,
+    "memory_usage": 714952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.8500000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:25.106072244Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 7.8,
+    "memory_usage": 1021321216,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.8500000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:24.111862487Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.8999999999999995,
+    "memory_usage": 714952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.8500000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:24.105186235Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 7.8,
+    "memory_usage": 1021321216,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.8500000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:23.118786124Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.8999999999999995,
+    "memory_usage": 714952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.8500000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:23.106495708Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 7.8,
+    "memory_usage": 1021321216,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.8500000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:22.119504182Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.8999999999999995,
+    "memory_usage": 714952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.8500000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:22.105140332Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 7.8,
+    "memory_usage": 1021321216,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.8500000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:21.111826367Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.8999999999999995,
+    "memory_usage": 714952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.8500000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:21.105184757Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 7.8,
+    "memory_usage": 1021321216,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.8500000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:20.1150008Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.8999999999999995,
+    "memory_usage": 714952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.8500000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:20.106331663Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 7.8,
+    "memory_usage": 1021321216,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.8500000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:19.117619925Z",
+    "node_name": "uniba-dsg-h5144",
+    "cpu_usage": 5.8999999999999995,
+    "memory_usage": 714952704,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.8500000000000005,
+    "cluster_total_cpu": 4000
+  },
+  {
+    "timestamp": "2025-08-20T08:50:19.109835172Z",
+    "node_name": "uniba-dsg-h5143",
+    "cpu_usage": 7.8,
+    "memory_usage": 1021321216,
+    "is_benchmark": false,
+    "cluster_cpu_usage": 6.8500000000000005,
+    "cluster_total_cpu": 4000
+  }
+]
