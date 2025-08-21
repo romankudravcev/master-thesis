@@ -1,0 +1,165 @@
+2025-08-20 22:02:36 [INFO] Starting migration process...
+2025-08-20 22:02:36 [INFO] You will be prompted to select a networking tool and rerouting option to establish a secure connection and manage traffic between the clusters.
+2025-08-20 22:04:29 [INFO] Initializing kubernetes clients
+2025-08-20 22:04:29 [INFO] Checking connectivity between clusters
+2025-08-20 22:04:29 [DEBUG] Fetching cluster IPs
+2025-08-20 22:04:29 [DEBUG] Cleaning up probe resources
+2025-08-20 22:04:29 [DEBUG] Testing connectivity with Origin IP: 192.168.131.1, Target IP: 192.168.133.1
+2025-08-20 22:04:29 [DEBUG] Deploying probe resources
+2025-08-20 22:04:30 [DEBUG] Waiting for pods to be ready
+2025-08-20 22:04:35 [DEBUG] Pods are ready
+2025-08-20 22:04:35 [DEBUG] Checking connectivity between clusters
+2025-08-20 22:04:45 [DEBUG] Connectivity check successful with Origin IP: 192.168.131.1, Target IP: 192.168.133.1 - both clusters can reach each other
+2025-08-20 22:04:45 [DEBUG] Cleaning up probe resources
+2025-08-20 22:04:45 [DEBUG] Connectivity probe complete
+2025-08-20 22:04:45 [INFO] Deploy reverse proxy for request forwarding
+2025-08-20 22:04:45 [DEBUG] Fetching loadbalancer IP
+2025-08-20 22:04:45 [DEBUG] Service: traefik IP: 141.13.5.242
+2025-08-20 22:04:45 [DEBUG] Fetched loadbalancer IP: 141.13.5.242
+2025-08-20 22:04:46 [DEBUG] Deploying proxy
+2025-08-20 22:04:46 [INFO] Establishing secure connection between clusters
+2025-08-20 22:04:46 [INFO] Installing Skupper
+2025-08-20 22:04:46 [INFO] Deploying Site Controller
+2025-08-20 22:04:54 [INFO] Deploying Site Controller
+2025-08-20 22:05:00 [INFO] Migrating configuration resources
+2025-08-20 22:05:01 [INFO] Scanning for existing cnpg databases
+2025-08-20 22:05:01 [INFO] No existing cnpg databases found, skipping migration
+2025-08-20 22:05:01 [INFO] Migrating MongoDBs
+2025-08-20 22:05:01 [DEBUG] Creating MongoDB client pod...
+2025-08-20 22:05:01 [DEBUG] Waiting for MongoDB client pod to be ready...
+2025-08-20 22:05:19 [DEBUG] Creating MongoDB client pod...
+2025-08-20 22:05:19 [DEBUG] Waiting for MongoDB client pod to be ready...
+2025-08-20 22:05:41 [DEBUG] MongoDB command output: {"set":"rs0","date":"2025-08-20T20:05:41.377Z","myState":1,"term":{"low":1,"high":0,"unsigned":false},"syncSourceHost":"","syncSourceId":-1,"heartbeatIntervalMillis":{"low":2000,"high":0,"unsigned":false},"majorityVoteCount":2,"writeMajorityCount":2,"votingMembersCount":3,"writableVotingMembersCount":3,"optimes":{"lastCommittedOpTime":{"ts":{"$timestamp":"7540761445516967937"},"t":{"low":1,"high":0,"unsigned":false}},"lastCommittedWallTime":"2025-08-20T20:05:41.149Z","readConcernMajorityOpTime":{"ts":{"$timestamp":"7540761445516967937"},"t":{"low":1,"high":0,"unsigned":false}},"appliedOpTime":{"ts":{"$timestamp":"7540761445516967937"},"t":{"low":1,"high":0,"unsigned":false}},"durableOpTime":{"ts":{"$timestamp":"7540761445516967937"},"t":{"low":1,"high":0,"unsigned":false}},"lastAppliedWallTime":"2025-08-20T20:05:41.149Z","lastDurableWallTime":"2025-08-20T20:05:41.149Z"},"lastStableRecoveryTimestamp":{"$timestamp":"7540761235063570439"},"electionCandidateMetrics":{"lastElectionReason":"electionTimeout","lastElectionDate":"2025-08-20T20:00:03.608Z","electionTerm":{"low":1,"high":0,"unsigned":false},"lastCommittedOpTimeAtElection":{"ts":{"$timestamp":"7540759946573381633"},"t":{"low":-1,"high":-1,"unsigned":false}},"lastSeenOpTimeAtElection":{"ts":{"$timestamp":"7540759946573381633"},"t":{"low":-1,"high":-1,"unsigned":false}},"numVotesNeeded":2,"priorityAtElection":1,"electionTimeoutMillis":{"low":10000,"high":0,"unsigned":false},"numCatchUpOps":{"low":0,"high":0,"unsigned":false},"newTermStartDate":"2025-08-20T20:00:03.647Z","wMajorityWriteAvailabilityDate":"2025-08-20T20:00:04.610Z"},"members":[{"_id":0,"name":"mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017","health":1,"state":1,"stateStr":"PRIMARY","uptime":386,"optime":{"ts":{"$timestamp":"7540761445516967937"},"t":{"low":1,"high":0,"unsigned":false}},"optimeDate":"2025-08-20T20:05:41.000Z","lastAppliedWallTime":"2025-08-20T20:05:41.149Z","lastDurableWallTime":"2025-08-20T20:05:41.149Z","syncSourceHost":"","syncSourceId":-1,"infoMessage":"","electionTime":{"$timestamp":"7540759993818021889"},"electionDate":"2025-08-20T20:00:03.000Z","configVersion":1,"configTerm":1,"self":true,"lastHeartbeatMessage":""},{"_id":1,"name":"mongodb-1.mongodb-headless.mongodb.svc.cluster.local:27017","health":1,"state":2,"stateStr":"SECONDARY","uptime":348,"optime":{"ts":{"$timestamp":"7540761436927033347"},"t":{"low":1,"high":0,"unsigned":false}},"optimeDurable":{"ts":{"$timestamp":"7540761436927033347"},"t":{"low":1,"high":0,"unsigned":false}},"optimeDate":"2025-08-20T20:05:39.000Z","optimeDurableDate":"2025-08-20T20:05:39.000Z","lastAppliedWallTime":"2025-08-20T20:05:41.149Z","lastDurableWallTime":"2025-08-20T20:05:41.149Z","lastHeartbeat":"2025-08-20T20:05:39.769Z","lastHeartbeatRecv":"2025-08-20T20:05:40.753Z","pingMs":{"low":0,"high":0,"unsigned":false},"lastHeartbeatMessage":"","syncSourceHost":"mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017","syncSourceId":0,"infoMessage":"","configVersion":1,"configTerm":1},{"_id":2,"name":"mongodb-2.mongodb-headless.mongodb.svc.cluster.local:27017","health":1,"state":2,"stateStr":"SECONDARY","uptime":348,"optime":{"ts":{"$timestamp":"7540761436927033347"},"t":{"low":1,"high":0,"unsigned":false}},"optimeDurable":{"ts":{"$timestamp":"7540761436927033347"},"t":{"low":1,"high":0,"unsigned":false}},"optimeDate":"2025-08-20T20:05:39.000Z","optimeDurableDate":"2025-08-20T20:05:39.000Z","lastAppliedWallTime":"2025-08-20T20:05:41.149Z","lastDurableWallTime":"2025-08-20T20:05:41.149Z","lastHeartbeat":"2025-08-20T20:05:39.769Z","lastHeartbeatRecv":"2025-08-20T20:05:40.752Z","pingMs":{"low":0,"high":0,"unsigned":false},"lastHeartbeatMessage":"","syncSourceHost":"mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017","syncSourceId":0,"infoMessage":"","configVersion":1,"configTerm":1}],"ok":1,"$clusterTime":{"clusterTime":{"$timestamp":"7540761445516967937"},"signature":{"hash":"X5JmedP/696xsrHgJa0ny9SBxjg=","keyId":{"low":5,"high":1755720003,"unsigned":false}}},"operationTime":{"$timestamp":"7540761445516967937"}}
+
+2025-08-20 22:05:43 [DEBUG] MongoDB command output: {"_id":"rs0","version":1,"term":1,"members":[{"_id":0,"host":"mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017","arbiterOnly":false,"buildIndexes":true,"hidden":false,"priority":1,"tags":{},"secondaryDelaySecs":{"low":0,"high":0,"unsigned":false},"votes":1},{"_id":1,"host":"mongodb-1.mongodb-headless.mongodb.svc.cluster.local:27017","arbiterOnly":false,"buildIndexes":true,"hidden":false,"priority":1,"tags":{},"secondaryDelaySecs":{"low":0,"high":0,"unsigned":false},"votes":1},{"_id":2,"host":"mongodb-2.mongodb-headless.mongodb.svc.cluster.local:27017","arbiterOnly":false,"buildIndexes":true,"hidden":false,"priority":1,"tags":{},"secondaryDelaySecs":{"low":0,"high":0,"unsigned":false},"votes":1}],"protocolVersion":{"low":1,"high":0,"unsigned":false},"writeConcernMajorityJournalDefault":true,"settings":{"chainingAllowed":true,"heartbeatIntervalMillis":2000,"heartbeatTimeoutSecs":10,"electionTimeoutMillis":10000,"catchUpTimeoutMillis":-1,"catchUpTakeoverDelayMillis":30000,"getLastErrorModes":{},"getLastErrorDefaults":{"w":1,"wtimeout":0},"replicaSetId":"68a62938a48f72ed01834c9c"}}
+
+2025-08-20 22:05:43 [DEBUG] MongoDB hosts for StatefulSet mongodb: [mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017 mongodb-1.mongodb-headless.mongodb.svc.cluster.local:27017 mongodb-2.mongodb-headless.mongodb.svc.cluster.local:27017]
+2025-08-20 22:05:43 [INFO] Waiting for StatefulSet mongodb to be ready...
+2025-08-20 22:06:02 [INFO] StatefulSet mongodb is ready
+2025-08-20 22:06:02 [INFO] Creating Site Connection on Namespace: mongodb
+2025-08-20 22:06:02 [INFO] Creating Site
+2025-08-20 22:06:39 [INFO] Creating Site
+2025-08-20 22:07:09 [INFO] Creating Connection Token
+2025-08-20 22:07:09 [INFO] Waiting for token to be populated with data
+2025-08-20 22:07:15 [INFO] Token successfully populated with data
+2025-08-20 22:07:15 [INFO] Extracting Connection Token
+2025-08-20 22:07:15 [INFO] Creating Connection Token
+2025-08-20 22:07:15 [INFO] Waiting for token to be populated with data
+2025-08-20 22:07:20 [INFO] Token successfully populated with data
+2025-08-20 22:07:20 [INFO] Extracting Connection Token
+2025-08-20 22:07:20 [INFO] Export service
+2025-08-20 22:07:26 [DEBUG] MongoDB command output: { ok: 1 }
+
+2025-08-20 22:07:26 [INFO] MongoDB replica set initiated successfully
+2025-08-20 22:07:26 [INFO] Extracted credentials for StatefulSet mongodb: Username=admin, Password=admin123, PasswordLocationType=, PasswordLocation=, PasswordKey=
+2025-08-20 22:07:26 [DEBUG] MongoDB command output: {
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1755720447, i: 4 }),
+    signature: {
+      hash: Binary.createFromBase64('cPPDjkV1vJ0mjQdtKgvBjeLLn8E=', 0),
+      keyId: Long('7540761896488534023')
+    }
+  },
+  operationTime: Timestamp({ t: 1755720447, i: 4 })
+}
+
+2025-08-20 22:07:26 [INFO] Root user created successfully
+2025-08-20 22:07:26 [DEBUG] Getting primary MongoDB hosts for origin
+2025-08-20 22:07:29 [DEBUG] MongoDB command output: {"set":"rs0","date":"2025-08-20T20:07:29.466Z","myState":1,"term":{"low":1,"high":0,"unsigned":false},"syncSourceHost":"","syncSourceId":-1,"heartbeatIntervalMillis":{"low":2000,"high":0,"unsigned":false},"majorityVoteCount":2,"writeMajorityCount":2,"votingMembersCount":3,"writableVotingMembersCount":3,"optimes":{"lastCommittedOpTime":{"ts":{"$timestamp":"7540761909373435907"},"t":{"low":1,"high":0,"unsigned":false}},"lastCommittedWallTime":"2025-08-20T20:07:29.355Z","readConcernMajorityOpTime":{"ts":{"$timestamp":"7540761909373435907"},"t":{"low":1,"high":0,"unsigned":false}},"appliedOpTime":{"ts":{"$timestamp":"7540761909373435907"},"t":{"low":1,"high":0,"unsigned":false}},"durableOpTime":{"ts":{"$timestamp":"7540761909373435907"},"t":{"low":1,"high":0,"unsigned":false}},"lastAppliedWallTime":"2025-08-20T20:07:29.355Z","lastDurableWallTime":"2025-08-20T20:07:29.355Z"},"lastStableRecoveryTimestamp":{"$timestamp":"7540761754754613249"},"electionCandidateMetrics":{"lastElectionReason":"electionTimeout","lastElectionDate":"2025-08-20T20:00:03.608Z","electionTerm":{"low":1,"high":0,"unsigned":false},"lastCommittedOpTimeAtElection":{"ts":{"$timestamp":"7540759946573381633"},"t":{"low":-1,"high":-1,"unsigned":false}},"lastSeenOpTimeAtElection":{"ts":{"$timestamp":"7540759946573381633"},"t":{"low":-1,"high":-1,"unsigned":false}},"numVotesNeeded":2,"priorityAtElection":1,"electionTimeoutMillis":{"low":10000,"high":0,"unsigned":false},"numCatchUpOps":{"low":0,"high":0,"unsigned":false},"newTermStartDate":"2025-08-20T20:00:03.647Z","wMajorityWriteAvailabilityDate":"2025-08-20T20:00:04.610Z"},"members":[{"_id":0,"name":"mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017","health":1,"state":1,"stateStr":"PRIMARY","uptime":494,"optime":{"ts":{"$timestamp":"7540761909373435907"},"t":{"low":1,"high":0,"unsigned":false}},"optimeDate":"2025-08-20T20:07:29.000Z","lastAppliedWallTime":"2025-08-20T20:07:29.355Z","lastDurableWallTime":"2025-08-20T20:07:29.355Z","syncSourceHost":"","syncSourceId":-1,"infoMessage":"","electionTime":{"$timestamp":"7540759993818021889"},"electionDate":"2025-08-20T20:00:03.000Z","configVersion":1,"configTerm":1,"self":true,"lastHeartbeatMessage":""},{"_id":1,"name":"mongodb-1.mongodb-headless.mongodb.svc.cluster.local:27017","health":1,"state":2,"stateStr":"SECONDARY","uptime":456,"optime":{"ts":{"$timestamp":"7540761900783501318"},"t":{"low":1,"high":0,"unsigned":false}},"optimeDurable":{"ts":{"$timestamp":"7540761900783501318"},"t":{"low":1,"high":0,"unsigned":false}},"optimeDate":"2025-08-20T20:07:27.000Z","optimeDurableDate":"2025-08-20T20:07:27.000Z","lastAppliedWallTime":"2025-08-20T20:07:29.355Z","lastDurableWallTime":"2025-08-20T20:07:29.355Z","lastHeartbeat":"2025-08-20T20:07:27.821Z","lastHeartbeatRecv":"2025-08-20T20:07:28.793Z","pingMs":{"low":0,"high":0,"unsigned":false},"lastHeartbeatMessage":"","syncSourceHost":"mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017","syncSourceId":0,"infoMessage":"","configVersion":1,"configTerm":1},{"_id":2,"name":"mongodb-2.mongodb-headless.mongodb.svc.cluster.local:27017","health":1,"state":2,"stateStr":"SECONDARY","uptime":456,"optime":{"ts":{"$timestamp":"7540761900783501318"},"t":{"low":1,"high":0,"unsigned":false}},"optimeDurable":{"ts":{"$timestamp":"7540761900783501318"},"t":{"low":1,"high":0,"unsigned":false}},"optimeDate":"2025-08-20T20:07:27.000Z","optimeDurableDate":"2025-08-20T20:07:27.000Z","lastAppliedWallTime":"2025-08-20T20:07:29.355Z","lastDurableWallTime":"2025-08-20T20:07:29.355Z","lastHeartbeat":"2025-08-20T20:07:27.821Z","lastHeartbeatRecv":"2025-08-20T20:07:28.793Z","pingMs":{"low":0,"high":0,"unsigned":false},"lastHeartbeatMessage":"","syncSourceHost":"mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017","syncSourceId":0,"infoMessage":"","configVersion":1,"configTerm":1}],"ok":1,"$clusterTime":{"clusterTime":{"$timestamp":"7540761909373435907"},"signature":{"hash":"pEqg5x6JXsO0Wn7KrOZagZLXMdM=","keyId":{"low":5,"high":1755720003,"unsigned":false}}},"operationTime":{"$timestamp":"7540761909373435907"}}
+
+2025-08-20 22:07:29 [DEBUG] Getting primary MongoDB hosts for target
+2025-08-20 22:07:31 [DEBUG] MongoDB command output: {"set":"rs0","date":"2025-08-20T20:07:31.884Z","myState":1,"term":{"low":1,"high":0,"unsigned":false},"syncSourceHost":"","syncSourceId":-1,"heartbeatIntervalMillis":{"low":2000,"high":0,"unsigned":false},"majorityVoteCount":1,"writeMajorityCount":1,"votingMembersCount":1,"writableVotingMembersCount":1,"optimes":{"lastCommittedOpTime":{"ts":{"$timestamp":"7540761900783501316"},"t":{"low":1,"high":0,"unsigned":false}},"lastCommittedWallTime":"2025-08-20T20:07:27.056Z","readConcernMajorityOpTime":{"ts":{"$timestamp":"7540761900783501316"},"t":{"low":1,"high":0,"unsigned":false}},"appliedOpTime":{"ts":{"$timestamp":"7540761900783501316"},"t":{"low":1,"high":0,"unsigned":false}},"durableOpTime":{"ts":{"$timestamp":"7540761900783501316"},"t":{"low":1,"high":0,"unsigned":false}},"lastAppliedWallTime":"2025-08-20T20:07:27.056Z","lastDurableWallTime":"2025-08-20T20:07:27.056Z"},"lastStableRecoveryTimestamp":{"$timestamp":"7540761896488534017"},"electionCandidateMetrics":{"lastElectionReason":"electionTimeout","lastElectionDate":"2025-08-20T20:07:26.353Z","electionTerm":{"low":1,"high":0,"unsigned":false},"lastCommittedOpTimeAtElection":{"ts":{"$timestamp":"7540761896488534017"},"t":{"low":-1,"high":-1,"unsigned":false}},"lastSeenOpTimeAtElection":{"ts":{"$timestamp":"7540761896488534017"},"t":{"low":-1,"high":-1,"unsigned":false}},"numVotesNeeded":1,"priorityAtElection":1,"electionTimeoutMillis":{"low":10000,"high":0,"unsigned":false},"newTermStartDate":"2025-08-20T20:07:26.396Z","wMajorityWriteAvailabilityDate":"2025-08-20T20:07:26.416Z"},"members":[{"_id":0,"name":"mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017","health":1,"state":1,"stateStr":"PRIMARY","uptime":89,"optime":{"ts":{"$timestamp":"7540761900783501316"},"t":{"low":1,"high":0,"unsigned":false}},"optimeDate":"2025-08-20T20:07:27.000Z","lastAppliedWallTime":"2025-08-20T20:07:27.056Z","lastDurableWallTime":"2025-08-20T20:07:27.056Z","syncSourceHost":"","syncSourceId":-1,"infoMessage":"Could not find member to sync from","electionTime":{"$timestamp":"7540761896488534018"},"electionDate":"2025-08-20T20:07:26.000Z","configVersion":1,"configTerm":1,"self":true,"lastHeartbeatMessage":""}],"ok":1,"$clusterTime":{"clusterTime":{"$timestamp":"7540761900783501316"},"signature":{"hash":"cPPDjkV1vJ0mjQdtKgvBjeLLn8E=","keyId":{"low":7,"high":1755720446,"unsigned":false}}},"operationTime":{"$timestamp":"7540761900783501316"}}
+
+2025-08-20 22:07:31 [INFO] Primary MongoDB host in origin cluster: mongodb-0.mongodb-headless.mongodb.svc.cluster.local
+2025-08-20 22:07:31 [INFO] Primary MongoDB host in target cluster: mongodb-0.mongodb-headless.mongodb.svc.cluster.local
+2025-08-20 22:07:34 [DEBUG] MongoDB command output: {
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1755720454, i: 4 }),
+    signature: {
+      hash: Binary.createFromBase64('2sRQgaW5KsFO1s/7rwqTFEKBa50=', 0),
+      keyId: Long('7540759993818021893')
+    }
+  },
+  operationTime: Timestamp({ t: 1755720454, i: 4 })
+}
+
+2025-08-20 22:07:36 [DEBUG] MongoDB command output: {
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1755720456, i: 1 }),
+    signature: {
+      hash: Binary.createFromBase64('chAbS3J+yINKe11mowzyC0PHCw8=', 0),
+      keyId: Long('7540761896488534023')
+    }
+  },
+  operationTime: Timestamp({ t: 1755720456, i: 1 })
+}
+
+2025-08-20 22:07:39 [DEBUG] MongoDB command output: {"_id":"rs0","version":1,"term":1,"members":[{"_id":0,"host":"mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017","arbiterOnly":false,"buildIndexes":true,"hidden":false,"priority":1,"tags":{},"secondaryDelaySecs":{"low":0,"high":0,"unsigned":false},"votes":1},{"_id":1,"host":"mongodb-1.mongodb-headless.mongodb.svc.cluster.local:27017","arbiterOnly":false,"buildIndexes":true,"hidden":false,"priority":1,"tags":{},"secondaryDelaySecs":{"low":0,"high":0,"unsigned":false},"votes":1},{"_id":2,"host":"mongodb-2.mongodb-headless.mongodb.svc.cluster.local:27017","arbiterOnly":false,"buildIndexes":true,"hidden":false,"priority":1,"tags":{},"secondaryDelaySecs":{"low":0,"high":0,"unsigned":false},"votes":1}],"protocolVersion":{"low":1,"high":0,"unsigned":false},"writeConcernMajorityJournalDefault":true,"settings":{"chainingAllowed":true,"heartbeatIntervalMillis":2000,"heartbeatTimeoutSecs":10,"electionTimeoutMillis":10000,"catchUpTimeoutMillis":-1,"catchUpTakeoverDelayMillis":30000,"getLastErrorModes":{},"getLastErrorDefaults":{"w":1,"wtimeout":0},"replicaSetId":"68a62938a48f72ed01834c9c"}}
+
+2025-08-20 22:07:39 [INFO] mongodb://clusteradmin:password1@mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-1.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-2.mongodb-headless.mongodb.svc.cluster.local:27017/?authSource=admin
+2025-08-20 22:07:41 [DEBUG] MongoDB command output: {"_id":"rs0","version":1,"term":1,"members":[{"_id":0,"host":"mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017","arbiterOnly":false,"buildIndexes":true,"hidden":false,"priority":1,"tags":{},"secondaryDelaySecs":{"low":0,"high":0,"unsigned":false},"votes":1}],"protocolVersion":{"low":1,"high":0,"unsigned":false},"writeConcernMajorityJournalDefault":true,"settings":{"chainingAllowed":true,"heartbeatIntervalMillis":2000,"heartbeatTimeoutSecs":10,"electionTimeoutMillis":10000,"catchUpTimeoutMillis":-1,"catchUpTakeoverDelayMillis":30000,"getLastErrorModes":{},"getLastErrorDefaults":{"w":1,"wtimeout":0},"replicaSetId":"68a62afe0131739a9c9c23a7"}}
+
+2025-08-20 22:07:41 [INFO] mongodb://clusteradmin:password1@mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017/?authSource=admin
+2025-08-20 22:07:47 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-20 22:07:52 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-20 22:07:57 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-20 22:08:02 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-20 22:08:07 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-20 22:08:12 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-20 22:08:17 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-20 22:08:22 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-20 22:08:27 [DEBUG] Job mongosyncer-job in namespace default has completed
+2025-08-20 22:08:27 [DEBUG] Restoring MongoDB cluster mongodb member count to %!d(string=mongodb)
+2025-08-20 22:08:27 [INFO] Waiting for StatefulSet mongodb to be ready...
+2025-08-20 22:08:53 [INFO] StatefulSet mongodb is ready
+2025-08-20 22:08:53 [INFO] Adding new MongoDB member mongodb-1 to replica set in target cluster
+2025-08-20 22:08:55 [DEBUG] MongoDB command output: {
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1755720535, i: 1 }),
+    signature: {
+      hash: Binary.createFromBase64('I08xiSIZZii9dby6CmmjWyP/oss=', 0),
+      keyId: Long('7540761896488534023')
+    }
+  },
+  operationTime: Timestamp({ t: 1755720535, i: 1 })
+}
+
+2025-08-20 22:08:55 [INFO] Adding new MongoDB member mongodb-2 to replica set in target cluster
+2025-08-20 22:09:01 [DEBUG] MongoDB command output: {
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1755720539, i: 1 }),
+    signature: {
+      hash: Binary.createFromBase64('pMoKNGS8lcWhTtO8yJbwlPvY2es=', 0),
+      keyId: Long('7540761896488534023')
+    }
+  },
+  operationTime: Timestamp({ t: 1755720539, i: 1 })
+}
+
+2025-08-20 22:09:04 [DEBUG] MongoDB command output: {
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1755720544, i: 1 }),
+    signature: {
+      hash: Binary.createFromBase64('VjmUsujTZO7FHKGHUzUkbRNjnkE=', 0),
+      keyId: Long('7540761896488534023')
+    }
+  },
+  operationTime: Timestamp({ t: 1755720544, i: 1 })
+}
+
+2025-08-20 22:09:04 [DEBUG] Deleting MongoDB client pod...
+2025-08-20 22:09:04 [DEBUG] Deleting MongoDB client pod...
+2025-08-20 22:09:04 [INFO] Successfully migrated MongoDB StatefulSet mongodb
+2025-08-20 22:09:04 [INFO] Checking for existing MongoDB Community Operator deployment
+2025-08-20 22:09:04 [DEBUG] No MongoDB Community Operator found in origin cluster, skipping operator migration
+2025-08-20 22:09:04 [INFO] Migrating PostgreSQL databases
+2025-08-20 22:09:04 [INFO] No existing PostgreSQL databases found, skipping migration
+2025-08-20 22:09:04 [INFO] Migrating resources
+2025-08-20 22:09:05 [INFO] Enable request forwarding from origin
+2025-08-20 22:09:05 [INFO] Migration complete
