@@ -1,0 +1,52 @@
+\begin{table}[tb]
+  \caption{Response Time Analysis by Configuration and Request Type}
+  \label{tab:response_time_vertical}
+  \centering
+  \begin{tabular}{@{}llllcc@{}}
+    \toprule
+    \textbf{Connectivity} & \textbf{Database} & \textbf{Deployment} & \textbf{Forwarding} & \textbf{GET Response} & \textbf{POST Response} \\
+    \textbf{Tool} & & \textbf{Type} & \textbf{Tool} & \textbf{Time (ms)} & \textbf{Time (ms)} \\
+    \midrule
+    \multirow{8}{*}{Submariner} & \multirow{4}{*}{PostgreSQL} & Operator & Clustershift & 72.58 ± 20.65 ms & 67.78 ± 24.98 ms \\
+     &  & Operator & Submariner & 450.12 ± 60.03 ms & 420.25 ± 80.11 ms \\
+     &  & StatefulSet & Clustershift & 54.91 ± 0.62 ms & 49.77 ± 0.35 ms \\
+     &  & StatefulSet & Submariner & 301.19 ± 147.23 ms & 298.6 ± 163.97 ms \\
+    \cmidrule(lr){2-6}
+     & \multirow{4}{*}{MongoDB} & Operator & Clustershift & 58.29 ± 1.48 ms & 53.82 ± 1.03 ms \\
+     &  & Operator & Submariner & 388.69 ± 137.35 ms & 374.59 ± 137.45 ms \\
+     &  & StatefulSet & Clustershift & 57.84 ± 0.78 ms & 176.16 ± 4.98 ms \\
+     &  & StatefulSet & Submariner & 426.15 ± 219.45 ms & 551.17 ± 183.07 ms \\
+    \midrule
+    \multirow{8}{*}{Linkerd} & \multirow{4}{*}{PostgreSQL} & Operator & Clustershift & 102.28 ± 13.66 ms & 85.94 ± 5.4 ms \\
+     &  & Operator & Linkerd & 129.5 ± 19.74 ms & 112.66 ± 40.02 ms \\
+     &  & StatefulSet & Clustershift & 51.57 ± 1.72 ms & 48.35 ± 3.09 ms \\
+     &  & StatefulSet & Linkerd & 96.54 ± 18.36 ms & 93.81 ± 17.39 ms \\
+    \cmidrule(lr){2-6}
+     & \multirow{4}{*}{MongoDB} & Operator & Clustershift & 59.31 ± 4.18 ms & 44.15 ± 2.01 ms \\
+     &  & Operator & Linkerd & 187.16 ± 182.34 ms & 215.6 ± 267.26 ms \\
+     &  & StatefulSet & Clustershift & 54.21 ± 1 ms & 45.67 ± 0.93 ms \\
+     &  & StatefulSet & Linkerd & 150.42 ± 90.65 ms & 147.93 ± 70.33 ms \\
+    \midrule
+    \multirow{8}{*}{Skupper} & \multirow{4}{*}{PostgreSQL} & Operator & Clustershift & 58.37 ± 12.64 ms & 52.75 ± 9.72 ms \\
+     &  & Operator & Skupper & 64.87 ± 21.45 ms & 60.16 ± 22.5 ms \\
+     &  & StatefulSet & Clustershift & -- & -- \\
+     &  & StatefulSet & Skupper & -- & -- \\
+    \cmidrule(lr){2-6}
+     & \multirow{4}{*}{MongoDB} & Operator & Clustershift & 56.91 ± 3.76 ms & 51.91 ± 1.18 ms \\
+     &  & Operator & Skupper & 58.33 ± 1.61 ms & 52.13 ± 1.04 ms \\
+     &  & StatefulSet & Clustershift & 363.37 ± 533.13 ms & 353.02 ± 524.69 ms \\
+     &  & StatefulSet & Skupper & 56.13 ± 2.99 ms & 48.48 ± 3.4 ms \\
+    \midrule
+    \multirow{4}{*}{Idle} & \multirow{2}{*}{PostgreSQL} & Operator & none & 50.51 ± 3.56 ms & 39.01 ± 3.55 ms \\
+     &  & StatefulSet & none & 53.27 ± 1.68 ms & 46.84 ± 0.95 ms \\
+    \cmidrule(lr){2-6}
+     & \multirow{2}{*}{MongoDB} & Operator & none & 53.73 ± 1.91 ms & 45.37 ± 0.23 ms \\
+     &  & StatefulSet & none & 53.17 ± 1.86 ms & 45.46 ± 0.07 ms \\
+    \bottomrule
+  \end{tabular}
+  \begin{tablenotes}
+    \small
+    \item Note: Response times shown as mean ± standard deviation across 3 experimental runs.
+    \item "--" indicates scenarios where data collection was incomplete.
+  \end{tablenotes}
+\end{table}

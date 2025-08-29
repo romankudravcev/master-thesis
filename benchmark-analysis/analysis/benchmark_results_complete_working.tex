@@ -1,0 +1,67 @@
+\begin{table}[tb]
+  \caption{Benchmark Results: Request Counts, Availability, Migration Time and Downtime}
+  \label{tab:benchmark_results_complete_working}
+  \resizebox{\linewidth}{!}{%
+    \begin{tabular}{@{}lll l cccc ccc@{}}
+      \toprule
+      \multirow{2}{*}{\textbf{Connectivity Tool}} & \multirow{2}{*}{\textbf{Database}} & \multirow{2}{*}{\textbf{Deployment}} & \multirow{2}{*}{\textbf{Forwarding Tool}} 
+        & \multicolumn{4}{c}{\textbf{Request Counts}} & \multicolumn{3}{c}{\textbf{Performance Metrics}} \\
+      \cmidrule(lr){5-8} \cmidrule(lr){9-11}
+        &  &  &  & \textbf{Successful} & \textbf{Successful} & \textbf{Failed} & \textbf{Failed} & \textbf{Availability} & \textbf{Migration} & \textbf{Downtime} \\
+        &  &  &  & \textbf{GET} & \textbf{POST} & \textbf{GET} & \textbf{POST} & \textbf{(\%)} & \textbf{Time (s)} & \textbf{(s)} \\
+      \midrule
+
+      \multirow{8}{*}{Submariner}
+        & \multirow{4}{*}{PostgreSQL}
+          & Operator    & Clustershift & 1706.7 ± 68.41 & 3950 ± 77.32 & 104 ± 46.94 & 239.3 ± 94.52 & 94.28 ± 2.33\% & 193 ± 26.23 s & 32.77 ± 15.1 s \\
+              &                                             & Operator    & Submariner & 1729 ± 20.07 & 4042 ± 29.55 & 63 ± 8.89 & 165 ± 33.06 & 96.2 ± 0.7\% & 217 ± 16.82 s & 23.69 ± 4.63 s \\
+              &                                             & StatefulSet    & Clustershift & 1728.7 ± 16.2 & 4043 ± 25.16 & 57.7 ± 4.62 & 170.3 ± 19.14 & 96.2 ± 0.38\% & 146 ± 17.06 s & 22.67 ± 2.32 s \\
+              &                                             & StatefulSet    & Submariner & 1762.3 ± 32.32 & 4096 ± 16.09 & 40 ± 12.49 & 101.3 ± 35.02 & 97.64 ± 0.78\% & 165.33 ± 35.53 s & 14 ± 4.76 s \\
+        \cmidrule(lr){2-11}
+              & \multirow{4}{*}{MongoDB}
+          & Operator    & Clustershift & 1759 ± 13 & 3883.7 ± 17.79 & 81 ± 11.36 & 276.3 ± 5.86 & 94.04 ± 0.09\% & 232 ± 15.72 s & 40 ± 0.4 s \\
+              &                                             & Operator    & Submariner & 1738.3 ± 31.34 & 3983.3 ± 65.91 & 48 ± 27.22 & 230 ± 58.28 & 95.37 ± 1.42\% & 244 ± 14.11 s & 32.73 ± 8.89 s \\
+              &                                             & StatefulSet    & Clustershift & 1714.3 ± 13.65 & 3988.7 ± 16.56 & 66 ± 10.54 & 231 ± 4.36 & 95.05 ± 0.24\% & 200 ± 5 s & 32.2 ± 1.06 s \\
+              &                                             & StatefulSet    & Submariner & 1756.7 ± 45.65 & 3980.7 ± 75.96 & 56.7 ± 40.15 & 206 ± 81.41 & 95.62 ± 2.03\% & 202.67 ± 5.51 s & 29.2 ± 12.22 s \\
+      \midrule
+
+      \multirow{8}{*}{Linkerd}
+        & \multirow{4}{*}{PostgreSQL}
+          & Operator    & Clustershift & 1670 ± 59.19 & 3981 ± 78.94 & 99 ± 30.51 & 250 ± 70.62 & 94.18 ± 1.69\% & 351 ± 15 s & 34.33 ± 10.08 s \\
+              &                                             & Operator    & Linkerd & 1701.3 ± 25.77 & 4147.3 ± 26.54 & 34 ± 13.23 & 117.3 ± 35.73 & 97.48 ± 0.73\% & 370.67 ± 19.66 s & 16.23 ± 5.18 s \\
+              &                                             & StatefulSet    & Clustershift & 1697.3 ± 41.79 & 3952.7 ± 111.51 & 106 ± 25.71 & 243 ± 45.43 & 94.18 ± 1.17\% & 256.67 ± 17.95 s & 34.53 ± 7.16 s \\
+              &                                             & StatefulSet    & Linkerd & 1774 ± 27.84 & 4020 ± 16.52 & 62.3 ± 6.81 & 140.7 ± 24.54 & 96.62 ± 0.52\% & 260.67 ± 19.6 s & 19.83 ± 3.09 s \\
+        \cmidrule(lr){2-11}
+              & \multirow{4}{*}{MongoDB}
+          & Operator    & Clustershift & 1689 ± 68.72 & 3762.3 ± 75.3 & 120.3 ± 30.86 & 428.3 ± 111.73 & 90.86 ± 2.36\% & 402 ± 9.54 s & 59.63 ± 14.48 s \\
+              &                                             & Operator    & Linkerd & 1757.3 ± 19.66 & 3818 ± 100.96 & 63.3 ± 15.7 & 361 ± 70 & 92.93 ± 1.43\% & 423.67 ± 35.5 s & 50.27 ± 9.73 s \\
+              &                                             & StatefulSet    & Clustershift & 1717.7 ± 34.7 & 3632.7 ± 43.47 & 91.7 ± 9.02 & 558 ± 11.53 & 89.17 ± 0.21\% & 367.33 ± 20.03 s & 81.87 ± 0.67 s \\
+              &                                             & StatefulSet    & Linkerd & 1753.3 ± 43.32 & 3573 ± 47.79 & 59 ± 8.89 & 614 ± 17.52 & 88.78 ± 0.43\% & 389 ± 27.22 s & 87.57 ± 2.97 s \\
+      \midrule
+
+      \multirow{8}{*}{Skupper}
+        & \multirow{4}{*}{PostgreSQL}
+          & Operator    & Clustershift & 1701 ± 17.06 & 3982.7 ± 55.41 & 93.7 ± 21.08 & 222.7 ± 50.52 & 94.73 ± 1.19\% & 214 ± 5.57 s & 31.43 ± 7.25 s \\
+              &                                             & Operator    & Skupper & 1714.7 ± 28.5 & 3994.3 ± 6.03 & 70 ± 11.79 & 221 ± 15.59 & 95.15 ± 0.43\% & 280 ± 11.14 s & 30 ± 2.76 s \\
+              &                                             & StatefulSet    & Clustershift & -- & -- & -- & -- & -- & -- & -- \\
+              &                                             & StatefulSet    & Skupper & -- & -- & -- & -- & -- & -- & -- \\
+        \cmidrule(lr){2-11}
+              & \multirow{4}{*}{MongoDB}
+          & Operator    & Clustershift & 1695.3 ± 46.61 & 3859.7 ± 75.84 & 101 ± 26.06 & 344 ± 63.79 & 92.58 ± 1.5\% & 270.33 ± 3.21 s & 48.02 ± 8.18 s \\
+              &                                             & Operator    & Skupper & 1685.7 ± 68.6 & 3759.7 ± 44.97 & 135.3 ± 33.98 & 419 ± 75.66 & 90.76 ± 1.83\% & 332.33 ± 11.02 s & 60.77 ± 10.97 s \\
+              &                                             & StatefulSet    & Clustershift & 1699 ± 85.04 & 3518.3 ± 185.93 & 124.7 ± 89.85 & 657.3 ± 180.97 & 86.97 ± 4.51\% & 278 ± 2 s & 92 ± 26.68 s \\
+              &                                             & StatefulSet    & Skupper & 1693.7 ± 41.02 & 3600.7 ± 59.48 & 100 ± 17.06 & 604.3 ± 73.87 & 88.26 ± 1.52\% & 313.67 ± 11.06 s & 84.78 ± 8.35 s \\
+      \midrule
+
+      \multirow{4}{*}{Idle}
+        & \multirow{2}{*}{PostgreSQL}
+          & Operator    & none & 1775 ± 10.82 & 4225 ± 10.82 & 0 & 0 & 100\% & -- & -- \\
+              &                                             & StatefulSet    & none & 1809 ± 84.88 & 4191 ± 84.88 & 0 & 0 & 100\% & -- & -- \\
+        \cmidrule(lr){2-11}
+              & \multirow{2}{*}{MongoDB}
+          & Operator    & none & 1817.7 ± 15.7 & 4182.3 ± 15.7 & 0 & 0 & 100\% & -- & -- \\
+              &                                             & StatefulSet    & none & 1810.3 ± 52.55 & 4189.3 ± 52.94 & 0 & 0 & 100\% & -- & -- \\
+      \bottomrule
+    \end{tabular}
+  }
+\end{table}

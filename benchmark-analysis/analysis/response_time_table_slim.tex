@@ -1,0 +1,21 @@
+\begin{table}[tb]
+  \caption{Response Time Comparison Across Connectivity Tools and Configurations}
+  \label{tab:response_time_comparison}
+  \centering
+  \resizebox{\linewidth}{!}{%
+    \begin{tabular}{@{}lcccccccccccccccccccccccccccc@{}}
+      \toprule
+      \textbf{Request Type} & \rotatebox{45}{\textbf{Sub-Post-Ope-Clus}} & \rotatebox{45}{\textbf{Sub-Post-Ope-Subm}} & \rotatebox{45}{\textbf{Sub-Post-Sta-Clus}} & \rotatebox{45}{\textbf{Sub-Post-Sta-Subm}} & \rotatebox{45}{\textbf{Sub-Mong-Ope-Clus}} & \rotatebox{45}{\textbf{Sub-Mong-Ope-Subm}} & \rotatebox{45}{\textbf{Sub-Mong-Sta-Clus}} & \rotatebox{45}{\textbf{Sub-Mong-Sta-Subm}} & \rotatebox{45}{\textbf{Lin-Post-Ope-Clus}} & \rotatebox{45}{\textbf{Lin-Post-Ope-Link}} & \rotatebox{45}{\textbf{Lin-Post-Sta-Clus}} & \rotatebox{45}{\textbf{Lin-Post-Sta-Link}} & \rotatebox{45}{\textbf{Lin-Mong-Ope-Clus}} & \rotatebox{45}{\textbf{Lin-Mong-Ope-Link}} & \rotatebox{45}{\textbf{Lin-Mong-Sta-Clus}} & \rotatebox{45}{\textbf{Lin-Mong-Sta-Link}} & \rotatebox{45}{\textbf{Sku-Post-Ope-Clus}} & \rotatebox{45}{\textbf{Sku-Post-Ope-Skup}} & \rotatebox{45}{\textbf{Sku-Post-Sta-Clus}} & \rotatebox{45}{\textbf{Sku-Post-Sta-Skup}} & \rotatebox{45}{\textbf{Sku-Mong-Ope-Clus}} & \rotatebox{45}{\textbf{Sku-Mong-Ope-Skup}} & \rotatebox{45}{\textbf{Sku-Mong-Sta-Clus}} & \rotatebox{45}{\textbf{Sku-Mong-Sta-Skup}} & \rotatebox{45}{\textbf{Idl-Post-Ope-none}} & \rotatebox{45}{\textbf{Idl-Post-Sta-none}} & \rotatebox{45}{\textbf{Idl-Mong-Ope-none}} & \rotatebox{45}{\textbf{Idl-Mong-Sta-none}} \\
+       & \tiny{Submariner+PostgreSQL+Operator+Clustershift} & \tiny{Submariner+PostgreSQL+Operator+Submariner} & \tiny{Submariner+PostgreSQL+StatefulSet+Clustershift} & \tiny{Submariner+PostgreSQL+StatefulSet+Submariner} & \tiny{Submariner+MongoDB+Operator+Clustershift} & \tiny{Submariner+MongoDB+Operator+Submariner} & \tiny{Submariner+MongoDB+StatefulSet+Clustershift} & \tiny{Submariner+MongoDB+StatefulSet+Submariner} & \tiny{Linkerd+PostgreSQL+Operator+Clustershift} & \tiny{Linkerd+PostgreSQL+Operator+Linkerd} & \tiny{Linkerd+PostgreSQL+StatefulSet+Clustershift} & \tiny{Linkerd+PostgreSQL+StatefulSet+Linkerd} & \tiny{Linkerd+MongoDB+Operator+Clustershift} & \tiny{Linkerd+MongoDB+Operator+Linkerd} & \tiny{Linkerd+MongoDB+StatefulSet+Clustershift} & \tiny{Linkerd+MongoDB+StatefulSet+Linkerd} & \tiny{Skupper+PostgreSQL+Operator+Clustershift} & \tiny{Skupper+PostgreSQL+Operator+Skupper} & \tiny{Skupper+PostgreSQL+StatefulSet+Clustershift} & \tiny{Skupper+PostgreSQL+StatefulSet+Skupper} & \tiny{Skupper+MongoDB+Operator+Clustershift} & \tiny{Skupper+MongoDB+Operator+Skupper} & \tiny{Skupper+MongoDB+StatefulSet+Clustershift} & \tiny{Skupper+MongoDB+StatefulSet+Skupper} & \tiny{Idle+PostgreSQL+Operator+none} & \tiny{Idle+PostgreSQL+StatefulSet+none} & \tiny{Idle+MongoDB+Operator+none} & \tiny{Idle+MongoDB+StatefulSet+none} \\
+      \midrule
+      \textbf{GET Requests (ms)} & 72.58 ± 20.65 ms & 450.12 ± 60.03 ms & 54.91 ± 0.62 ms & 301.19 ± 147.23 ms & 58.29 ± 1.48 ms & 388.69 ± 137.35 ms & 57.84 ± 0.78 ms & 426.15 ± 219.45 ms & 102.28 ± 13.66 ms & 129.5 ± 19.74 ms & 51.57 ± 1.72 ms & 96.54 ± 18.36 ms & 59.31 ± 4.18 ms & 187.16 ± 182.34 ms & 54.21 ± 1 ms & 150.42 ± 90.65 ms & 58.37 ± 12.64 ms & 64.87 ± 21.45 ms & -- & -- & 56.91 ± 3.76 ms & 58.33 ± 1.61 ms & 363.37 ± 533.13 ms & 56.13 ± 2.99 ms & 50.51 ± 3.56 ms & 53.27 ± 1.68 ms & 53.73 ± 1.91 ms & 53.17 ± 1.86 ms \\
+      \textbf{POST Requests (ms)} & 67.78 ± 24.98 ms & 420.25 ± 80.11 ms & 49.77 ± 0.35 ms & 298.6 ± 163.97 ms & 53.82 ± 1.03 ms & 374.59 ± 137.45 ms & 176.16 ± 4.98 ms & 551.17 ± 183.07 ms & 85.94 ± 5.4 ms & 112.66 ± 40.02 ms & 48.35 ± 3.09 ms & 93.81 ± 17.39 ms & 44.15 ± 2.01 ms & 215.6 ± 267.26 ms & 45.67 ± 0.93 ms & 147.93 ± 70.33 ms & 52.75 ± 9.72 ms & 60.16 ± 22.5 ms & -- & -- & 51.91 ± 1.18 ms & 52.13 ± 1.04 ms & 353.02 ± 524.69 ms & 48.48 ± 3.4 ms & 39.01 ± 3.55 ms & 46.84 ± 0.95 ms & 45.37 ± 0.23 ms & 45.46 ± 0.07 ms \\
+      \bottomrule
+    \end{tabular}
+  }
+  \begin{tablenotes}
+    \small
+    \item Note: Values shown as mean ± standard deviation across 3 runs. "--" indicates missing data.
+    \item Abbreviations: Sub=Submariner, Link=Linkerd, Sku=Skupper, Idle=Idle, Post=PostgreSQL, Mong=MongoDB, Ope=Operator, Sta=StatefulSet, Clus=Clustershift
+  \end{tablenotes}
+\end{table}
