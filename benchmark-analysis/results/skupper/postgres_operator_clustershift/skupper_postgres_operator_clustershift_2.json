@@ -1,5 +1,5 @@
 {
-  "Server successful POST requests": "5019 (Client: 4020)",
+  "Server successful POST requests": "5020 (Client: 4020)",
   "Client successful GET requests": 1706,
   "total_requests": 6000,
   "successful_posts": 4020,

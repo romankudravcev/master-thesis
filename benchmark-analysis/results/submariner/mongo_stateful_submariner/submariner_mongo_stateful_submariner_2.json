@@ -1,4 +1,6 @@
 {
+  "Server successful POST requests": "4981 (Client: 3893)",
+  "Client successful GET requests": 1781,
   "total_requests": 6000,
   "successful_posts": 3893,
   "failed_posts": 300,

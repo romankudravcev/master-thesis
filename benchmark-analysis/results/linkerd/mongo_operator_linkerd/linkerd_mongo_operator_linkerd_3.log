@@ -1,0 +1,169 @@
+2025-08-22 15:05:22 [INFO] Starting migration process...
+2025-08-22 15:05:22 [INFO] You will be prompted to select a networking tool and rerouting option to establish a secure connection and manage traffic between the clusters.
+2025-08-22 15:06:04 [INFO] Initializing kubernetes clients
+2025-08-22 15:06:04 [INFO] Checking connectivity between clusters
+2025-08-22 15:06:04 [DEBUG] Fetching cluster IPs
+2025-08-22 15:06:04 [DEBUG] Cleaning up probe resources
+2025-08-22 15:06:05 [DEBUG] Testing connectivity with Origin IP: 192.168.100.1, Target IP: 192.168.131.3
+2025-08-22 15:06:05 [DEBUG] Deploying probe resources
+2025-08-22 15:06:06 [DEBUG] Waiting for pods to be ready
+2025-08-22 15:06:10 [DEBUG] Pods are ready
+2025-08-22 15:06:10 [DEBUG] Checking connectivity between clusters
+2025-08-22 15:06:20 [DEBUG] Connectivity check successful with Origin IP: 192.168.100.1, Target IP: 192.168.131.3 - both clusters can reach each other
+2025-08-22 15:06:20 [DEBUG] Cleaning up probe resources
+2025-08-22 15:06:20 [DEBUG] Connectivity probe complete
+2025-08-22 15:06:20 [INFO] Establishing secure connection between clusters
+2025-08-22 15:06:20 [DEBUG] Create Linkerd certificates
+2025-08-22 15:06:20 [INFO] Installing Linkerd
+2025-08-22 15:06:21 [DEBUG] Install linkerd-crds
+2025-08-22 15:06:32 [DEBUG] Install Linkerd control plane
+2025-08-22 15:07:13 [DEBUG] Install linkerd-multicluster
+2025-08-22 15:07:44 [INFO] Installing Linkerd
+2025-08-22 15:07:44 [DEBUG] Install linkerd-crds
+2025-08-22 15:07:57 [DEBUG] Install Linkerd control plane
+2025-08-22 15:08:48 [DEBUG] Install linkerd-multicluster
+2025-08-22 15:09:28 [INFO] Try fetching gateway service linkerd-gateway in namespace linkerd-multicluster
+2025-08-22 15:09:29 [INFO] Try fetching gateway service linkerd-gateway in namespace linkerd-multicluster
+2025-08-22 15:09:31 [INFO] Migrating configuration resources
+2025-08-22 15:09:35 [INFO] Including namespace for Skupper: benchmark
+2025-08-22 15:09:35 [INFO] Including namespace for Skupper: mongodb
+2025-08-22 15:09:35 [INFO] Including namespace for Skupper: traefik
+2025-08-22 15:09:35 [INFO] Number of valid namespaces found: 3
+2025-08-22 15:09:36 [INFO] No CNPG clusters found or error fetching them: the server could not find the requested resource
+2025-08-22 15:09:36 [INFO] Waiting for deployments to be ready in namespace benchmark
+2025-08-22 15:09:36 [INFO] Waiting for statefulsets to be ready in namespace benchmark
+2025-08-22 15:09:36 [INFO] No CNPG clusters found or error fetching them: the server could not find the requested resource
+2025-08-22 15:09:36 [INFO] Waiting for deployments to be ready in namespace mongodb
+2025-08-22 15:09:36 [INFO] Waiting for statefulsets to be ready in namespace mongodb
+2025-08-22 15:09:36 [INFO] Restarting deployment traefik in namespace traefik
+2025-08-22 15:09:37 [INFO] No CNPG clusters found or error fetching them: the server could not find the requested resource
+2025-08-22 15:09:37 [INFO] Waiting for deployments to be ready in namespace traefik
+2025-08-22 15:09:42 [INFO] Deployment traefik is ready
+2025-08-22 15:09:42 [INFO] Waiting for statefulsets to be ready in namespace traefik
+2025-08-22 15:09:42 [INFO] Scanning for existing cnpg databases
+2025-08-22 15:09:42 [INFO] No existing cnpg databases found, skipping migration
+2025-08-22 15:09:42 [INFO] Migrating MongoDBs
+2025-08-22 15:09:42 [INFO] No existing MongoDBs found, skipping migration
+2025-08-22 15:09:42 [INFO] Checking for existing MongoDB Community Operator deployment
+2025-08-22 15:09:42 [DEBUG] Found MongoDB Community Operator version 0.13.0 in namespace mongodb
+2025-08-22 15:09:42 [INFO] Deploying MongoDB Community Operator version 0.13.0 to target cluster
+2025-08-22 15:09:53 [DEBUG] Found 1 MongoDB databases in origin cluster
+2025-08-22 15:09:53 [DEBUG] Creating MongoDB client pod...
+2025-08-22 15:09:53 [DEBUG] Waiting for MongoDB client pod to be ready...
+2025-08-22 15:10:10 [DEBUG] Creating MongoDB client pod...
+2025-08-22 15:10:10 [DEBUG] Waiting for MongoDB client pod to be ready...
+2025-08-22 15:10:28 [DEBUG] Deploying MongoDB cluster example-mongodb in namespace mongodb
+2025-08-22 15:10:28 [DEBUG] Waiting for MongoDB cluster example-mongodb in namespace mongodb to be ready
+2025-08-22 15:10:33 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: 
+2025-08-22 15:10:38 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-22 15:10:43 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-22 15:10:48 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-22 15:10:53 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-22 15:10:58 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-22 15:11:03 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-22 15:11:09 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-22 15:11:14 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-22 15:11:19 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-22 15:11:24 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is not ready yet, current phase: Pending
+2025-08-22 15:11:24 [DEBUG] MongoDB cluster example-mongodb in namespace mongodb is ready
+2025-08-22 15:11:29 [INFO] Exporting service example-mongodb-svc in namespace mongodb
+2025-08-22 15:11:29 [INFO] Adding linkerd.io/inject=enabled annotation to namespace mongodb
+2025-08-22 15:11:29 [INFO] Injecting namespace default with linkerd
+2025-08-22 15:11:29 [INFO] Rerolling all pods in namespace default
+2025-08-22 15:11:30 [INFO] No CNPG clusters found or error fetching them: the server could not find the requested resource
+2025-08-22 15:11:30 [INFO] Waiting for deployments to be ready in namespace default
+2025-08-22 15:11:30 [INFO] Waiting for statefulsets to be ready in namespace default
+2025-08-22 15:11:37 [DEBUG] MongoDB command output: {"set":"example-mongodb","date":"2025-08-22T13:11:37.410Z","myState":2,"term":{"low":1,"high":0,"unsigned":false},"syncSourceHost":"example-mongodb-0.example-mongodb-svc.mongodb.svc.cluster.local:27017","syncSourceId":0,"heartbeatIntervalMillis":{"low":2000,"high":0,"unsigned":false},"majorityVoteCount":2,"writeMajorityCount":2,"votingMembersCount":2,"writableVotingMembersCount":2,"optimes":{"lastCommittedOpTime":{"ts":{"$timestamp":"7541396911698214914"},"t":{"low":1,"high":0,"unsigned":false}},"lastCommittedWallTime":"2025-08-22T13:11:37.318Z","readConcernMajorityOpTime":{"ts":{"$timestamp":"7541396911698214914"},"t":{"low":1,"high":0,"unsigned":false}},"appliedOpTime":{"ts":{"$timestamp":"7541396911698214914"},"t":{"low":1,"high":0,"unsigned":false}},"durableOpTime":{"ts":{"$timestamp":"7541396911698214914"},"t":{"low":1,"high":0,"unsigned":false}},"lastAppliedWallTime":"2025-08-22T13:11:37.318Z","lastDurableWallTime":"2025-08-22T13:11:37.318Z"},"lastStableRecoveryTimestamp":{"$timestamp":"7541396890223378435"},"electionParticipantMetrics":{"votedForCandidate":true,"electionTerm":{"low":1,"high":0,"unsigned":false},"lastVoteDate":"2025-08-22T13:01:30.494Z","electionCandidateMemberId":0,"voteReason":"","lastAppliedOpTimeAtElection":{"ts":{"$timestamp":"7541394257408425985"},"t":{"low":-1,"high":-1,"unsigned":false}},"maxAppliedOpTimeInSet":{"ts":{"$timestamp":"7541394257408425985"},"t":{"low":-1,"high":-1,"unsigned":false}},"priorityAtElection":1,"newTermStartDate":"2025-08-22T13:01:30.534Z","newTermAppliedDate":"2025-08-22T13:01:31.706Z"},"members":[{"_id":0,"name":"example-mongodb-0.example-mongodb-svc.mongodb.svc.cluster.local:27017","health":1,"state":1,"stateStr":"PRIMARY","uptime":617,"optime":{"ts":{"$timestamp":"7541396907403247619"},"t":{"low":1,"high":0,"unsigned":false}},"optimeDurable":{"ts":{"$timestamp":"7541396907403247619"},"t":{"low":1,"high":0,"unsigned":false}},"optimeDate":"2025-08-22T13:11:36.000Z","optimeDurableDate":"2025-08-22T13:11:36.000Z","lastAppliedWallTime":"2025-08-22T13:11:36.221Z","lastDurableWallTime":"2025-08-22T13:11:36.221Z","lastHeartbeat":"2025-08-22T13:11:36.398Z","lastHeartbeatRecv":"2025-08-22T13:11:36.891Z","pingMs":{"low":0,"high":0,"unsigned":false},"lastHeartbeatMessage":"","syncSourceHost":"","syncSourceId":-1,"infoMessage":"","electionTime":{"$timestamp":"7541394304653066241"},"electionDate":"2025-08-22T13:01:30.000Z","configVersion":1,"configTerm":1},{"_id":1,"name":"example-mongodb-1.example-mongodb-svc.mongodb.svc.cluster.local:27017","health":1,"state":2,"stateStr":"SECONDARY","uptime":620,"optime":{"ts":{"$timestamp":"7541396911698214914"},"t":{"low":1,"high":0,"unsigned":false}},"optimeDate":"2025-08-22T13:11:37.000Z","lastAppliedWallTime":"2025-08-22T13:11:37.318Z","lastDurableWallTime":"2025-08-22T13:11:37.318Z","syncSourceHost":"example-mongodb-0.example-mongodb-svc.mongodb.svc.cluster.local:27017","syncSourceId":0,"infoMessage":"","configVersion":1,"configTerm":1,"self":true,"lastHeartbeatMessage":""}],"ok":1,"$clusterTime":{"clusterTime":{"$timestamp":"7541396911698214914"},"signature":{"hash":"T7r2wm5X322rA430++IPNR6ZEPU=","keyId":{"low":5,"high":1755867690,"unsigned":false}}},"operationTime":{"$timestamp":"7541396911698214914"}}
+
+2025-08-22 15:11:40 [DEBUG] MongoDB command output: {"set":"example-mongodb","date":"2025-08-22T13:11:40.264Z","myState":1,"term":{"low":1,"high":0,"unsigned":false},"syncSourceHost":"","syncSourceId":-1,"heartbeatIntervalMillis":{"low":2000,"high":0,"unsigned":false},"majorityVoteCount":1,"writeMajorityCount":1,"votingMembersCount":1,"writableVotingMembersCount":1,"optimes":{"lastCommittedOpTime":{"ts":{"$timestamp":"7541396911698214913"},"t":{"low":1,"high":0,"unsigned":false}},"lastCommittedWallTime":"2025-08-22T13:11:37.508Z","readConcernMajorityOpTime":{"ts":{"$timestamp":"7541396911698214913"},"t":{"low":1,"high":0,"unsigned":false}},"appliedOpTime":{"ts":{"$timestamp":"7541396911698214913"},"t":{"low":1,"high":0,"unsigned":false}},"durableOpTime":{"ts":{"$timestamp":"7541396911698214913"},"t":{"low":1,"high":0,"unsigned":false}},"lastAppliedWallTime":"2025-08-22T13:11:37.508Z","lastDurableWallTime":"2025-08-22T13:11:37.508Z"},"lastStableRecoveryTimestamp":{"$timestamp":"7541396825798868993"},"electionCandidateMetrics":{"lastElectionReason":"electionTimeout","lastElectionDate":"2025-08-22T13:11:17.454Z","electionTerm":{"low":1,"high":0,"unsigned":false},"lastCommittedOpTimeAtElection":{"ts":{"$timestamp":"7541396825798868993"},"t":{"low":-1,"high":-1,"unsigned":false}},"lastSeenOpTimeAtElection":{"ts":{"$timestamp":"7541396825798868993"},"t":{"low":-1,"high":-1,"unsigned":false}},"numVotesNeeded":1,"priorityAtElection":1,"electionTimeoutMillis":{"low":10000,"high":0,"unsigned":false},"newTermStartDate":"2025-08-22T13:11:17.491Z","wMajorityWriteAvailabilityDate":"2025-08-22T13:11:17.510Z"},"members":[{"_id":0,"name":"example-mongodb-0.example-mongodb-svc.mongodb.svc.cluster.local:27017","health":1,"state":1,"stateStr":"PRIMARY","uptime":24,"optime":{"ts":{"$timestamp":"7541396911698214913"},"t":{"low":1,"high":0,"unsigned":false}},"optimeDate":"2025-08-22T13:11:37.000Z","lastAppliedWallTime":"2025-08-22T13:11:37.508Z","lastDurableWallTime":"2025-08-22T13:11:37.508Z","syncSourceHost":"","syncSourceId":-1,"infoMessage":"Could not find member to sync from","electionTime":{"$timestamp":"7541396825798868994"},"electionDate":"2025-08-22T13:11:17.000Z","configVersion":1,"configTerm":1,"self":true,"lastHeartbeatMessage":""}],"ok":1,"$clusterTime":{"clusterTime":{"$timestamp":"7541396911698214913"},"signature":{"hash":"sFf07Z/9oZg+zxDZXpVnWXnSWUk=","keyId":{"low":6,"high":1755868277,"unsigned":false}}},"operationTime":{"$timestamp":"7541396911698214913"}}
+
+2025-08-22 15:11:40 [INFO] Primary MongoDB host in origin cluster: example-mongodb-0.example-mongodb-svc.mongodb.svc.cluster.local
+2025-08-22 15:11:40 [INFO] Primary MongoDB host in target cluster: example-mongodb-0.example-mongodb-svc.mongodb.svc.cluster.local
+2025-08-22 15:11:43 [DEBUG] MongoDB command output: {
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1755868303, i: 2 }),
+    signature: {
+      hash: Binary.createFromBase64('+Rz8Jz+eDNcB/CsULnoHjPY6d34=', 0),
+      keyId: Long('7541394304653066245')
+    }
+  },
+  operationTime: Timestamp({ t: 1755868303, i: 2 })
+}
+
+2025-08-22 15:11:45 [DEBUG] MongoDB command output: {
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1755868305, i: 1 }),
+    signature: {
+      hash: Binary.createFromBase64('KzDYSd+Pcq7pQjg6R0Dflyvp01I=', 0),
+      keyId: Long('7541396825798868998')
+    }
+  },
+  operationTime: Timestamp({ t: 1755868305, i: 1 })
+}
+
+2025-08-22 15:11:47 [DEBUG] MongoDB command output: {"_id":"example-mongodb","version":1,"term":1,"members":[{"_id":0,"host":"example-mongodb-0.example-mongodb-svc.mongodb.svc.cluster.local:27017","arbiterOnly":false,"buildIndexes":true,"hidden":false,"priority":1,"tags":{},"secondaryDelaySecs":{"low":0,"high":0,"unsigned":false},"votes":1},{"_id":1,"host":"example-mongodb-1.example-mongodb-svc.mongodb.svc.cluster.local:27017","arbiterOnly":false,"buildIndexes":true,"hidden":false,"priority":1,"tags":{},"secondaryDelaySecs":{"low":0,"high":0,"unsigned":false},"votes":1}],"protocolVersion":{"low":1,"high":0,"unsigned":false},"writeConcernMajorityJournalDefault":true,"settings":{"chainingAllowed":true,"heartbeatIntervalMillis":2000,"heartbeatTimeoutSecs":10,"electionTimeoutMillis":10000,"catchUpTimeoutMillis":-1,"catchUpTakeoverDelayMillis":30000,"getLastErrorModes":{},"getLastErrorDefaults":{"w":1,"wtimeout":0},"replicaSetId":"68a86a1e370239627476d5c5"}}
+
+2025-08-22 15:11:47 [INFO] mongodb://clusteradmin:password1@example-mongodb-0.example-mongodb-svc.mongodb.svc.cluster.local:27017,example-mongodb-1.example-mongodb-svc.mongodb.svc.cluster.local:27017/?authSource=admin
+2025-08-22 15:11:49 [DEBUG] MongoDB command output: {"_id":"example-mongodb","version":1,"term":1,"members":[{"_id":0,"host":"example-mongodb-0.example-mongodb-svc.mongodb.svc.cluster.local:27017","arbiterOnly":false,"buildIndexes":true,"hidden":false,"priority":1,"tags":{},"secondaryDelaySecs":{"low":0,"high":0,"unsigned":false},"votes":1}],"protocolVersion":{"low":1,"high":0,"unsigned":false},"writeConcernMajorityJournalDefault":true,"settings":{"chainingAllowed":true,"heartbeatIntervalMillis":2000,"heartbeatTimeoutSecs":10,"electionTimeoutMillis":10000,"catchUpTimeoutMillis":-1,"catchUpTakeoverDelayMillis":30000,"getLastErrorModes":{},"getLastErrorDefaults":{"w":1,"wtimeout":0},"replicaSetId":"68a86c75f1a1628657228154"}}
+
+2025-08-22 15:11:49 [INFO] mongodb://clusteradmin:password1@example-mongodb-0.example-mongodb-svc.mongodb.svc.cluster.local:27017/?authSource=admin
+2025-08-22 15:11:55 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-22 15:12:00 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-22 15:12:05 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-22 15:12:10 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-22 15:12:15 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-22 15:12:20 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-22 15:12:25 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-22 15:12:30 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-22 15:12:35 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-22 15:12:40 [DEBUG] Job mongosyncer-job in namespace default not completed yet, waiting...
+2025-08-22 15:12:45 [DEBUG] Job mongosyncer-job in namespace default has completed
+2025-08-22 15:12:47 [DEBUG] MongoDB command output: {
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1755868367, i: 2 }),
+    signature: {
+      hash: Binary.createFromBase64('HDf1yAWEq7gi4KIR/80qUDhhYko=', 0),
+      keyId: Long('7541396825798868998')
+    }
+  },
+  operationTime: Timestamp({ t: 1755868367, i: 2 })
+}
+
+2025-08-22 15:12:47 [DEBUG] Deleting MongoDB client pod...
+2025-08-22 15:12:47 [DEBUG] Deleting MongoDB client pod...
+2025-08-22 15:12:48 [DEBUG] Restoring MongoDB cluster example-mongodb member count to 2
+2025-08-22 15:12:48 [INFO] Migrating PostgreSQL databases
+2025-08-22 15:12:48 [INFO] No existing PostgreSQL databases found, skipping migration
+2025-08-22 15:12:48 [INFO] Migrating resources
+2025-08-22 15:12:49 [INFO] Enable request forwarding from origin
+2025-08-22 15:12:50 [INFO] Mirroring service clustershift-benchmark-service in namespace benchmark
+2025-08-22 15:12:50 [INFO] Mirroring service metrics-collector in namespace clustershift
+2025-08-22 15:12:50 [INFO] Mirroring service kubernetes in namespace default
+2025-08-22 15:12:50 [INFO] Mirroring service kube-dns in namespace kube-system
+2025-08-22 15:12:50 [INFO] Mirroring service metrics-server in namespace kube-system
+2025-08-22 15:12:50 [INFO] Mirroring service linkerd-gateway in namespace linkerd-multicluster
+2025-08-22 15:12:50 [INFO] Mirroring service probe-gateway-origin in namespace linkerd-multicluster
+2025-08-22 15:12:50 [INFO] Mirroring service probe-gateway-target in namespace linkerd-multicluster
+2025-08-22 15:12:50 [INFO] Mirroring service linkerd-dst in namespace linkerd
+2025-08-22 15:12:50 [INFO] Mirroring service linkerd-dst-headless in namespace linkerd
+2025-08-22 15:12:50 [INFO] Mirroring service linkerd-identity in namespace linkerd
+2025-08-22 15:12:51 [INFO] Mirroring service linkerd-identity-headless in namespace linkerd
+2025-08-22 15:12:51 [INFO] Mirroring service linkerd-policy in namespace linkerd
+2025-08-22 15:12:51 [INFO] Mirroring service linkerd-policy-validator in namespace linkerd
+2025-08-22 15:12:51 [INFO] Mirroring service linkerd-proxy-injector in namespace linkerd
+2025-08-22 15:12:51 [INFO] Mirroring service linkerd-sp-validator in namespace linkerd
+2025-08-22 15:12:51 [INFO] Mirroring service metallb-webhook-service in namespace metallb-system
+2025-08-22 15:12:51 [INFO] Mirroring service example-mongodb-svc in namespace mongodb
+2025-08-22 15:12:51 [INFO] Mirroring service traefik in namespace traefik
+2025-08-22 15:12:52 [INFO] Restarting deployment traefik in namespace traefik
+2025-08-22 15:12:52 [INFO] No CNPG clusters found or error fetching them: the server could not find the requested resource
+2025-08-22 15:12:52 [INFO] Waiting for deployments to be ready in namespace traefik
+2025-08-22 15:12:57 [INFO] Deployment traefik is ready
+2025-08-22 15:12:57 [INFO] Waiting for statefulsets to be ready in namespace traefik
+2025-08-22 15:12:57 [INFO] Updating service name in IngressRoute clustershift-benchmark-ingress-route from clustershift-benchmark-service to clustershift-benchmark-service-target
+2025-08-22 15:12:58 [INFO] Updating service name in IngressRoute metrics-collector-route from metrics-collector to metrics-collector-target
+2025-08-22 15:12:58 [DEBUG] Ignoring IngressRoute traefik-dashboard as it is the Traefik dashboard
+2025-08-22 15:12:58 [INFO] Migration complete
