@@ -256,7 +256,6 @@ process_benchmark_file <- function(file_path) {
       message_lost_rate <- (messages_lost / total_requests_calc) * 100
     }
     
-    # --------- NEW: Calculate GET and POST response times separately ---------
     avg_response_time_get <- NA
     avg_response_time_post <- NA
     
@@ -306,8 +305,7 @@ process_benchmark_file <- function(file_path) {
         }
       }
     }
-    # ------------------------------------------------------------------------
-    
+
     cat("  Calculating downtime from JSON data:\n")
     downtime_seconds <- calculate_downtime_from_json(data)
     return(data.frame(
@@ -656,7 +654,7 @@ generate_complete_latex_table <- function(results_df, output_file = "benchmark_r
 }
 
 # ============================================================
-# Slim response time table generation (A4 friendly)
+# Slim response time table generation
 # ============================================================
 
 generate_slim_response_time_table <- function(results_df, output_file = "response_time_table_slim.tex") {
