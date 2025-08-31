@@ -13,8 +13,8 @@ library(lubridate)
 # Configuration
 # ============================================================
 
-base_path <- "/Users/romankudravcev/Desktop/master-thesis/benchmark-analysis/results"
-output_path <- "/Users/romankudravcev/Desktop/master-thesis/benchmark-analysis/analysis"
+base_path <- "results"
+output_path <- "analysis"
 
 databases <- c("postgres", "mongo")
 db_types <- c("operator", "stateful")

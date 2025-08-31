@@ -16,9 +16,8 @@ library(cowplot)
 # 2. Configuration
 # ============================================================
 
-base_path <- "/Users/romankudravcev/Desktop/master-thesis/benchmark-analysis/results"
-
-output_path <- "/Users/romankudravcev/Desktop/master-thesis/benchmark-analysis/plots"
+base_path <- "results"
+output_path <- "plots"
 
 # Definitionen
 databases <- c("postgres", "mongo")
@@ -168,6 +167,14 @@ collect_data_for_combination <- function(db, db_type, conn_tool, cluster_type) {
 # 6. Plot-Funktion
 # ============================================================
 
+all_files_exist <- function(files) {
+  all(file.exists(files))
+}
+
+blank_plot <- function() {
+  ggplot() + theme_void()
+}
+
 create_subplot <- function(db, db_type, conn_tool, cluster_type) {
   data <- collect_data_for_combination(db, db_type, conn_tool, cluster_type)
   
@@ -215,23 +222,38 @@ create_subplot <- function(db, db_type, conn_tool, cluster_type) {
 create_connectivity_tool_grid <- function(conn_tool) {
   cat("Erstelle Grid für:", conn_tool, "\n")
   
+  configs <- list(
+    # PostgreSQL Operator
+    list(db="postgres", db_type="operator", cluster_type="origin"),
+    list(db="postgres", db_type="operator", cluster_type="target"),
+    # PostgreSQL Stateful
+    list(db="postgres", db_type="stateful", cluster_type="origin"),
+    list(db="postgres", db_type="stateful", cluster_type="target"),
+    # MongoDB Operator
+    list(db="mongo", db_type="operator", cluster_type="origin"),
+    list(db="mongo", db_type="operator", cluster_type="target"),
+    # MongoDB Stateful
+    list(db="mongo", db_type="stateful", cluster_type="origin"),
+    list(db="mongo", db_type="stateful", cluster_type="target")
+  )
+  
   plots <- list()
   
-  # PostgreSQL Plots (Zeile 1)
-  plots[[1]] <- create_subplot("postgres", "operator", conn_tool, "origin")
-  plots[[2]] <- create_subplot("postgres", "operator", conn_tool, "target")
-  plots[[3]] <- create_subplot("postgres", "stateful", conn_tool, "origin")
-  plots[[4]] <- create_subplot("postgres", "stateful", conn_tool, "target")
+  for(cfg in configs) {
+    # Prüfe, ob alle Dateien existieren
+    idle_files <- get_idle_files(cfg$cluster_type, cfg$db, cfg$db_type)
+    clustershift_files <- get_migration_files(cfg$db, cfg$db_type, conn_tool, "clustershift", cfg$cluster_type)
+    selected_files <- get_migration_files(cfg$db, cfg$db_type, conn_tool, "selected_tool", cfg$cluster_type)
+    
+    if (all(file.exists(idle_files)) && all(file.exists(clustershift_files)) && all(file.exists(selected_files))) {
+      plots[[length(plots) + 1]] <- create_subplot(cfg$db, cfg$db_type, conn_tool, cfg$cluster_type)
+    } else {
+      plots[[length(plots) + 1]] <- blank_plot()
+    }
+  }
   
-  # MongoDB Plots (Zeile 2)
-  plots[[5]] <- create_subplot("mongo", "operator", conn_tool, "origin")
-  plots[[6]] <- create_subplot("mongo", "operator", conn_tool, "target")
-  plots[[7]] <- create_subplot("mongo", "stateful", conn_tool, "origin")
-  plots[[8]] <- create_subplot("mongo", "stateful", conn_tool, "target")
-  
-  # Grid Layout: 2 Zeilen × 4 Spalten
+  # Grid: 2 Zeilen × 4 Spalten
   grid <- wrap_plots(plots, nrow = 2, ncol = 4)
-  
   return(grid)
 }
 
